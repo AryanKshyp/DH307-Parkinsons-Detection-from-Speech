@@ -1,0 +1,26 @@
+
+=== duration [handcrafted]: 40000 segments, 216 speakers, 40 features ===
+corpus mix: ItalianPD 18504, NeuroVoz 14419, MDVR-KCL 7077
+channels: clinical, smartphone   languages: en, es, it
+chance: corpus 0.333, PD/HC 0.500
+normaliser checks out: order preserved, per-speaker mean 0. Between-speaker spread of feature means 13.46 -> 1.3e-16, which is where a speaker-constant label like PD/HC lives.
+corpus scope checks out: per-dataset mean 0 on the fitted set.
+  global+coral     corpus 0.855 [0.846,0.865]   PD/HC 0.726 [0.690,0.758]
+    per-fold corpus 0.849 0.879 0.850 0.847 0.862
+    per-fold PD/HC  0.692 0.744 0.673 0.789 0.734
+LODO-style PD/HC (fit on the other corpora):
+  lodo ItalianPD    global    PD/HC 0.515  target_in_stats=False
+  lodo MDVR-KCL     global    PD/HC 0.626  target_in_stats=False
+  lodo NeuroVoz     global    PD/HC 0.520  target_in_stats=False
+
+=== balanced accuracy by normalisation scope ===
+ scope transform  corpus  pd_hc  corpus_chance                     corpora tasks
+global     coral   0.855  0.726          0.333 ItalianPD+MDVR-KCL+NeuroVoz   all
+wrote experiments\corpus_norm_ablation\probe_mixed_r4.csv
+
+=== LODO-style PD/HC ===
+   level transform  held_out  scope  pd_hc  n_test  held_out_in_stats
+duration     coral ItalianPD global  0.515   18504              False
+duration     coral  MDVR-KCL global  0.626    7077              False
+duration     coral  NeuroVoz global  0.520   14419              False
+wrote experiments\corpus_norm_ablation\probe_lodo_r4.csv

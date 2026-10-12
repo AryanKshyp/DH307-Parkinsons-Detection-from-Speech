@@ -1,0 +1,9 @@
+{
+  "best_epoch": 5,
+  "best_val_ba": 0.7666666666666666,
+  "n_parameters": 44676,
+  "domain_names": [
+    "ItalianPD",
+    "NeuroVoz"
+  ]
+}

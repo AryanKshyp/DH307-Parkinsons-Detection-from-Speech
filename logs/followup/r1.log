@@ -1,0 +1,47 @@
+D:\DH307 R&D\scripts\probe_moment_ladder.py:192: RuntimeWarning: Mean of empty slice
+  "surrogate_test": float(np.nanmean(surrogate_folds)),
+duration: 40000 segments, 216 speakers, 40 features, corpus chance 0.333
+
+--- L0 (global space) ---
+  corpus BA on real held-out rows 0.569 [0.542,0.598]
+  corpus BA on surrogate held-out rows 0.573  (moment-content bound)
+  worst moment drift: mean 0.058, cov 0.043
+  per-fold 0.604 0.587 0.585 0.532 0.543
+
+--- L1 (global space) ---
+  corpus BA on real held-out rows 0.570 [0.548,0.593]
+  corpus BA on surrogate held-out rows 0.872  (moment-content bound)
+  worst moment drift: mean 0.063, cov 0.083
+  per-fold 0.611 0.571 0.544 0.553 0.571
+
+--- L2 (global space) ---
+  corpus BA on real held-out rows 0.669 [0.640,0.697]
+  corpus BA on surrogate held-out rows 0.874  (moment-content bound)
+  worst moment drift: mean 0.061, cov 0.053
+  per-fold 0.691 0.671 0.649 0.639 0.684
+
+--- L2z (corpus space) ---
+  corpus BA on real held-out rows 0.591 [0.574,0.607]
+  corpus BA on surrogate held-out rows 0.677  (moment-content bound)
+  worst moment drift: mean 0.099, cov 0.058
+  per-fold 0.593 0.600 0.586 0.610 0.582
+
+--- L3 (global space) ---
+  corpus BA on real held-out rows 0.757 [0.730,0.786]
+  per-fold 0.774 0.779 0.746 0.730 0.749
+
+=== moment ladder ===
+rung  scope  real_test  surrogate_test  ci_lo  ci_hi
+  L0 global      0.569           0.573  0.542  0.598
+  L1 global      0.570           0.872  0.548  0.593
+  L2 global      0.669           0.874  0.640  0.697
+ L2z corpus      0.591           0.677  0.574  0.607
+  L3 global      0.757             NaN  0.730  0.786
+
+share of the real corpus cue (L3 = 0.757) reachable from each rung:
+  L0  +0.56
+  L1  +0.56
+  L2  +0.79
+
+L2 - L1 = +0.098  (correlations carry something; R4 authorised)
+wrote experiments\corpus_norm_ablation\moment_ladder_r1.csv

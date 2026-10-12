@@ -1,0 +1,33 @@
+{
+  "family": "handcrafted",
+  "level": "duration",
+  "protocol": "mixed",
+  "split": "9",
+  "regime": "baseline",
+  "dataset": "ItalianPD",
+  "phone_class": null,
+  "tasks": null,
+  "norm": "global",
+  "epochs": 30,
+  "batch_size": 256,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "patience": 8,
+  "min_select_epoch": 5,
+  "seed": 0,
+  "samples_per_epoch": null,
+  "num_workers": 0,
+  "device": "auto",
+  "width": null,
+  "dropout": null,
+  "lambda_max": 1.0,
+  "lambda_gamma": 10.0,
+  "run_id": "mixed_9_handcrafted_duration_single_ItalianPD_s0",
+  "commit": "unknown",
+  "n_in": 40,
+  "n_mels": null,
+  "domain_names": [
+    "ItalianPD"
+  ],
+  "target_stats": null
+}

@@ -1,0 +1,4 @@
+level,transform,held_out,scope,pd_hc,n_test,held_out_in_stats
+duration,coral,ItalianPD,global,0.5151875711433123,18504,False
+duration,coral,MDVR-KCL,global,0.6256874256590734,7077,False
+duration,coral,NeuroVoz,global,0.5198416236753968,14419,False

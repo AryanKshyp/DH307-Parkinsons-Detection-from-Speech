@@ -1,0 +1,13 @@
+level,transform,held_out,scope,pd_hc,n_test,held_out_in_stats
+duration,inlp_k0,ItalianPD,global,0.5914256896640109,18504,False
+duration,inlp_k0,MDVR-KCL,global,0.5990936374112052,7077,False
+duration,inlp_k0,NeuroVoz,global,0.5206555715614681,14419,False
+duration,inlp_k1,ItalianPD,global,0.5908179092428278,18504,False
+duration,inlp_k1,MDVR-KCL,global,0.6061043928940351,7077,False
+duration,inlp_k1,NeuroVoz,global,0.5234868454362024,14419,False
+duration,inlp_k2,ItalianPD,global,0.5784058706366623,18504,False
+duration,inlp_k2,MDVR-KCL,global,0.5981923469123901,7077,False
+duration,inlp_k2,NeuroVoz,global,0.5212329088729737,14419,False
+duration,inlp_k3,ItalianPD,global,0.5705176109239865,18504,False
+duration,inlp_k3,MDVR-KCL,global,0.6048135377065136,7077,False
+duration,inlp_k3,NeuroVoz,global,0.5275535019926235,14419,False

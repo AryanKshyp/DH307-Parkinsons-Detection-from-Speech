@@ -1,0 +1,9 @@
+{
+  "best_epoch": 5,
+  "best_val_ba": 0.9285714285714286,
+  "n_parameters": 224645,
+  "domain_names": [
+    "ItalianPD",
+    "MDVR-KCL"
+  ]
+}

@@ -1,0 +1,37 @@
+
+=== utterance: 3871 segments, 216 speakers, 40 features ===
+corpus mix: NeuroVoz 2968, ItalianPD 830, MDVR-KCL 73
+chance: corpus 0.333, PD/HC 0.500
+normaliser checks out: order preserved, per-speaker mean 0. Between-speaker spread of feature means 14.56 -> 7.0e-16, which is where a speaker-constant label like PD/HC lives.
+  none      corpus 0.938   PD/HC 0.761
+  global    corpus 0.938   PD/HC 0.761
+  speaker   corpus 0.316   PD/HC 0.471
+  utterance corpus 0.333   PD/HC 0.459
+
+=== duration: 40000 segments, 216 speakers, 40 features ===
+corpus mix: ItalianPD 18504, NeuroVoz 14419, MDVR-KCL 7077
+chance: corpus 0.333, PD/HC 0.500
+normaliser checks out: order preserved, per-speaker mean 0. Between-speaker spread of feature means 13.46 -> 1.3e-16, which is where a speaker-constant label like PD/HC lives.
+  none      corpus 0.757   PD/HC 0.738
+  global    corpus 0.757   PD/HC 0.738
+  speaker   corpus 0.327   PD/HC 0.500
+  utterance corpus 0.332   PD/HC 0.469
+
+=== balanced accuracy by normalisation scope ===
+    level     scope  corpus  pd_hc  corpus_chance  pd_hc_chance
+utterance      none   0.938  0.761          0.333           0.5
+utterance    global   0.938  0.761          0.333           0.5
+utterance   speaker   0.316  0.471          0.333           0.5
+utterance utterance   0.333  0.459          0.333           0.5
+ duration      none   0.757  0.738          0.333           0.5
+ duration    global   0.757  0.738          0.333           0.5
+ duration   speaker   0.327  0.500          0.333           0.5
+ duration utterance   0.332  0.469          0.333           0.5
+
+change from leaving the cache alone:
+  duration  global    corpus +0.000   PD/HC +0.000
+  duration  speaker   corpus -0.430   PD/HC -0.238
+  duration  utterance corpus -0.424   PD/HC -0.270
+  utterance global    corpus +0.000   PD/HC +0.000
+  utterance speaker   corpus -0.622   PD/HC -0.290
+  utterance utterance corpus -0.605   PD/HC -0.302

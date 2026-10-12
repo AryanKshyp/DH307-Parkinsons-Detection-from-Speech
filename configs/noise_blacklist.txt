@@ -1,0 +1,25 @@
+# Files excluded during preprocessing. One repo-relative path per line,
+# with a comment giving the reason. Keeping the decision here rather than in
+# someone's shell history is the point of the file.
+
+# Byte-identical to this speaker's B1. The second reading of the text was
+# never recorded, so keeping it would duplicate one speaker's utterance.
+data/raw/ItalianPD/28 People with Parkinson's disease/17-28/Giulia P/B2GPIUUGLL63F100220171021.wav
+
+# Truncated NeuroVoz recordings: too short to contain the prompted utterance.
+# The sentence tasks have a median of ~2.9 s and the shortest prompt
+# ("esto es una ganga") still runs over a second.
+data/raw/NeuroVoz/data/audios/HC_CARMEN_0082.wav          # 0.08 s
+data/raw/NeuroVoz/data/audios/HC_CARMEN_0083.wav          # 0.15 s
+data/raw/NeuroVoz/data/audios/HC_ABLANDADA_0082.wav       # 0.17 s
+data/raw/NeuroVoz/data/audios/HC_PETACA_BLANCA_0063.wav   # 0.20 s
+data/raw/NeuroVoz/data/audios/HC_PIDIO_0065.wav           # 0.20 s
+data/raw/NeuroVoz/data/audios/HC_TOMAS_0068.wav           # 0.45 s
+data/raw/NeuroVoz/data/audios/HC_DIABLO_0080.wav          # 0.66 s, longest prompt of the set
+data/raw/NeuroVoz/data/audios/HC_A2_0056.wav              # 0.53 s, not a sustained phonation
+
+# Not excluded, but worth listening to before Stage 3:
+#   HC_E1_0132.wav    0.91 s sustained vowel (median 3.9 s)
+#   HC_PATAKA_0064.wav 2.39 s DDK (median 11.3 s)
+#   ItalianPD vowels running 27-35 s, and Antonia G / Nicolo C reading 3-4x
+#   the median. Slow effortful reading is a PD symptom, so these may be real.

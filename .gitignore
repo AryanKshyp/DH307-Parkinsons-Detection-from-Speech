@@ -1,0 +1,33 @@
+# Data is never tracked: corpora are not redistributable and filenames
+# contain speaker identifiers.
+data/
+*.zip
+
+# Experiment outputs. Run configs, metrics and summaries are tracked;
+# per-speaker predictions and embeddings carry speaker identifiers.
+experiments/**/outputs/
+experiments/**/checkpoints/
+experiments/**/predictions.csv
+experiments/**/embeddings.csv
+
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+.obsidian/
+.qodo/
+
+# Slide decks, speaking notes and deck-building scratch
+Presentations/
+tmp_deck/
+tmp_week2/
+tmp_week3/
+tmp_week3_media/
+reports/supervisor_meeting.md
+scripts/plot_week4_diagrams.py
+notebooks/figures/week4_*.png
+
+# Lab server access notes
+kcdh_server_rules.md

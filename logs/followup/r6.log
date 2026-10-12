@@ -1,0 +1,17 @@
+
+=== duration [mel-meanpool]: 40000 segments, 216 speakers, 65 features ===
+corpus mix: ItalianPD 18504, NeuroVoz 14419, MDVR-KCL 7077
+channels: clinical, smartphone   languages: en, es, it
+chance: corpus 0.333, PD/HC 0.500
+  global           corpus 0.774 [0.747,0.803]   PD/HC 0.744 [0.709,0.778]
+    per-fold corpus 0.796 0.789 0.773 0.707 0.787
+    per-fold PD/HC  0.717 0.761 0.718 0.789 0.742
+  corpus           corpus 0.669 [0.651,0.686]   PD/HC 0.737 [0.701,0.771]
+    per-fold corpus 0.681 0.683 0.657 0.670 0.674
+    per-fold PD/HC  0.721 0.743 0.686 0.804 0.738
+
+=== balanced accuracy by normalisation scope ===
+ scope transform  corpus  pd_hc  corpus_chance                     corpora tasks
+global      none   0.774  0.744          0.333 ItalianPD+MDVR-KCL+NeuroVoz   all
+corpus      none   0.669  0.737          0.333 ItalianPD+MDVR-KCL+NeuroVoz   all
+wrote experiments\corpus_norm_ablation\probe_mixed_r6.csv

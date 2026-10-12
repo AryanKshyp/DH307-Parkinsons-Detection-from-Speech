@@ -1,0 +1,10 @@
+{
+  "best_epoch": 10,
+  "best_val_ba": 0.8083333333333333,
+  "n_parameters": 224131,
+  "domain_names": [
+    "ItalianPD",
+    "MDVR-KCL",
+    "NeuroVoz"
+  ]
+}

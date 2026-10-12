@@ -1,0 +1,20 @@
+
+=== phoneme: 40000 segments, 175 speakers, 40 features ===
+corpus mix: NeuroVoz 31178, ItalianPD 8822
+chance: corpus 0.500, PD/HC 0.500
+  none      corpus 0.804   PD/HC 0.652
+  global    corpus 0.804   PD/HC 0.652
+  speaker   corpus 0.403   PD/HC 0.490
+  utterance corpus 0.482   PD/HC 0.487
+
+=== balanced accuracy by normalisation scope ===
+  level     scope  corpus  pd_hc  corpus_chance  pd_hc_chance
+phoneme      none   0.804  0.652            0.5           0.5
+phoneme    global   0.804  0.652            0.5           0.5
+phoneme   speaker   0.403  0.490            0.5           0.5
+phoneme utterance   0.482  0.487            0.5           0.5
+
+change from leaving the cache alone:
+  phoneme   global    corpus +0.000   PD/HC +0.000
+  phoneme   speaker   corpus -0.401   PD/HC -0.162
+  phoneme   utterance corpus -0.321   PD/HC -0.164

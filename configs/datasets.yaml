@@ -1,0 +1,154 @@
+# Dataset registry. Adding a corpus means adding a block here, not editing code.
+#
+# Each rule's `pattern` is matched against the file's path relative to `root`,
+# with forward slashes. Rules are tried in order; first match wins. Named
+# capture groups are interpolated into the `fields` templates.
+#
+# `task_map` maps the captured task token onto the shared task vocabulary:
+#   vowel_a vowel_e vowel_i vowel_o vowel_u
+#   ddk_pataka ddk_pa ddk_ta
+#   sentence read_text read_words read_phrases
+#   monologue spontaneous
+
+datasets:
+
+  NeuroVoz:
+    root: data/raw/NeuroVoz
+    language: es
+    channel: clinical
+    # data/transcriptions/ also holds 663 wavs, all byte-identical duplicates
+    # of files in data/audios/. Globbing only audios/ excludes them.
+    glob: "data/audios/*.wav"
+    rules:
+      - pattern: '^data/audios/(?P<grp>HC|PD)_(?P<task>[A-Z0-9_]+)_(?P<spk>\d{4})\.wav$'
+        fields:
+          speaker_id: "neurovoz_{grp}_{spk}"
+          label: "{grp}"
+          cohort: "{grp}"
+    label_map: {HC: HC, PD: PD}
+    cohort_map: {HC: control, PD: patient}
+    task_map:
+      A1: vowel_a
+      A2: vowel_a
+      A3: vowel_a
+      E1: vowel_e
+      E2: vowel_e
+      E3: vowel_e
+      I1: vowel_i
+      I2: vowel_i
+      I3: vowel_i
+      O1: vowel_o
+      O2: vowel_o
+      O3: vowel_o
+      U1: vowel_u
+      U2: vowel_u
+      U3: vowel_u
+      PATAKA: ddk_pataka
+      FREE: monologue
+      # Listen-and-repeat sentences. The short tokens (PAN, PATATA, PETACA) are
+      # an inconsistent naming variant of the long ones and carry the same text.
+      ABLANDADA: sentence
+      ACAMPADA: sentence
+      BARBAS: sentence
+      BURRO: sentence
+      CALLE: sentence
+      CARMEN: sentence
+      DIABLO: sentence
+      GANGA: sentence
+      MANGA: sentence
+      PAN: sentence
+      PAN_VINO: sentence
+      PATATA: sentence
+      PATATA_BLANDA: sentence
+      PERRO: sentence
+      PETACA: sentence
+      PETACA_BLANCA: sentence
+      PIDIO: sentence
+      SOMBRA: sentence
+      TOMAS: sentence
+
+  ItalianPD:
+    root: data/raw/ItalianPD
+    language: it
+    channel: clinical
+    glob: "**/*.wav"
+    # The speaker code embedded in filenames is NOT unique: all but four of the
+    # young controls share a copy-pasted code. Speaker identity comes from the
+    # directory, which is one folder per person.
+    rules:
+      - pattern: '^28 People with Parkinson.s disease/(?P<bin>[\d-]+)/(?P<spk>[^/]+)/(?P<task>[A-Z]+\d).*\.wav$'
+        fields:
+          speaker_id: "italianpd_pd_{bin}_{spk}"
+          label: "PD"
+          cohort: "patient"
+      - pattern: '^15 Young Healthy Control/(?P<spk>[^/]+)/(?P<task>[A-Z]+\d).*\.wav$'
+        fields:
+          speaker_id: "italianpd_yhc_{spk}"
+          label: "HC"
+          cohort: "young_control"
+      - pattern: '^22 Elderly Healthy Control/(?P<spk>[^/]+)/(?P<task>[A-Z]+\d).*\.wav$'
+        fields:
+          speaker_id: "italianpd_ehc_{spk}"
+          label: "HC"
+          cohort: "elderly_control"
+    task_map:
+      B1: read_text
+      B2: read_text
+      D1: ddk_pa
+      D2: ddk_ta
+      FB1: read_phrases
+      PR1: read_words
+      VA1: vowel_a
+      VA2: vowel_a
+      VE1: vowel_e
+      VE2: vowel_e
+      VI1: vowel_i
+      VI2: vowel_i
+      VO1: vowel_o
+      VO2: vowel_o
+      VU1: vowel_u
+      VU2: vowel_u
+
+  MDVR-KCL:
+    root: data/raw/MDVR-KCL
+    language: en
+    channel: smartphone
+    glob: "**/*.wav"
+    # Filename tail is H&Y _ UPDRS-II-5 _ UPDRS-III-18. The separator after the
+    # speaker id is optional: ID22's spontaneous file is named "ID22hc_0_0_0".
+    rules:
+      - pattern: '^26_29_09_2017_KCL/26-29_09_2017_KCL/(?P<task>ReadText|SpontaneousDialogue)/(HC|PD)/(?P<spk>ID\d+)_?(?P<grp>hc|pd)_(?P<hy>\d+)_(?P<updrs2>\d+)_(?P<updrs3>\d+)\.wav$'
+        fields:
+          speaker_id: "mdvrkcl_{spk}"
+          label: "{grp}"
+          cohort: "{grp}"
+    label_map: {hc: HC, pd: PD}
+    cohort_map: {hc: control, pd: patient}
+    task_map:
+      ReadText: read_text
+      SpontaneousDialogue: spontaneous
+
+# FredPrior (81 speakers, sustained /a/ only, 8 kHz) was bundled in PD.zip and is
+# deliberately out of scope: none of the four assigned tasks is present, and its
+# 8 kHz bandwidth was the only bandwidth cue in the set. Excluding it leaves all
+# three remaining corpora at an identical 8 kHz bandwidth after the 16 kHz
+# resample. Its raw audio is left untouched under data/raw/. The verified block is
+# kept here, commented out, so reinstating it is a matter of uncommenting.
+#
+#  FredPrior:
+#    root: data/raw/FredPrior
+#    language: en
+#    channel: mobile_8k
+#    glob: "**/*.wav"
+#    # HC codes are separated by '_', PD codes by '-'.
+#    rules:
+#      - pattern: '^(?P<grp>HC|PD)_AH/AH_(?P<spk>[^_-]+)[_-].*\.wav$'
+#        fields:
+#          speaker_id: "fredprior_{grp}_{spk}"
+#          label: "{grp}"
+#          cohort: "{grp}"
+#          task: "AH"
+#    label_map: {HC: HC, PD: PD}
+#    cohort_map: {HC: control, PD: patient}
+#    task_map:
+#      AH: vowel_a

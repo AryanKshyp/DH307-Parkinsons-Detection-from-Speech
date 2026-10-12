@@ -1,0 +1,3090 @@
+===== PHASE 1: handcrafted, every level =====
+
+### 04:43:20  python -m src.training.run --family handcrafted --level duration --protocol mixed --all-configs --regime baseline
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 220572       172 ItalianPD,MDVR-KCL,NeuroVoz 98776 121796
+  val  29099        22 ItalianPD,MDVR-KCL,NeuroVoz 15494  13605
+ test  24788        22 ItalianPD,MDVR-KCL,NeuroVoz 10955  13833
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_0_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.890  val BA 0.773  domain nan
+epoch 01  lam 0.000  train BA 0.935  val BA 0.727  domain nan
+epoch 02  lam 0.000  train BA 0.957  val BA 0.682  domain nan
+epoch 03  lam 0.000  train BA 0.979  val BA 0.773  domain nan
+epoch 04  lam 0.000  train BA 0.989  val BA 0.727  domain nan
+epoch 05  lam 0.000  train BA 0.989  val BA 0.818  domain nan
+epoch 06  lam 0.000  train BA 0.989  val BA 0.773  domain nan
+epoch 07  lam 0.000  train BA 0.989  val BA 0.727  domain nan
+epoch 08  lam 0.000  train BA 0.995  val BA 0.773  domain nan
+epoch 09  lam 0.000  train BA 0.995  val BA 0.773  domain nan
+epoch 10  lam 0.000  train BA 0.995  val BA 0.773  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.773  domain nan
+early stop at epoch 13, best was 5 (val BA 0.818)
+val   speaker BA 0.818  AUC 0.884  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.717
+test  speaker BA 0.773  AUC 0.909  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.633
+
+=== mixed split=1 handcrafted duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 215119       172 ItalianPD,MDVR-KCL,NeuroVoz 95949 119170
+  val  30241        22 ItalianPD,MDVR-KCL,NeuroVoz 13782  16459
+ test  29099        22 ItalianPD,MDVR-KCL,NeuroVoz 15494  13605
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_1_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.877  val BA 0.817  domain nan
+epoch 01  lam 0.000  train BA 0.939  val BA 0.867  domain nan
+epoch 02  lam 0.000  train BA 0.962  val BA 0.867  domain nan
+epoch 03  lam 0.000  train BA 0.973  val BA 0.867  domain nan
+epoch 04  lam 0.000  train BA 0.984  val BA 0.817  domain nan
+epoch 05  lam 0.000  train BA 0.989  val BA 0.825  domain nan
+epoch 06  lam 0.000  train BA 0.995  val BA 0.767  domain nan
+epoch 07  lam 0.000  train BA 0.995  val BA 0.817  domain nan
+epoch 08  lam 0.000  train BA 0.995  val BA 0.817  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.867  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.867  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+early stop at epoch 17, best was 9 (val BA 0.867)
+val   speaker BA 0.867  AUC 0.917  n=22  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.833
+test  speaker BA 0.773  AUC 0.893  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.633
+
+=== mixed split=2 handcrafted duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 216776       172 ItalianPD,MDVR-KCL,NeuroVoz 99202 117574
+  val  27442        22 ItalianPD,MDVR-KCL,NeuroVoz 12241  15201
+ test  30241        22 ItalianPD,MDVR-KCL,NeuroVoz 13782  16459
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_2_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.865  val BA 0.825  domain nan
+epoch 01  lam 0.000  train BA 0.946  val BA 0.825  domain nan
+epoch 02  lam 0.000  train BA 0.967  val BA 0.867  domain nan
+epoch 03  lam 0.000  train BA 0.984  val BA 0.867  domain nan
+epoch 04  lam 0.000  train BA 0.984  val BA 0.817  domain nan
+epoch 05  lam 0.000  train BA 0.995  val BA 0.908  domain nan
+epoch 06  lam 0.000  train BA 0.995  val BA 0.867  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.808  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.850  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.858  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.867  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+early stop at epoch 13, best was 5 (val BA 0.908)
+val   speaker BA 0.908  AUC 0.942  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.833
+test  speaker BA 0.817  AUC 0.908  n=22  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.750
+
+=== mixed split=3 handcrafted duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 220447       172 ItalianPD,MDVR-KCL,NeuroVoz 99918 120529
+  val  26570        22 ItalianPD,MDVR-KCL,NeuroVoz 13066  13504
+ test  27442        22 ItalianPD,MDVR-KCL,NeuroVoz 12241  15201
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_3_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.887  val BA 0.733  domain nan
+epoch 01  lam 0.000  train BA 0.946  val BA 0.725  domain nan
+epoch 02  lam 0.000  train BA 0.973  val BA 0.683  domain nan
+epoch 03  lam 0.000  train BA 0.989  val BA 0.683  domain nan
+epoch 04  lam 0.000  train BA 0.995  val BA 0.725  domain nan
+epoch 05  lam 0.000  train BA 0.995  val BA 0.683  domain nan
+epoch 06  lam 0.000  train BA 0.995  val BA 0.725  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.675  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.683  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.683  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.683  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.683  domain nan
+early stop at epoch 15, best was 7 (val BA 0.733)
+val   speaker BA 0.733  AUC 0.833  n=22  ItalianPD 0.833  MDVR-KCL 0.750  NeuroVoz 0.667
+test  speaker BA 0.858  AUC 0.925  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.750
+
+=== mixed split=4 handcrafted duration baseline ===
+ role  items  speakers                     corpora     pd     hc
+train 219564       172 ItalianPD,MDVR-KCL,NeuroVoz 102097 117467
+  val  28325        22 ItalianPD,MDVR-KCL,NeuroVoz  10062  18263
+ test  26570        22 ItalianPD,MDVR-KCL,NeuroVoz  13066  13504
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_4_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.892  val BA 0.885  domain nan
+epoch 01  lam 0.000  train BA 0.956  val BA 0.846  domain nan
+epoch 02  lam 0.000  train BA 0.967  val BA 0.846  domain nan
+epoch 03  lam 0.000  train BA 0.989  val BA 0.846  domain nan
+epoch 04  lam 0.000  train BA 0.995  val BA 0.885  domain nan
+epoch 05  lam 0.000  train BA 0.995  val BA 0.846  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.885  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.885  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 20  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+epoch 21  lam 0.000  train BA 1.000  val BA 0.846  domain nan
+early stop at epoch 21, best was 13 (val BA 0.885)
+val   speaker BA 0.885  AUC 0.966  n=22  ItalianPD 1.000  MDVR-KCL 0.833  NeuroVoz 0.833
+test  speaker BA 0.725  AUC 0.817  n=22  ItalianPD 0.833  MDVR-KCL 1.000  NeuroVoz 0.583
+
+=== mixed split=5 handcrafted duration baseline ===
+ role  items  speakers                     corpora     pd     hc
+train 223386       173 ItalianPD,MDVR-KCL,NeuroVoz 105415 117971
+  val  22748        21 ItalianPD,MDVR-KCL,NeuroVoz   9748  13000
+ test  28325        22 ItalianPD,MDVR-KCL,NeuroVoz  10062  18263
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_5_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.882  val BA 0.806  domain nan
+epoch 01  lam 0.000  train BA 0.950  val BA 0.806  domain nan
+epoch 02  lam 0.000  train BA 0.956  val BA 0.806  domain nan
+epoch 03  lam 0.000  train BA 0.984  val BA 0.806  domain nan
+epoch 04  lam 0.000  train BA 0.995  val BA 0.806  domain nan
+epoch 05  lam 0.000  train BA 0.995  val BA 0.806  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.764  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.847  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.806  domain nan
+early stop at epoch 19, best was 11 (val BA 0.847)
+val   speaker BA 0.847  AUC 0.889  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.829  AUC 0.966  n=22  ItalianPD 1.000  MDVR-KCL 0.833  NeuroVoz 0.750
+
+=== mixed split=6 handcrafted duration baseline ===
+ role  items  speakers                     corpora     pd     hc
+train 224161       174 ItalianPD,MDVR-KCL,NeuroVoz 102426 121735
+  val  27550        21 ItalianPD,MDVR-KCL,NeuroVoz  13051  14499
+ test  22748        21 ItalianPD,MDVR-KCL,NeuroVoz   9748  13000
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_6_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.872  val BA 0.809  domain nan
+epoch 01  lam 0.000  train BA 0.934  val BA 0.809  domain nan
+epoch 02  lam 0.000  train BA 0.962  val BA 0.764  domain nan
+epoch 03  lam 0.000  train BA 0.968  val BA 0.809  domain nan
+epoch 04  lam 0.000  train BA 0.989  val BA 0.855  domain nan
+epoch 05  lam 0.000  train BA 0.989  val BA 0.805  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.855  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.855  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.855  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.855  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.855  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.809  domain nan
+early stop at epoch 18, best was 10 (val BA 0.855)
+val   speaker BA 0.855  AUC 0.873  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.717
+test  speaker BA 0.764  AUC 0.880  n=21  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.733
+
+=== mixed split=7 handcrafted duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 216702       174 ItalianPD,MDVR-KCL,NeuroVoz 98231 118471
+  val  30207        21 ItalianPD,MDVR-KCL,NeuroVoz 13943  16264
+ test  27550        21 ItalianPD,MDVR-KCL,NeuroVoz 13051  14499
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_7_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.879  val BA 0.905  domain nan
+epoch 01  lam 0.000  train BA 0.936  val BA 0.950  domain nan
+epoch 02  lam 0.000  train BA 0.952  val BA 0.859  domain nan
+epoch 03  lam 0.000  train BA 0.968  val BA 0.905  domain nan
+epoch 04  lam 0.000  train BA 0.989  val BA 0.859  domain nan
+epoch 05  lam 0.000  train BA 0.995  val BA 0.905  domain nan
+epoch 06  lam 0.000  train BA 0.995  val BA 0.859  domain nan
+epoch 07  lam 0.000  train BA 0.995  val BA 0.905  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.859  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.950  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.859  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 20  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+epoch 21  lam 0.000  train BA 1.000  val BA 0.905  domain nan
+early stop at epoch 21, best was 13 (val BA 0.950)
+val   speaker BA 0.950  AUC 0.927  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.900
+test  speaker BA 0.855  AUC 0.882  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.717
+
+=== mixed split=8 handcrafted duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 216763       174 ItalianPD,MDVR-KCL,NeuroVoz 98399 118364
+  val  27489        21 ItalianPD,MDVR-KCL,NeuroVoz 12883  14606
+ test  30207        21 ItalianPD,MDVR-KCL,NeuroVoz 13943  16264
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_8_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.869  val BA 0.900  domain nan
+epoch 01  lam 0.000  train BA 0.941  val BA 0.900  domain nan
+epoch 02  lam 0.000  train BA 0.963  val BA 0.809  domain nan
+epoch 03  lam 0.000  train BA 0.979  val BA 0.855  domain nan
+epoch 04  lam 0.000  train BA 0.984  val BA 0.855  domain nan
+epoch 05  lam 0.000  train BA 0.995  val BA 0.855  domain nan
+epoch 06  lam 0.000  train BA 0.995  val BA 0.809  domain nan
+epoch 07  lam 0.000  train BA 0.995  val BA 0.900  domain nan
+epoch 08  lam 0.000  train BA 0.995  val BA 0.900  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.855  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.850  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+early stop at epoch 15, best was 7 (val BA 0.900)
+val   speaker BA 0.900  AUC 0.945  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.900
+test  speaker BA 0.905  AUC 0.955  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.817
+
+=== mixed split=9 handcrafted duration baseline ===
+ role  items  speakers                     corpora     pd     hc
+train 222182       173 ItalianPD,MDVR-KCL,NeuroVoz 101387 120795
+  val  24788        22 ItalianPD,MDVR-KCL,NeuroVoz  10955  13833
+ test  27489        21 ItalianPD,MDVR-KCL,NeuroVoz  12883  14606
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_9_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.863  val BA 0.818  domain nan
+epoch 01  lam 0.000  train BA 0.941  val BA 0.818  domain nan
+epoch 02  lam 0.000  train BA 0.963  val BA 0.864  domain nan
+epoch 03  lam 0.000  train BA 0.973  val BA 0.818  domain nan
+epoch 04  lam 0.000  train BA 0.989  val BA 0.864  domain nan
+epoch 05  lam 0.000  train BA 0.995  val BA 0.864  domain nan
+epoch 06  lam 0.000  train BA 0.995  val BA 0.818  domain nan
+epoch 07  lam 0.000  train BA 0.995  val BA 0.818  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+early stop at epoch 13, best was 5 (val BA 0.864)
+val   speaker BA 0.864  AUC 0.909  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.900  AUC 0.927  n=21  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 1.000
+
+### 05:03:27  python -m src.training.run --family handcrafted --level duration --protocol lodo --all-configs --regime baseline
+3 configurations: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+
+=== lodo split=ItalianPD handcrafted duration baseline ===
+ role  items  speakers           corpora    pd    hc
+train 127098       128 MDVR-KCL,NeuroVoz 52735 74363
+  val  20630        23 MDVR-KCL,NeuroVoz  8411 12219
+ test 126731        65         ItalianPD 64079 62652
+domains in train: ['MDVR-KCL', 'NeuroVoz']
+writing experiments\lodo_ItalianPD_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 2 training domains ['MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.834  val BA 0.742  domain nan
+epoch 01  lam 0.000  train BA 0.918  val BA 0.739  domain nan
+epoch 02  lam 0.000  train BA 0.948  val BA 0.697  domain nan
+epoch 03  lam 0.000  train BA 0.970  val BA 0.780  domain nan
+epoch 04  lam 0.000  train BA 0.985  val BA 0.784  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.742  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.742  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.780  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.826  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.739  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.826  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.739  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.822  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.784  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.826  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.739  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.822  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.826  domain nan
+epoch 20  lam 0.000  train BA 1.000  val BA 0.867  domain nan
+epoch 21  lam 0.000  train BA 1.000  val BA 0.780  domain nan
+epoch 22  lam 0.000  train BA 1.000  val BA 0.867  domain nan
+epoch 23  lam 0.000  train BA 1.000  val BA 0.867  domain nan
+epoch 24  lam 0.000  train BA 1.000  val BA 0.777  domain nan
+epoch 25  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 26  lam 0.000  train BA 1.000  val BA 0.777  domain nan
+epoch 27  lam 0.000  train BA 1.000  val BA 0.822  domain nan
+epoch 28  lam 0.000  train BA 1.000  val BA 0.826  domain nan
+early stop at epoch 28, best was 20 (val BA 0.867)
+val   speaker BA 0.867  AUC 0.871  n=23  MDVR-KCL 1.000  NeuroVoz 0.833
+test  speaker BA 0.776  AUC 0.850  n=65  ItalianPD 0.776
+
+=== lodo split=MDVR-KCL handcrafted duration baseline ===
+ role  items  speakers            corpora    pd    hc
+train 187984       152 ItalianPD,NeuroVoz 89266 98718
+  val  37500        27 ItalianPD,NeuroVoz 16411 21089
+ test  48975        37           MDVR-KCL 19548 29427
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\lodo_MDVR-KCL_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.910  val BA 0.725  domain nan
+epoch 01  lam 0.000  train BA 0.975  val BA 0.767  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.808  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.767  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+early stop at epoch 14, best was 6 (val BA 0.808)
+val   speaker BA 0.808  AUC 0.861  n=27  ItalianPD 0.875  NeuroVoz 0.764
+test  speaker BA 0.595  AUC 0.685  n=37  MDVR-KCL 0.595
+
+=== lodo split=NeuroVoz handcrafted duration baseline ===
+ role  items  speakers            corpora    pd    hc
+train 146592        86 ItalianPD,MDVR-KCL 70670 75922
+  val  29114        16 ItalianPD,MDVR-KCL 12957 16157
+ test  98753       114           NeuroVoz 41598 57155
+domains in train: ['ItalianPD', 'MDVR-KCL']
+writing experiments\lodo_NeuroVoz_handcrafted_duration_baseline_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.973  val BA 0.802  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.857  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.857  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.857  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.929  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.857  domain nan
+early stop at epoch 13, best was 5 (val BA 0.929)
+val   speaker BA 0.929  AUC 0.968  n=16  ItalianPD 0.875  MDVR-KCL 1.000
+test  speaker BA 0.508  AUC 0.700  n=114  NeuroVoz 0.508
+
+### 05:07:24  python -m src.training.run --family handcrafted --level duration --protocol mixed --all-configs --regime dann
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted duration dann ===
+ role  items  speakers                     corpora    pd     hc
+train 220572       172 ItalianPD,MDVR-KCL,NeuroVoz 98776 121796
+  val  29099        22 ItalianPD,MDVR-KCL,NeuroVoz 15494  13605
+ test  24788        22 ItalianPD,MDVR-KCL,NeuroVoz 10955  13833
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_0_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.885  val BA 0.773  domain 0.6406204631242741
+epoch 01  lam 0.165  train BA 0.906  val BA 0.727  domain 0.3975618829849013
+epoch 02  lam 0.322  train BA 0.918  val BA 0.773  domain 0.3618385235191638
+epoch 03  lam 0.462  train BA 0.923  val BA 0.773  domain 0.36265516114982577
+epoch 04  lam 0.583  train BA 0.935  val BA 0.773  domain 0.3697281504065041
+epoch 05  lam 0.682  train BA 0.935  val BA 0.773  domain 0.37014100609756095
+epoch 06  lam 0.762  train BA 0.924  val BA 0.773  domain 0.37370699041811845
+epoch 07  lam 0.823  train BA 0.935  val BA 0.727  domain 0.37643365272938445
+epoch 08  lam 0.870  train BA 0.941  val BA 0.727  domain 0.3831618394308943
+epoch 09  lam 0.905  train BA 0.952  val BA 0.727  domain 0.37252740272938445
+epoch 10  lam 0.931  train BA 0.957  val BA 0.773  domain 0.369324368466899
+epoch 11  lam 0.950  train BA 0.963  val BA 0.773  domain 0.3797818670150987
+epoch 12  lam 0.964  train BA 0.952  val BA 0.773  domain 0.3706037674216028
+epoch 13  lam 0.974  train BA 0.957  val BA 0.682  domain 0.37220074767711964
+early stop at epoch 13, best was 5 (val BA 0.773)
+val   speaker BA 0.773  AUC 0.826  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.617
+test  speaker BA 0.818  AUC 0.851  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.717
+
+=== mixed split=1 handcrafted duration dann ===
+ role  items  speakers                     corpora    pd     hc
+train 215119       172 ItalianPD,MDVR-KCL,NeuroVoz 95949 119170
+  val  30241        22 ItalianPD,MDVR-KCL,NeuroVoz 13782  16459
+ test  29099        22 ItalianPD,MDVR-KCL,NeuroVoz 15494  13605
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_1_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.877  val BA 0.867  domain 0.63017578125
+epoch 01  lam 0.165  train BA 0.906  val BA 0.917  domain 0.40210193452380955
+epoch 02  lam 0.322  train BA 0.928  val BA 0.867  domain 0.35679873511904764
+epoch 03  lam 0.462  train BA 0.940  val BA 0.867  domain 0.35888206845238096
+epoch 04  lam 0.583  train BA 0.940  val BA 0.717  domain 0.36397879464285715
+epoch 05  lam 0.682  train BA 0.939  val BA 0.758  domain 0.3691034226190476
+epoch 06  lam 0.762  train BA 0.928  val BA 0.817  domain 0.37585565476190474
+epoch 07  lam 0.823  train BA 0.940  val BA 0.867  domain 0.37361886160714286
+epoch 08  lam 0.870  train BA 0.945  val BA 0.817  domain 0.3834449404761905
+epoch 09  lam 0.905  train BA 0.945  val BA 0.817  domain 0.37236793154761905
+epoch 10  lam 0.931  train BA 0.945  val BA 0.867  domain 0.3693638392857143
+epoch 11  lam 0.950  train BA 0.945  val BA 0.717  domain 0.37788783482142857
+epoch 12  lam 0.964  train BA 0.962  val BA 0.867  domain 0.3742931547619048
+epoch 13  lam 0.974  train BA 0.973  val BA 0.817  domain 0.3717308407738095
+epoch 14  lam 0.981  train BA 0.962  val BA 0.817  domain 0.3756742931547619
+epoch 15  lam 0.987  train BA 0.968  val BA 0.875  domain 0.37215401785714286
+epoch 16  lam 0.990  train BA 0.973  val BA 0.817  domain 0.3679268973214286
+epoch 17  lam 0.993  train BA 0.984  val BA 0.867  domain 0.36532738095238093
+epoch 18  lam 0.995  train BA 0.989  val BA 0.867  domain 0.3626255580357143
+epoch 19  lam 0.996  train BA 0.984  val BA 0.867  domain 0.36513206845238094
+epoch 20  lam 0.997  train BA 0.989  val BA 0.817  domain 0.35965401785714285
+epoch 21  lam 0.998  train BA 0.989  val BA 0.867  domain 0.3571149553571429
+epoch 22  lam 0.999  train BA 0.989  val BA 0.767  domain 0.3605096726190476
+epoch 23  lam 0.999  train BA 0.989  val BA 0.817  domain 0.35766834077380955
+early stop at epoch 23, best was 15 (val BA 0.875)
+val   speaker BA 0.875  AUC 0.933  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.833
+test  speaker BA 0.818  AUC 0.876  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.717
+
+=== mixed split=2 handcrafted duration dann ===
+ role  items  speakers                     corpora    pd     hc
+train 216776       172 ItalianPD,MDVR-KCL,NeuroVoz 99202 117574
+  val  27442        22 ItalianPD,MDVR-KCL,NeuroVoz 12241  15201
+ test  30241        22 ItalianPD,MDVR-KCL,NeuroVoz 13782  16459
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_2_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.876  val BA 0.825  domain 0.6416408096926713
+epoch 01  lam 0.165  train BA 0.887  val BA 0.817  domain 0.3937001329787234
+epoch 02  lam 0.322  train BA 0.922  val BA 0.908  domain 0.35648917700945626
+epoch 03  lam 0.462  train BA 0.921  val BA 0.775  domain 0.3632304595153664
+epoch 04  lam 0.583  train BA 0.939  val BA 0.825  domain 0.36742760047281325
+epoch 05  lam 0.682  train BA 0.939  val BA 0.817  domain 0.36269485076832153
+epoch 06  lam 0.762  train BA 0.946  val BA 0.817  domain 0.3712599734042553
+epoch 07  lam 0.823  train BA 0.940  val BA 0.767  domain 0.37076130319148937
+epoch 08  lam 0.870  train BA 0.946  val BA 0.725  domain 0.3777980939716312
+epoch 09  lam 0.905  train BA 0.951  val BA 0.808  domain 0.3778211805555556
+epoch 10  lam 0.931  train BA 0.951  val BA 0.867  domain 0.37886931146572106
+epoch 11  lam 0.950  train BA 0.951  val BA 0.825  domain 0.37499538268321514
+epoch 12  lam 0.964  train BA 0.951  val BA 0.858  domain 0.38040226063829785
+epoch 13  lam 0.974  train BA 0.951  val BA 0.817  domain 0.3754017065602837
+epoch 14  lam 0.981  train BA 0.967  val BA 0.858  domain 0.36896516696217496
+epoch 15  lam 0.987  train BA 0.967  val BA 0.858  domain 0.36725214243498816
+epoch 16  lam 0.990  train BA 0.967  val BA 0.867  domain 0.3727790706264775
+epoch 17  lam 0.993  train BA 0.995  val BA 0.867  domain 0.3665549276004728
+epoch 18  lam 0.995  train BA 0.984  val BA 0.900  domain 0.36128656914893614
+epoch 19  lam 0.996  train BA 0.995  val BA 0.908  domain 0.3637568336288416
+epoch 20  lam 0.997  train BA 0.995  val BA 0.858  domain 0.366051640070922
+epoch 21  lam 0.998  train BA 0.995  val BA 0.867  domain 0.35999372044917255
+epoch 22  lam 0.999  train BA 0.995  val BA 0.817  domain 0.36329510195035464
+epoch 23  lam 0.999  train BA 0.995  val BA 0.867  domain 0.35417128398345155
+epoch 24  lam 0.999  train BA 0.995  val BA 0.833  domain 0.35999833776595747
+epoch 25  lam 1.000  train BA 0.995  val BA 0.817  domain 0.3566692523640662
+epoch 26  lam 1.000  train BA 0.995  val BA 0.908  domain 0.35548260195035464
+epoch 27  lam 1.000  train BA 0.995  val BA 0.825  domain 0.35554262706855794
+early stop at epoch 27, best was 19 (val BA 0.908)
+val   speaker BA 0.908  AUC 0.958  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.833
+test  speaker BA 0.817  AUC 0.900  n=22  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.750
+
+=== mixed split=3 handcrafted duration dann ===
+ role  items  speakers                     corpora    pd     hc
+train 220447       172 ItalianPD,MDVR-KCL,NeuroVoz 99918 120529
+  val  26570        22 ItalianPD,MDVR-KCL,NeuroVoz 13066  13504
+ test  27442        22 ItalianPD,MDVR-KCL,NeuroVoz 12241  15201
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_3_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.882  val BA 0.733  domain 0.6342779108594657
+epoch 01  lam 0.165  train BA 0.904  val BA 0.633  domain 0.39914978948896634
+epoch 02  lam 0.322  train BA 0.927  val BA 0.775  domain 0.3543163835656214
+epoch 03  lam 0.462  train BA 0.933  val BA 0.633  domain 0.36068615708478513
+epoch 04  lam 0.583  train BA 0.939  val BA 0.725  domain 0.35711563588850176
+epoch 05  lam 0.682  train BA 0.939  val BA 0.650  domain 0.36876179587688734
+epoch 06  lam 0.762  train BA 0.950  val BA 0.683  domain 0.37554896196283394
+epoch 07  lam 0.823  train BA 0.956  val BA 0.692  domain 0.37428771051103366
+epoch 08  lam 0.870  train BA 0.945  val BA 0.775  domain 0.37351644163763065
+epoch 09  lam 0.905  train BA 0.967  val BA 0.683  domain 0.3636578106852497
+epoch 10  lam 0.931  train BA 0.978  val BA 0.733  domain 0.3671648156213705
+epoch 11  lam 0.950  train BA 0.967  val BA 0.725  domain 0.38045786149825783
+epoch 12  lam 0.964  train BA 0.973  val BA 0.742  domain 0.37667864401858303
+epoch 13  lam 0.974  train BA 0.978  val BA 0.825  domain 0.3643156576655052
+epoch 14  lam 0.981  train BA 0.978  val BA 0.733  domain 0.3742650261324042
+epoch 15  lam 0.987  train BA 0.989  val BA 0.700  domain 0.36501433652729387
+epoch 16  lam 0.990  train BA 0.989  val BA 0.742  domain 0.3743330792682927
+epoch 17  lam 0.993  train BA 0.989  val BA 0.692  domain 0.36514136904761907
+epoch 18  lam 0.995  train BA 0.995  val BA 0.683  domain 0.36602152293844364
+epoch 19  lam 0.996  train BA 0.995  val BA 0.783  domain 0.3633220818815331
+epoch 20  lam 0.997  train BA 0.989  val BA 0.742  domain 0.35736062717770034
+epoch 21  lam 0.998  train BA 0.995  val BA 0.742  domain 0.36394363385598144
+early stop at epoch 21, best was 13 (val BA 0.825)
+val   speaker BA 0.825  AUC 0.817  n=22  ItalianPD 0.833  MDVR-KCL 1.000  NeuroVoz 0.750
+test  speaker BA 0.908  AUC 0.942  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.833
+
+=== mixed split=4 handcrafted duration dann ===
+ role  items  speakers                     corpora     pd     hc
+train 219564       172 ItalianPD,MDVR-KCL,NeuroVoz 102097 117467
+  val  28325        22 ItalianPD,MDVR-KCL,NeuroVoz  10062  18263
+ test  26570        22 ItalianPD,MDVR-KCL,NeuroVoz  13066  13504
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_4_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.893  val BA 0.885  domain 0.6546045434655776
+epoch 01  lam 0.165  train BA 0.916  val BA 0.846  domain 0.41164217473745623
+epoch 02  lam 0.322  train BA 0.938  val BA 0.846  domain 0.3640105382147025
+epoch 03  lam 0.462  train BA 0.950  val BA 0.808  domain 0.36860961201866976
+epoch 04  lam 0.583  train BA 0.956  val BA 0.885  domain 0.3667225787631272
+epoch 05  lam 0.682  train BA 0.949  val BA 0.923  domain 0.38161373249708286
+epoch 06  lam 0.762  train BA 0.956  val BA 0.885  domain 0.3709387762543757
+epoch 07  lam 0.823  train BA 0.962  val BA 0.885  domain 0.37406559947491247
+epoch 08  lam 0.870  train BA 0.962  val BA 0.885  domain 0.3751777640023337
+epoch 09  lam 0.905  train BA 0.967  val BA 0.808  domain 0.3719005250875146
+epoch 10  lam 0.931  train BA 0.967  val BA 0.846  domain 0.38258459743290546
+epoch 11  lam 0.950  train BA 0.973  val BA 0.885  domain 0.3738604871645274
+epoch 12  lam 0.964  train BA 0.984  val BA 0.846  domain 0.3667636012252042
+epoch 13  lam 0.974  train BA 0.973  val BA 0.885  domain 0.371759225495916
+early stop at epoch 13, best was 5 (val BA 0.923)
+val   speaker BA 0.923  AUC 0.949  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.833
+test  speaker BA 0.725  AUC 0.767  n=22  ItalianPD 0.833  MDVR-KCL 1.000  NeuroVoz 0.583
+
+=== mixed split=5 handcrafted duration dann ===
+ role  items  speakers                     corpora     pd     hc
+train 223386       173 ItalianPD,MDVR-KCL,NeuroVoz 105415 117971
+  val  22748        21 ItalianPD,MDVR-KCL,NeuroVoz   9748  13000
+ test  28325        22 ItalianPD,MDVR-KCL,NeuroVoz  10062  18263
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_5_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.876  val BA 0.806  domain 0.6409027379587156
+epoch 01  lam 0.165  train BA 0.904  val BA 0.806  domain 0.4009461009174312
+epoch 02  lam 0.322  train BA 0.940  val BA 0.764  domain 0.36438324254587157
+epoch 03  lam 0.462  train BA 0.945  val BA 0.806  domain 0.3563333213876147
+epoch 04  lam 0.583  train BA 0.956  val BA 0.806  domain 0.3679669581422018
+epoch 05  lam 0.682  train BA 0.945  val BA 0.764  domain 0.365440438646789
+epoch 06  lam 0.762  train BA 0.956  val BA 0.764  domain 0.36860754730504586
+epoch 07  lam 0.823  train BA 0.951  val BA 0.722  domain 0.3727377795298165
+epoch 08  lam 0.870  train BA 0.951  val BA 0.750  domain 0.3738352924311927
+epoch 09  lam 0.905  train BA 0.962  val BA 0.847  domain 0.37331565366972475
+epoch 10  lam 0.931  train BA 0.962  val BA 0.806  domain 0.37746380447247707
+epoch 11  lam 0.950  train BA 0.967  val BA 0.806  domain 0.370041033543578
+epoch 12  lam 0.964  train BA 0.962  val BA 0.806  domain 0.37756683629587157
+epoch 13  lam 0.974  train BA 0.984  val BA 0.806  domain 0.37298863962155965
+epoch 14  lam 0.981  train BA 0.984  val BA 0.764  domain 0.371017596043578
+epoch 15  lam 0.987  train BA 0.978  val BA 0.750  domain 0.3721823036123853
+epoch 16  lam 0.990  train BA 0.978  val BA 0.806  domain 0.3647147362385321
+epoch 17  lam 0.993  train BA 0.989  val BA 0.806  domain 0.3642667717889908
+early stop at epoch 17, best was 9 (val BA 0.847)
+val   speaker BA 0.847  AUC 0.898  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.846  AUC 0.974  n=22  ItalianPD 1.000  MDVR-KCL 0.833  NeuroVoz 0.750
+
+=== mixed split=6 handcrafted duration dann ===
+ role  items  speakers                     corpora     pd     hc
+train 224161       174 ItalianPD,MDVR-KCL,NeuroVoz 102426 121735
+  val  27550        21 ItalianPD,MDVR-KCL,NeuroVoz  13051  14499
+ test  22748        21 ItalianPD,MDVR-KCL,NeuroVoz   9748  13000
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_6_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.883  val BA 0.809  domain 0.6338705357142858
+epoch 01  lam 0.165  train BA 0.912  val BA 0.759  domain 0.3902455357142857
+epoch 02  lam 0.322  train BA 0.929  val BA 0.764  domain 0.36959375
+epoch 03  lam 0.462  train BA 0.935  val BA 0.809  domain 0.34951785714285716
+epoch 04  lam 0.583  train BA 0.940  val BA 0.805  domain 0.3594151785714286
+epoch 05  lam 0.682  train BA 0.940  val BA 0.668  domain 0.36688839285714286
+epoch 06  lam 0.762  train BA 0.929  val BA 0.764  domain 0.3671116071428571
+epoch 07  lam 0.823  train BA 0.940  val BA 0.809  domain 0.38035267857142857
+epoch 08  lam 0.870  train BA 0.940  val BA 0.714  domain 0.3750178571428571
+epoch 09  lam 0.905  train BA 0.945  val BA 0.759  domain 0.3787276785714286
+epoch 10  lam 0.931  train BA 0.951  val BA 0.764  domain 0.3713794642857143
+epoch 11  lam 0.950  train BA 0.951  val BA 0.805  domain 0.36694642857142856
+epoch 12  lam 0.964  train BA 0.956  val BA 0.764  domain 0.3723214285714286
+epoch 13  lam 0.974  train BA 0.962  val BA 0.718  domain 0.3646294642857143
+epoch 14  lam 0.981  train BA 0.973  val BA 0.805  domain 0.36628571428571427
+epoch 15  lam 0.987  train BA 0.978  val BA 0.855  domain 0.36624107142857143
+epoch 16  lam 0.990  train BA 0.973  val BA 0.759  domain 0.36363392857142857
+epoch 17  lam 0.993  train BA 0.978  val BA 0.809  domain 0.36486160714285715
+epoch 18  lam 0.995  train BA 0.989  val BA 0.855  domain 0.36365625
+epoch 19  lam 0.996  train BA 0.995  val BA 0.855  domain 0.36438839285714286
+epoch 20  lam 0.997  train BA 0.995  val BA 0.855  domain 0.3611875
+epoch 21  lam 0.998  train BA 0.995  val BA 0.855  domain 0.36187053571428573
+epoch 22  lam 0.999  train BA 0.995  val BA 0.855  domain 0.35876785714285714
+epoch 23  lam 0.999  train BA 0.995  val BA 0.855  domain 0.3594107142857143
+early stop at epoch 23, best was 15 (val BA 0.855)
+val   speaker BA 0.855  AUC 0.873  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.717
+test  speaker BA 0.806  AUC 0.870  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.733
+
+=== mixed split=7 handcrafted duration dann ===
+ role  items  speakers                     corpora    pd     hc
+train 216702       174 ItalianPD,MDVR-KCL,NeuroVoz 98231 118471
+  val  30207        21 ItalianPD,MDVR-KCL,NeuroVoz 13943  16264
+ test  27550        21 ItalianPD,MDVR-KCL,NeuroVoz 13051  14499
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_7_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.890  val BA 0.905  domain 0.6341284352836879
+epoch 01  lam 0.165  train BA 0.908  val BA 0.859  domain 0.4041675901300236
+epoch 02  lam 0.322  train BA 0.919  val BA 0.859  domain 0.34972480791962174
+epoch 03  lam 0.462  train BA 0.931  val BA 0.814  domain 0.348829048463357
+epoch 04  lam 0.583  train BA 0.919  val BA 0.814  domain 0.3573526152482269
+epoch 05  lam 0.682  train BA 0.936  val BA 0.814  domain 0.3630365322104019
+epoch 06  lam 0.762  train BA 0.931  val BA 0.768  domain 0.3671875
+epoch 07  lam 0.823  train BA 0.931  val BA 0.859  domain 0.3710475768321513
+epoch 08  lam 0.870  train BA 0.931  val BA 0.814  domain 0.3595458407210402
+epoch 09  lam 0.905  train BA 0.936  val BA 0.814  domain 0.37014258274231676
+epoch 10  lam 0.931  train BA 0.947  val BA 0.814  domain 0.3709275265957447
+epoch 11  lam 0.950  train BA 0.941  val BA 0.814  domain 0.37259437795508277
+epoch 12  lam 0.964  train BA 0.947  val BA 0.905  domain 0.3729591459810875
+epoch 13  lam 0.974  train BA 0.968  val BA 0.814  domain 0.3672567597517731
+epoch 14  lam 0.981  train BA 0.957  val BA 0.768  domain 0.36757997192671393
+epoch 15  lam 0.987  train BA 0.968  val BA 0.859  domain 0.35907487440898345
+epoch 16  lam 0.990  train BA 0.968  val BA 0.859  domain 0.36281028368794327
+epoch 17  lam 0.993  train BA 0.979  val BA 0.905  domain 0.35961510047281325
+epoch 18  lam 0.995  train BA 0.989  val BA 0.905  domain 0.35681238918439717
+epoch 19  lam 0.996  train BA 0.989  val BA 0.859  domain 0.3649065455082742
+epoch 20  lam 0.997  train BA 0.984  val BA 0.814  domain 0.35955045803782504
+early stop at epoch 20, best was 12 (val BA 0.905)
+val   speaker BA 0.905  AUC 0.927  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.817
+test  speaker BA 0.759  AUC 0.855  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.617
+
+=== mixed split=8 handcrafted duration dann ===
+ role  items  speakers                     corpora    pd     hc
+train 216763       174 ItalianPD,MDVR-KCL,NeuroVoz 98399 118364
+  val  27489        21 ItalianPD,MDVR-KCL,NeuroVoz 12883  14606
+ test  30207        21 ItalianPD,MDVR-KCL,NeuroVoz 13943  16264
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_8_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.868  val BA 0.900  domain 0.6319813829787234
+epoch 01  lam 0.165  train BA 0.914  val BA 0.859  domain 0.38494108303782504
+epoch 02  lam 0.322  train BA 0.926  val BA 0.950  domain 0.3522043070330969
+epoch 03  lam 0.462  train BA 0.926  val BA 0.814  domain 0.35801750886524825
+epoch 04  lam 0.583  train BA 0.926  val BA 0.855  domain 0.3602430555555556
+epoch 05  lam 0.682  train BA 0.931  val BA 0.905  domain 0.3701379654255319
+epoch 06  lam 0.762  train BA 0.936  val BA 0.905  domain 0.36976396276595747
+epoch 07  lam 0.823  train BA 0.941  val BA 0.905  domain 0.3689697842789598
+epoch 08  lam 0.870  train BA 0.941  val BA 0.905  domain 0.3783660239361702
+epoch 09  lam 0.905  train BA 0.947  val BA 0.855  domain 0.37109375
+epoch 10  lam 0.931  train BA 0.947  val BA 0.805  domain 0.37305149231678486
+epoch 11  lam 0.950  train BA 0.963  val BA 0.950  domain 0.366157838356974
+epoch 12  lam 0.964  train BA 0.963  val BA 0.905  domain 0.370276484929078
+epoch 13  lam 0.974  train BA 0.968  val BA 0.855  domain 0.36636561761229314
+epoch 14  lam 0.981  train BA 0.968  val BA 0.950  domain 0.36734910608747046
+epoch 15  lam 0.987  train BA 0.973  val BA 0.905  domain 0.3719387189716312
+epoch 16  lam 0.990  train BA 0.973  val BA 0.859  domain 0.3685126699172577
+epoch 17  lam 0.993  train BA 0.973  val BA 0.900  domain 0.3596104831560284
+epoch 18  lam 0.995  train BA 0.973  val BA 0.900  domain 0.35875166223404253
+epoch 19  lam 0.996  train BA 0.984  val BA 0.900  domain 0.3603030806737589
+early stop at epoch 19, best was 11 (val BA 0.950)
+val   speaker BA 0.950  AUC 0.955  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 1.000
+test  speaker BA 0.859  AUC 0.945  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.733
+
+=== mixed split=9 handcrafted duration dann ===
+ role  items  speakers                     corpora     pd     hc
+train 222182       173 ItalianPD,MDVR-KCL,NeuroVoz 101387 120795
+  val  24788        22 ItalianPD,MDVR-KCL,NeuroVoz  10955  13833
+ test  27489        21 ItalianPD,MDVR-KCL,NeuroVoz  12883  14606
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_9_handcrafted_duration_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.874  val BA 0.818  domain 0.6306588811995386
+epoch 01  lam 0.165  train BA 0.920  val BA 0.818  domain 0.38881379757785467
+epoch 02  lam 0.322  train BA 0.931  val BA 0.818  domain 0.3561761101499423
+epoch 03  lam 0.462  train BA 0.936  val BA 0.773  domain 0.3574872044405998
+epoch 04  lam 0.583  train BA 0.936  val BA 0.773  domain 0.36853463811995385
+epoch 05  lam 0.682  train BA 0.936  val BA 0.773  domain 0.3650473976355248
+epoch 06  lam 0.762  train BA 0.936  val BA 0.818  domain 0.38397941897347176
+epoch 07  lam 0.823  train BA 0.936  val BA 0.773  domain 0.368210243656286
+epoch 08  lam 0.870  train BA 0.941  val BA 0.818  domain 0.3716389129181084
+epoch 09  lam 0.905  train BA 0.941  val BA 0.773  domain 0.36898969146482125
+epoch 10  lam 0.931  train BA 0.941  val BA 0.818  domain 0.37638768742791234
+epoch 11  lam 0.950  train BA 0.952  val BA 0.818  domain 0.37900537053056516
+epoch 12  lam 0.964  train BA 0.963  val BA 0.773  domain 0.3690212298154556
+epoch 13  lam 0.974  train BA 0.957  val BA 0.818  domain 0.3746936274509804
+epoch 14  lam 0.981  train BA 0.963  val BA 0.864  domain 0.36969705161476357
+epoch 15  lam 0.987  train BA 0.963  val BA 0.773  domain 0.3647004757785467
+epoch 16  lam 0.990  train BA 0.968  val BA 0.773  domain 0.36265048298731256
+epoch 17  lam 0.993  train BA 0.979  val BA 0.818  domain 0.36511948529411764
+epoch 18  lam 0.995  train BA 0.984  val BA 0.818  domain 0.3608257641291811
+epoch 19  lam 0.996  train BA 0.989  val BA 0.818  domain 0.35827566320645904
+epoch 20  lam 0.997  train BA 0.984  val BA 0.818  domain 0.35980302047289503
+epoch 21  lam 0.998  train BA 0.995  val BA 0.818  domain 0.3563608347750865
+epoch 22  lam 0.999  train BA 0.995  val BA 0.818  domain 0.3571808318915802
+early stop at epoch 22, best was 14 (val BA 0.864)
+val   speaker BA 0.864  AUC 0.868  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.759  AUC 0.927  n=21  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.733
+
+### 05:30:13  python -m src.training.run --family handcrafted --level duration --protocol lodo --all-configs --regime dann
+3 configurations: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+
+=== lodo split=ItalianPD handcrafted duration dann ===
+ role  items  speakers           corpora    pd    hc
+train 127098       128 MDVR-KCL,NeuroVoz 52735 74363
+  val  20630        23 MDVR-KCL,NeuroVoz  8411 12219
+ test 126731        65         ItalianPD 64079 62652
+domains in train: ['MDVR-KCL', 'NeuroVoz']
+writing experiments\lodo_ItalianPD_handcrafted_duration_dann_s0
+device cuda, 44676 parameters, 2 training domains ['MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.850  val BA 0.742  domain 0.8153036794354839
+epoch 01  lam 0.165  train BA 0.887  val BA 0.746  domain 0.5750456779233871
+epoch 02  lam 0.322  train BA 0.902  val BA 0.788  domain 0.5308483492943549
+epoch 03  lam 0.462  train BA 0.902  val BA 0.742  domain 0.5549788936491935
+epoch 04  lam 0.583  train BA 0.902  val BA 0.788  domain 0.5454180317540323
+epoch 05  lam 0.682  train BA 0.910  val BA 0.788  domain 0.5684223790322581
+epoch 06  lam 0.762  train BA 0.925  val BA 0.788  domain 0.5447643649193549
+epoch 07  lam 0.823  train BA 0.925  val BA 0.701  domain 0.5371723790322581
+epoch 08  lam 0.870  train BA 0.910  val BA 0.830  domain 0.5720687373991935
+epoch 09  lam 0.905  train BA 0.925  val BA 0.663  domain 0.5428269909274194
+epoch 10  lam 0.931  train BA 0.925  val BA 0.788  domain 0.56884765625
+epoch 11  lam 0.950  train BA 0.925  val BA 0.739  domain 0.5694304435483871
+epoch 12  lam 0.964  train BA 0.933  val BA 0.788  domain 0.5508048765120968
+epoch 13  lam 0.974  train BA 0.933  val BA 0.788  domain 0.5520885836693549
+epoch 14  lam 0.981  train BA 0.933  val BA 0.788  domain 0.5646736391129032
+epoch 15  lam 0.987  train BA 0.940  val BA 0.701  domain 0.5512852822580645
+epoch 16  lam 0.990  train BA 0.933  val BA 0.826  domain 0.5722892515120968
+early stop at epoch 16, best was 8 (val BA 0.830)
+val   speaker BA 0.830  AUC 0.871  n=23  MDVR-KCL 1.000  NeuroVoz 0.778
+test  speaker BA 0.816  AUC 0.872  n=65  ItalianPD 0.816
+
+=== lodo split=MDVR-KCL handcrafted duration dann ===
+ role  items  speakers            corpora    pd    hc
+train 187984       152 ItalianPD,NeuroVoz 89266 98718
+  val  37500        27 ItalianPD,NeuroVoz 16411 21089
+ test  48975        37           MDVR-KCL 19548 29427
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\lodo_MDVR-KCL_handcrafted_duration_dann_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.897  val BA 0.725  domain 0.7548216110354223
+epoch 01  lam 0.165  train BA 0.963  val BA 0.725  domain 0.5905834894414169
+epoch 02  lam 0.322  train BA 1.000  val BA 0.767  domain 0.5461139730926431
+epoch 03  lam 0.462  train BA 0.994  val BA 0.767  domain 0.5421225732288828
+epoch 04  lam 0.583  train BA 0.994  val BA 0.725  domain 0.5374606181880109
+epoch 05  lam 0.682  train BA 1.000  val BA 0.725  domain 0.5403770010217984
+epoch 06  lam 0.762  train BA 1.000  val BA 0.725  domain 0.5413562244550408
+epoch 07  lam 0.823  train BA 1.000  val BA 0.725  domain 0.5358693801089919
+epoch 08  lam 0.870  train BA 1.000  val BA 0.725  domain 0.5479872700953679
+epoch 09  lam 0.905  train BA 1.000  val BA 0.725  domain 0.5368007067438693
+epoch 10  lam 0.931  train BA 1.000  val BA 0.725  domain 0.5399352861035422
+epoch 11  lam 0.950  train BA 1.000  val BA 0.725  domain 0.542574931880109
+epoch 12  lam 0.964  train BA 1.000  val BA 0.725  domain 0.5375404461852861
+epoch 13  lam 0.974  train BA 1.000  val BA 0.692  domain 0.5356192523841962
+early stop at epoch 13, best was 5 (val BA 0.725)
+val   speaker BA 0.725  AUC 0.822  n=27  ItalianPD 0.875  NeuroVoz 0.639
+test  speaker BA 0.644  AUC 0.762  n=37  MDVR-KCL 0.644
+
+=== lodo split=NeuroVoz handcrafted duration dann ===
+ role  items  speakers            corpora    pd    hc
+train 146592        86 ItalianPD,MDVR-KCL 70670 75922
+  val  29114        16 ItalianPD,MDVR-KCL 12957 16157
+ test  98753       114           NeuroVoz 41598 57155
+domains in train: ['ItalianPD', 'MDVR-KCL']
+writing experiments\lodo_NeuroVoz_handcrafted_duration_dann_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'MDVR-KCL'], regime dann
+epoch 00  lam 0.000  train BA 0.973  val BA 0.873  domain 0.728863909527972
+epoch 01  lam 0.165  train BA 0.986  val BA 0.857  domain 0.5738158326048951
+epoch 02  lam 0.322  train BA 1.000  val BA 0.857  domain 0.5176532451923077
+epoch 03  lam 0.462  train BA 1.000  val BA 0.857  domain 0.5134123688811189
+epoch 04  lam 0.583  train BA 1.000  val BA 0.857  domain 0.5292354130244755
+epoch 05  lam 0.682  train BA 1.000  val BA 0.929  domain 0.523628715034965
+epoch 06  lam 0.762  train BA 1.000  val BA 0.857  domain 0.5188346809440559
+epoch 07  lam 0.823  train BA 1.000  val BA 0.857  domain 0.5313797530594405
+epoch 08  lam 0.870  train BA 1.000  val BA 0.857  domain 0.5331826376748252
+epoch 09  lam 0.905  train BA 1.000  val BA 0.857  domain 0.532540701486014
+epoch 10  lam 0.931  train BA 1.000  val BA 0.857  domain 0.5174142263986014
+epoch 11  lam 0.950  train BA 1.000  val BA 0.929  domain 0.5243594296328671
+epoch 12  lam 0.964  train BA 1.000  val BA 0.873  domain 0.5283817744755245
+epoch 13  lam 0.974  train BA 1.000  val BA 0.857  domain 0.5285525021853147
+early stop at epoch 13, best was 5 (val BA 0.929)
+val   speaker BA 0.929  AUC 0.984  n=16  ItalianPD 0.875  MDVR-KCL 1.000
+test  speaker BA 0.526  AUC 0.692  n=114  NeuroVoz 0.526
+
+### 05:34:23  python -m src.training.run --family handcrafted --level utterance --protocol mixed --all-configs --regime baseline
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3143       172 ItalianPD,MDVR-KCL,NeuroVoz 1536 1607
+  val    393        22 ItalianPD,MDVR-KCL,NeuroVoz  226  167
+ test    335        22 ItalianPD,MDVR-KCL,NeuroVoz  172  163
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_0_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.775  val BA 0.682  domain nan
+epoch 01  lam 0.000  train BA 0.810  val BA 0.682  domain nan
+epoch 02  lam 0.000  train BA 0.864  val BA 0.727  domain nan
+epoch 03  lam 0.000  train BA 0.884  val BA 0.682  domain nan
+epoch 04  lam 0.000  train BA 0.887  val BA 0.636  domain nan
+epoch 05  lam 0.000  train BA 0.900  val BA 0.682  domain nan
+epoch 06  lam 0.000  train BA 0.911  val BA 0.682  domain nan
+epoch 07  lam 0.000  train BA 0.920  val BA 0.682  domain nan
+epoch 08  lam 0.000  train BA 0.928  val BA 0.682  domain nan
+epoch 09  lam 0.000  train BA 0.941  val BA 0.727  domain nan
+epoch 10  lam 0.000  train BA 0.952  val BA 0.682  domain nan
+epoch 11  lam 0.000  train BA 0.936  val BA 0.682  domain nan
+epoch 12  lam 0.000  train BA 0.945  val BA 0.682  domain nan
+epoch 13  lam 0.000  train BA 0.945  val BA 0.682  domain nan
+epoch 14  lam 0.000  train BA 0.971  val BA 0.727  domain nan
+epoch 15  lam 0.000  train BA 0.949  val BA 0.727  domain nan
+epoch 16  lam 0.000  train BA 0.972  val BA 0.682  domain nan
+epoch 17  lam 0.000  train BA 0.967  val BA 0.682  domain nan
+early stop at epoch 17, best was 9 (val BA 0.727)
+val   speaker BA 0.727  AUC 0.835  n=22  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.633
+test  speaker BA 0.864  AUC 0.950  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+
+=== mixed split=1 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3053       172 ItalianPD,MDVR-KCL,NeuroVoz 1495 1558
+  val    425        22 ItalianPD,MDVR-KCL,NeuroVoz  213  212
+ test    393        22 ItalianPD,MDVR-KCL,NeuroVoz  226  167
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_1_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.725  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 0.803  val BA 0.833  domain nan
+epoch 02  lam 0.000  train BA 0.846  val BA 0.875  domain nan
+epoch 03  lam 0.000  train BA 0.891  val BA 0.917  domain nan
+epoch 04  lam 0.000  train BA 0.886  val BA 0.917  domain nan
+epoch 05  lam 0.000  train BA 0.916  val BA 0.875  domain nan
+epoch 06  lam 0.000  train BA 0.932  val BA 0.917  domain nan
+epoch 07  lam 0.000  train BA 0.913  val BA 0.867  domain nan
+epoch 08  lam 0.000  train BA 0.921  val BA 0.917  domain nan
+epoch 09  lam 0.000  train BA 0.911  val BA 0.917  domain nan
+epoch 10  lam 0.000  train BA 0.947  val BA 0.867  domain nan
+epoch 11  lam 0.000  train BA 0.932  val BA 0.867  domain nan
+epoch 12  lam 0.000  train BA 0.928  val BA 0.867  domain nan
+epoch 13  lam 0.000  train BA 0.938  val BA 0.867  domain nan
+epoch 14  lam 0.000  train BA 0.956  val BA 0.917  domain nan
+early stop at epoch 14, best was 6 (val BA 0.917)
+val   speaker BA 0.917  AUC 0.967  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.833
+test  speaker BA 0.636  AUC 0.777  n=22  ItalianPD 1.000  MDVR-KCL 0.250  NeuroVoz 0.533
+
+=== mixed split=2 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3049       172 ItalianPD,MDVR-KCL,NeuroVoz 1534 1515
+  val    397        22 ItalianPD,MDVR-KCL,NeuroVoz  187  210
+ test    425        22 ItalianPD,MDVR-KCL,NeuroVoz  213  212
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_2_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.787  val BA 0.658  domain nan
+epoch 01  lam 0.000  train BA 0.804  val BA 0.783  domain nan
+epoch 02  lam 0.000  train BA 0.839  val BA 0.825  domain nan
+epoch 03  lam 0.000  train BA 0.861  val BA 0.817  domain nan
+epoch 04  lam 0.000  train BA 0.851  val BA 0.817  domain nan
+epoch 05  lam 0.000  train BA 0.916  val BA 0.767  domain nan
+epoch 06  lam 0.000  train BA 0.909  val BA 0.808  domain nan
+epoch 07  lam 0.000  train BA 0.935  val BA 0.817  domain nan
+epoch 08  lam 0.000  train BA 0.950  val BA 0.825  domain nan
+epoch 09  lam 0.000  train BA 0.915  val BA 0.725  domain nan
+epoch 10  lam 0.000  train BA 0.929  val BA 0.808  domain nan
+epoch 11  lam 0.000  train BA 0.930  val BA 0.817  domain nan
+epoch 12  lam 0.000  train BA 0.928  val BA 0.858  domain nan
+epoch 13  lam 0.000  train BA 0.942  val BA 0.808  domain nan
+epoch 14  lam 0.000  train BA 0.984  val BA 0.767  domain nan
+epoch 15  lam 0.000  train BA 0.960  val BA 0.858  domain nan
+epoch 16  lam 0.000  train BA 0.954  val BA 0.817  domain nan
+epoch 17  lam 0.000  train BA 0.966  val BA 0.817  domain nan
+epoch 18  lam 0.000  train BA 0.965  val BA 0.858  domain nan
+epoch 19  lam 0.000  train BA 0.970  val BA 0.858  domain nan
+epoch 20  lam 0.000  train BA 0.981  val BA 0.817  domain nan
+early stop at epoch 20, best was 12 (val BA 0.858)
+val   speaker BA 0.858  AUC 0.825  n=22  ItalianPD 1.000  MDVR-KCL 0.250  NeuroVoz 0.917
+test  speaker BA 0.917  AUC 0.958  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.833
+
+=== mixed split=3 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3071       172 ItalianPD,MDVR-KCL,NeuroVoz 1532 1539
+  val    403        22 ItalianPD,MDVR-KCL,NeuroVoz  215  188
+ test    397        22 ItalianPD,MDVR-KCL,NeuroVoz  187  210
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_3_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.731  val BA 0.650  domain nan
+epoch 01  lam 0.000  train BA 0.813  val BA 0.725  domain nan
+epoch 02  lam 0.000  train BA 0.826  val BA 0.683  domain nan
+epoch 03  lam 0.000  train BA 0.879  val BA 0.717  domain nan
+epoch 04  lam 0.000  train BA 0.861  val BA 0.717  domain nan
+epoch 05  lam 0.000  train BA 0.897  val BA 0.717  domain nan
+epoch 06  lam 0.000  train BA 0.931  val BA 0.717  domain nan
+epoch 07  lam 0.000  train BA 0.920  val BA 0.667  domain nan
+epoch 08  lam 0.000  train BA 0.936  val BA 0.717  domain nan
+epoch 09  lam 0.000  train BA 0.937  val BA 0.667  domain nan
+epoch 10  lam 0.000  train BA 0.964  val BA 0.617  domain nan
+epoch 11  lam 0.000  train BA 0.959  val BA 0.717  domain nan
+epoch 12  lam 0.000  train BA 0.954  val BA 0.575  domain nan
+epoch 13  lam 0.000  train BA 0.954  val BA 0.617  domain nan
+early stop at epoch 13, best was 5 (val BA 0.717)
+val   speaker BA 0.717  AUC 0.783  n=22  ItalianPD 0.833  MDVR-KCL 0.500  NeuroVoz 0.667
+test  speaker BA 0.817  AUC 0.883  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.750
+
+=== mixed split=4 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3068       172 ItalianPD,MDVR-KCL,NeuroVoz 1521 1547
+  val    400        22 ItalianPD,MDVR-KCL,NeuroVoz  198  202
+ test    403        22 ItalianPD,MDVR-KCL,NeuroVoz  215  188
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_4_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.707  val BA 0.808  domain nan
+epoch 01  lam 0.000  train BA 0.835  val BA 0.769  domain nan
+epoch 02  lam 0.000  train BA 0.867  val BA 0.808  domain nan
+epoch 03  lam 0.000  train BA 0.862  val BA 0.808  domain nan
+epoch 04  lam 0.000  train BA 0.850  val BA 0.846  domain nan
+epoch 05  lam 0.000  train BA 0.909  val BA 0.808  domain nan
+epoch 06  lam 0.000  train BA 0.915  val BA 0.846  domain nan
+epoch 07  lam 0.000  train BA 0.930  val BA 0.885  domain nan
+epoch 08  lam 0.000  train BA 0.938  val BA 0.846  domain nan
+epoch 09  lam 0.000  train BA 0.931  val BA 0.808  domain nan
+epoch 10  lam 0.000  train BA 0.954  val BA 0.885  domain nan
+epoch 11  lam 0.000  train BA 0.954  val BA 0.846  domain nan
+epoch 12  lam 0.000  train BA 0.944  val BA 0.808  domain nan
+epoch 13  lam 0.000  train BA 0.965  val BA 0.885  domain nan
+epoch 14  lam 0.000  train BA 0.972  val BA 0.885  domain nan
+epoch 15  lam 0.000  train BA 0.959  val BA 0.885  domain nan
+early stop at epoch 15, best was 7 (val BA 0.885)
+val   speaker BA 0.885  AUC 0.949  n=22  ItalianPD 1.000  MDVR-KCL 0.833  NeuroVoz 0.833
+test  speaker BA 0.717  AUC 0.783  n=22  ItalianPD 0.833  MDVR-KCL 0.500  NeuroVoz 0.667
+
+=== mixed split=5 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3120       173 ItalianPD,MDVR-KCL,NeuroVoz 1559 1561
+  val    351        21 ItalianPD,MDVR-KCL,NeuroVoz  177  174
+ test    400        22 ItalianPD,MDVR-KCL,NeuroVoz  198  202
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_5_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.764  val BA 0.778  domain nan
+epoch 01  lam 0.000  train BA 0.841  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 0.875  val BA 0.806  domain nan
+epoch 03  lam 0.000  train BA 0.875  val BA 0.806  domain nan
+epoch 04  lam 0.000  train BA 0.915  val BA 0.806  domain nan
+epoch 05  lam 0.000  train BA 0.915  val BA 0.847  domain nan
+epoch 06  lam 0.000  train BA 0.915  val BA 0.847  domain nan
+epoch 07  lam 0.000  train BA 0.907  val BA 0.847  domain nan
+epoch 08  lam 0.000  train BA 0.938  val BA 0.847  domain nan
+epoch 09  lam 0.000  train BA 0.954  val BA 0.847  domain nan
+epoch 10  lam 0.000  train BA 0.954  val BA 0.847  domain nan
+epoch 11  lam 0.000  train BA 0.943  val BA 0.847  domain nan
+epoch 12  lam 0.000  train BA 0.938  val BA 0.847  domain nan
+epoch 13  lam 0.000  train BA 0.932  val BA 0.847  domain nan
+early stop at epoch 13, best was 5 (val BA 0.847)
+val   speaker BA 0.847  AUC 0.861  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.846  AUC 0.897  n=22  ItalianPD 1.000  MDVR-KCL 0.833  NeuroVoz 0.750
+
+=== mixed split=6 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3150       174 ItalianPD,MDVR-KCL,NeuroVoz 1591 1559
+  val    370        21 ItalianPD,MDVR-KCL,NeuroVoz  166  204
+ test    351        21 ItalianPD,MDVR-KCL,NeuroVoz  177  174
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_6_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.785  val BA 0.632  domain nan
+epoch 01  lam 0.000  train BA 0.807  val BA 0.864  domain nan
+epoch 02  lam 0.000  train BA 0.858  val BA 0.864  domain nan
+epoch 03  lam 0.000  train BA 0.858  val BA 0.809  domain nan
+epoch 04  lam 0.000  train BA 0.894  val BA 0.859  domain nan
+epoch 05  lam 0.000  train BA 0.901  val BA 0.859  domain nan
+epoch 06  lam 0.000  train BA 0.922  val BA 0.859  domain nan
+epoch 07  lam 0.000  train BA 0.907  val BA 0.814  domain nan
+epoch 08  lam 0.000  train BA 0.928  val BA 0.764  domain nan
+epoch 09  lam 0.000  train BA 0.933  val BA 0.764  domain nan
+epoch 10  lam 0.000  train BA 0.972  val BA 0.764  domain nan
+epoch 11  lam 0.000  train BA 0.954  val BA 0.759  domain nan
+epoch 12  lam 0.000  train BA 0.972  val BA 0.805  domain nan
+epoch 13  lam 0.000  train BA 0.955  val BA 0.805  domain nan
+early stop at epoch 13, best was 5 (val BA 0.859)
+val   speaker BA 0.859  AUC 0.964  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.847  AUC 0.861  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+
+=== mixed split=7 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3095       174 ItalianPD,MDVR-KCL,NeuroVoz 1578 1517
+  val    406        21 ItalianPD,MDVR-KCL,NeuroVoz  190  216
+ test    370        21 ItalianPD,MDVR-KCL,NeuroVoz  166  204
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_7_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.685  val BA 0.568  domain nan
+epoch 01  lam 0.000  train BA 0.813  val BA 0.718  domain nan
+epoch 02  lam 0.000  train BA 0.833  val BA 0.859  domain nan
+epoch 03  lam 0.000  train BA 0.850  val BA 0.809  domain nan
+epoch 04  lam 0.000  train BA 0.852  val BA 0.809  domain nan
+epoch 05  lam 0.000  train BA 0.888  val BA 0.859  domain nan
+epoch 06  lam 0.000  train BA 0.876  val BA 0.905  domain nan
+epoch 07  lam 0.000  train BA 0.919  val BA 0.805  domain nan
+epoch 08  lam 0.000  train BA 0.932  val BA 0.900  domain nan
+epoch 09  lam 0.000  train BA 0.916  val BA 0.809  domain nan
+epoch 10  lam 0.000  train BA 0.960  val BA 0.850  domain nan
+epoch 11  lam 0.000  train BA 0.943  val BA 0.855  domain nan
+epoch 12  lam 0.000  train BA 0.948  val BA 0.855  domain nan
+epoch 13  lam 0.000  train BA 0.949  val BA 0.855  domain nan
+epoch 14  lam 0.000  train BA 0.943  val BA 0.855  domain nan
+early stop at epoch 14, best was 6 (val BA 0.905)
+val   speaker BA 0.905  AUC 0.955  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.817
+test  speaker BA 0.855  AUC 0.945  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.717
+
+=== mixed split=8 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3074       174 ItalianPD,MDVR-KCL,NeuroVoz 1554 1520
+  val    391        21 ItalianPD,MDVR-KCL,NeuroVoz  190  201
+ test    406        21 ItalianPD,MDVR-KCL,NeuroVoz  190  216
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_8_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.758  val BA 0.859  domain nan
+epoch 01  lam 0.000  train BA 0.846  val BA 0.809  domain nan
+epoch 02  lam 0.000  train BA 0.836  val BA 0.855  domain nan
+epoch 03  lam 0.000  train BA 0.886  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 0.901  val BA 0.750  domain nan
+epoch 05  lam 0.000  train BA 0.892  val BA 0.750  domain nan
+epoch 06  lam 0.000  train BA 0.915  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 0.902  val BA 0.850  domain nan
+epoch 08  lam 0.000  train BA 0.944  val BA 0.800  domain nan
+epoch 09  lam 0.000  train BA 0.936  val BA 0.750  domain nan
+epoch 10  lam 0.000  train BA 0.959  val BA 0.750  domain nan
+epoch 11  lam 0.000  train BA 0.960  val BA 0.800  domain nan
+epoch 12  lam 0.000  train BA 0.943  val BA 0.850  domain nan
+epoch 13  lam 0.000  train BA 0.948  val BA 0.850  domain nan
+epoch 14  lam 0.000  train BA 0.948  val BA 0.800  domain nan
+epoch 15  lam 0.000  train BA 0.972  val BA 0.850  domain nan
+early stop at epoch 15, best was 7 (val BA 0.850)
+val   speaker BA 0.850  AUC 0.855  n=21  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.900
+test  speaker BA 0.855  AUC 0.936  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+
+=== mixed split=9 handcrafted utterance baseline ===
+ role  items  speakers                     corpora   pd   hc
+train   3145       173 ItalianPD,MDVR-KCL,NeuroVoz 1572 1573
+  val    335        22 ItalianPD,MDVR-KCL,NeuroVoz  172  163
+ test    391        21 ItalianPD,MDVR-KCL,NeuroVoz  190  201
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_9_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.705  val BA 0.727  domain nan
+epoch 01  lam 0.000  train BA 0.829  val BA 0.773  domain nan
+epoch 02  lam 0.000  train BA 0.843  val BA 0.727  domain nan
+epoch 03  lam 0.000  train BA 0.843  val BA 0.818  domain nan
+epoch 04  lam 0.000  train BA 0.862  val BA 0.909  domain nan
+epoch 05  lam 0.000  train BA 0.874  val BA 0.864  domain nan
+epoch 06  lam 0.000  train BA 0.917  val BA 0.818  domain nan
+epoch 07  lam 0.000  train BA 0.943  val BA 0.818  domain nan
+epoch 08  lam 0.000  train BA 0.923  val BA 0.864  domain nan
+epoch 09  lam 0.000  train BA 0.955  val BA 0.864  domain nan
+epoch 10  lam 0.000  train BA 0.953  val BA 0.864  domain nan
+epoch 11  lam 0.000  train BA 0.942  val BA 0.864  domain nan
+epoch 12  lam 0.000  train BA 0.968  val BA 0.909  domain nan
+epoch 13  lam 0.000  train BA 0.953  val BA 0.864  domain nan
+epoch 14  lam 0.000  train BA 0.954  val BA 0.909  domain nan
+epoch 15  lam 0.000  train BA 0.959  val BA 0.909  domain nan
+epoch 16  lam 0.000  train BA 0.978  val BA 0.909  domain nan
+epoch 17  lam 0.000  train BA 0.965  val BA 0.864  domain nan
+epoch 18  lam 0.000  train BA 0.977  val BA 0.864  domain nan
+epoch 19  lam 0.000  train BA 0.983  val BA 0.864  domain nan
+epoch 20  lam 0.000  train BA 0.972  val BA 0.864  domain nan
+early stop at epoch 20, best was 12 (val BA 0.909)
+val   speaker BA 0.909  AUC 0.901  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.917
+test  speaker BA 0.850  AUC 0.836  n=21  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.900
+
+### 05:35:54  python -m src.training.run --family handcrafted --level utterance --protocol lodo --all-configs --regime baseline
+3 configurations: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+
+=== lodo split=ItalianPD handcrafted utterance baseline ===
+ role  items  speakers           corpora   pd   hc
+train   2600       128 MDVR-KCL,NeuroVoz 1271 1329
+  val    441        23 MDVR-KCL,NeuroVoz  227  214
+ test    830        65         ItalianPD  436  394
+domains in train: ['MDVR-KCL', 'NeuroVoz']
+writing experiments\lodo_ItalianPD_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 2 training domains ['MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.749  val BA 0.742  domain nan
+epoch 01  lam 0.000  train BA 0.838  val BA 0.659  domain nan
+epoch 02  lam 0.000  train BA 0.831  val BA 0.739  domain nan
+epoch 03  lam 0.000  train BA 0.878  val BA 0.735  domain nan
+epoch 04  lam 0.000  train BA 0.892  val BA 0.777  domain nan
+epoch 05  lam 0.000  train BA 0.922  val BA 0.784  domain nan
+epoch 06  lam 0.000  train BA 0.885  val BA 0.739  domain nan
+epoch 07  lam 0.000  train BA 0.907  val BA 0.788  domain nan
+epoch 08  lam 0.000  train BA 0.924  val BA 0.693  domain nan
+epoch 09  lam 0.000  train BA 0.924  val BA 0.739  domain nan
+epoch 10  lam 0.000  train BA 0.946  val BA 0.784  domain nan
+epoch 11  lam 0.000  train BA 0.954  val BA 0.739  domain nan
+epoch 12  lam 0.000  train BA 0.976  val BA 0.784  domain nan
+epoch 13  lam 0.000  train BA 0.969  val BA 0.693  domain nan
+epoch 14  lam 0.000  train BA 0.946  val BA 0.697  domain nan
+epoch 15  lam 0.000  train BA 0.984  val BA 0.697  domain nan
+early stop at epoch 15, best was 7 (val BA 0.788)
+val   speaker BA 0.788  AUC 0.871  n=23  MDVR-KCL 0.833  NeuroVoz 0.778
+test  speaker BA 0.703  AUC 0.776  n=65  ItalianPD 0.703
+
+=== lodo split=MDVR-KCL handcrafted utterance baseline ===
+ role  items  speakers            corpora   pd   hc
+train   3190       152 ItalianPD,NeuroVoz 1616 1574
+  val    608        27 ItalianPD,NeuroVoz  287  321
+ test     73        37           MDVR-KCL   31   42
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\lodo_MDVR-KCL_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.808  val BA 0.683  domain nan
+epoch 01  lam 0.000  train BA 0.890  val BA 0.683  domain nan
+epoch 02  lam 0.000  train BA 0.903  val BA 0.808  domain nan
+epoch 03  lam 0.000  train BA 0.914  val BA 0.725  domain nan
+epoch 04  lam 0.000  train BA 0.940  val BA 0.808  domain nan
+epoch 05  lam 0.000  train BA 0.933  val BA 0.808  domain nan
+epoch 06  lam 0.000  train BA 0.953  val BA 0.800  domain nan
+epoch 07  lam 0.000  train BA 0.952  val BA 0.767  domain nan
+epoch 08  lam 0.000  train BA 0.960  val BA 0.733  domain nan
+epoch 09  lam 0.000  train BA 0.960  val BA 0.758  domain nan
+epoch 10  lam 0.000  train BA 0.967  val BA 0.758  domain nan
+epoch 11  lam 0.000  train BA 0.987  val BA 0.758  domain nan
+epoch 12  lam 0.000  train BA 0.988  val BA 0.800  domain nan
+epoch 13  lam 0.000  train BA 0.994  val BA 0.758  domain nan
+early stop at epoch 13, best was 5 (val BA 0.808)
+val   speaker BA 0.808  AUC 0.872  n=27  ItalianPD 0.875  NeuroVoz 0.764
+test  speaker BA 0.576  AUC 0.628  n=37  MDVR-KCL 0.576
+
+=== lodo split=NeuroVoz handcrafted utterance baseline ===
+ role  items  speakers            corpora   pd   hc
+train    747        86 ItalianPD,MDVR-KCL  397  350
+  val    156        16 ItalianPD,MDVR-KCL   70   86
+ test   2968       114           NeuroVoz 1467 1501
+domains in train: ['ItalianPD', 'MDVR-KCL']
+writing experiments\lodo_NeuroVoz_handcrafted_utterance_baseline_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.729  val BA 0.690  domain nan
+epoch 01  lam 0.000  train BA 0.901  val BA 0.802  domain nan
+epoch 02  lam 0.000  train BA 0.892  val BA 0.857  domain nan
+epoch 03  lam 0.000  train BA 0.919  val BA 0.929  domain nan
+epoch 04  lam 0.000  train BA 0.946  val BA 0.929  domain nan
+epoch 05  lam 0.000  train BA 0.926  val BA 0.857  domain nan
+epoch 06  lam 0.000  train BA 0.949  val BA 0.857  domain nan
+epoch 07  lam 0.000  train BA 0.949  val BA 0.857  domain nan
+epoch 08  lam 0.000  train BA 0.949  val BA 0.802  domain nan
+epoch 09  lam 0.000  train BA 0.959  val BA 0.802  domain nan
+epoch 10  lam 0.000  train BA 0.949  val BA 0.857  domain nan
+epoch 11  lam 0.000  train BA 0.959  val BA 0.857  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.857  domain nan
+epoch 13  lam 0.000  train BA 0.973  val BA 0.857  domain nan
+early stop at epoch 13, best was 5 (val BA 0.857)
+val   speaker BA 0.857  AUC 0.921  n=16  ItalianPD 0.875  MDVR-KCL 0.833
+test  speaker BA 0.517  AUC 0.543  n=114  NeuroVoz 0.517
+
+### 05:36:32  python -m src.training.run --family handcrafted --level utterance --protocol mixed --all-configs --regime dann
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3143       172 ItalianPD,MDVR-KCL,NeuroVoz 1536 1607
+  val    393        22 ItalianPD,MDVR-KCL,NeuroVoz  226  167
+ test    335        22 ItalianPD,MDVR-KCL,NeuroVoz  172  163
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_0_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.745  val BA 0.727  domain 0.2858072916666667
+epoch 01  lam 0.166  train BA 0.826  val BA 0.682  domain 0.12858072916666666
+epoch 02  lam 0.322  train BA 0.860  val BA 0.727  domain 0.046549479166666664
+epoch 03  lam 0.463  train BA 0.872  val BA 0.682  domain 0.150390625
+epoch 04  lam 0.584  train BA 0.883  val BA 0.727  domain 0.3421223958333333
+epoch 05  lam 0.684  train BA 0.864  val BA 0.727  domain 0.3297526041666667
+epoch 06  lam 0.763  train BA 0.891  val BA 0.682  domain 0.3196614583333333
+epoch 07  lam 0.824  train BA 0.873  val BA 0.727  domain 0.181640625
+epoch 08  lam 0.871  train BA 0.899  val BA 0.682  domain 0.041341145833333336
+epoch 09  lam 0.906  train BA 0.883  val BA 0.682  domain 0.09993489583333333
+epoch 10  lam 0.932  train BA 0.910  val BA 0.727  domain 0.326171875
+epoch 11  lam 0.951  train BA 0.896  val BA 0.682  domain 0.3440755208333333
+epoch 12  lam 0.964  train BA 0.878  val BA 0.636  domain 0.3349609375
+epoch 13  lam 0.974  train BA 0.896  val BA 0.682  domain 0.3056640625
+early stop at epoch 13, best was 5 (val BA 0.727)
+val   speaker BA 0.727  AUC 0.826  n=22  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.617
+test  speaker BA 0.864  AUC 0.950  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.800
+
+=== mixed split=1 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3053       172 ItalianPD,MDVR-KCL,NeuroVoz 1495 1558
+  val    425        22 ItalianPD,MDVR-KCL,NeuroVoz  213  212
+ test    393        22 ItalianPD,MDVR-KCL,NeuroVoz  226  167
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_1_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.749  val BA 0.700  domain 0.3661221590909091
+epoch 01  lam 0.166  train BA 0.800  val BA 0.917  domain 0.25
+epoch 02  lam 0.322  train BA 0.855  val BA 0.825  domain 0.05078125
+epoch 03  lam 0.463  train BA 0.860  val BA 0.917  domain 0.049360795454545456
+epoch 04  lam 0.584  train BA 0.845  val BA 0.775  domain 0.05184659090909091
+epoch 05  lam 0.684  train BA 0.879  val BA 0.775  domain 0.18110795454545456
+epoch 06  lam 0.763  train BA 0.902  val BA 0.917  domain 0.32279829545454547
+epoch 07  lam 0.824  train BA 0.879  val BA 0.867  domain 0.32563920454545453
+epoch 08  lam 0.871  train BA 0.887  val BA 0.817  domain 0.33061079545454547
+epoch 09  lam 0.906  train BA 0.904  val BA 0.917  domain 0.3302556818181818
+epoch 10  lam 0.932  train BA 0.908  val BA 0.867  domain 0.3235085227272727
+epoch 11  lam 0.951  train BA 0.906  val BA 0.917  domain 0.3288352272727273
+epoch 12  lam 0.964  train BA 0.881  val BA 0.817  domain 0.34517045454545453
+epoch 13  lam 0.974  train BA 0.895  val BA 0.775  domain 0.3249289772727273
+epoch 14  lam 0.982  train BA 0.883  val BA 0.867  domain 0.3348721590909091
+early stop at epoch 14, best was 6 (val BA 0.917)
+val   speaker BA 0.917  AUC 0.942  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.833
+test  speaker BA 0.636  AUC 0.818  n=22  ItalianPD 1.000  MDVR-KCL 0.250  NeuroVoz 0.533
+
+=== mixed split=2 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3049       172 ItalianPD,MDVR-KCL,NeuroVoz 1534 1515
+  val    397        22 ItalianPD,MDVR-KCL,NeuroVoz  187  210
+ test    425        22 ItalianPD,MDVR-KCL,NeuroVoz  213  212
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_2_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.730  val BA 0.700  domain 0.2872869318181818
+epoch 01  lam 0.166  train BA 0.797  val BA 0.742  domain 0.29261363636363635
+epoch 02  lam 0.322  train BA 0.838  val BA 0.817  domain 0.09339488636363637
+epoch 03  lam 0.463  train BA 0.837  val BA 0.867  domain 0.05397727272727273
+epoch 04  lam 0.584  train BA 0.833  val BA 0.867  domain 0.18430397727272727
+epoch 05  lam 0.684  train BA 0.850  val BA 0.783  domain 0.32776988636363635
+epoch 06  lam 0.763  train BA 0.870  val BA 0.825  domain 0.3259943181818182
+epoch 07  lam 0.824  train BA 0.885  val BA 0.817  domain 0.29723011363636365
+epoch 08  lam 0.871  train BA 0.883  val BA 0.817  domain 0.17507102272727273
+epoch 09  lam 0.906  train BA 0.836  val BA 0.867  domain 0.2869318181818182
+epoch 10  lam 0.932  train BA 0.872  val BA 0.867  domain 0.3313210227272727
+epoch 11  lam 0.951  train BA 0.895  val BA 0.858  domain 0.3352272727272727
+epoch 12  lam 0.964  train BA 0.849  val BA 0.808  domain 0.3419744318181818
+epoch 13  lam 0.974  train BA 0.873  val BA 0.767  domain 0.3259943181818182
+epoch 14  lam 0.982  train BA 0.877  val BA 0.808  domain 0.33203125
+epoch 15  lam 0.987  train BA 0.912  val BA 0.867  domain 0.3291903409090909
+epoch 16  lam 0.991  train BA 0.896  val BA 0.825  domain 0.32670454545454547
+epoch 17  lam 0.993  train BA 0.926  val BA 0.867  domain 0.3483664772727273
+early stop at epoch 17, best was 9 (val BA 0.867)
+val   speaker BA 0.867  AUC 0.900  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.750
+test  speaker BA 0.958  AUC 0.967  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.917
+
+=== mixed split=3 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3071       172 ItalianPD,MDVR-KCL,NeuroVoz 1532 1539
+  val    403        22 ItalianPD,MDVR-KCL,NeuroVoz  215  188
+ test    397        22 ItalianPD,MDVR-KCL,NeuroVoz  187  210
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_3_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.764  val BA 0.683  domain 0.3526278409090909
+epoch 01  lam 0.166  train BA 0.817  val BA 0.725  domain 0.3220880681818182
+epoch 02  lam 0.322  train BA 0.839  val BA 0.633  domain 0.09446022727272728
+epoch 03  lam 0.463  train BA 0.859  val BA 0.725  domain 0.02947443181818182
+epoch 04  lam 0.584  train BA 0.868  val BA 0.717  domain 0.06214488636363636
+epoch 05  lam 0.684  train BA 0.850  val BA 0.683  domain 0.2585227272727273
+epoch 06  lam 0.763  train BA 0.872  val BA 0.633  domain 0.3249289772727273
+epoch 07  lam 0.824  train BA 0.880  val BA 0.633  domain 0.31782670454545453
+epoch 08  lam 0.871  train BA 0.858  val BA 0.725  domain 0.06889204545454546
+epoch 09  lam 0.906  train BA 0.873  val BA 0.675  domain 0.022727272727272728
+epoch 10  lam 0.932  train BA 0.882  val BA 0.675  domain 0.24786931818181818
+epoch 11  lam 0.951  train BA 0.882  val BA 0.675  domain 0.3313210227272727
+epoch 12  lam 0.964  train BA 0.861  val BA 0.633  domain 0.34019886363636365
+epoch 13  lam 0.974  train BA 0.882  val BA 0.717  domain 0.32421875
+epoch 14  lam 0.982  train BA 0.879  val BA 0.675  domain 0.33451704545454547
+epoch 15  lam 0.987  train BA 0.899  val BA 0.717  domain 0.34126420454545453
+epoch 16  lam 0.991  train BA 0.877  val BA 0.767  domain 0.32954545454545453
+epoch 17  lam 0.993  train BA 0.908  val BA 0.725  domain 0.34126420454545453
+epoch 18  lam 0.995  train BA 0.902  val BA 0.617  domain 0.3259943181818182
+epoch 19  lam 0.997  train BA 0.925  val BA 0.617  domain 0.34126420454545453
+epoch 20  lam 0.998  train BA 0.908  val BA 0.725  domain 0.33948863636363635
+epoch 21  lam 0.998  train BA 0.915  val BA 0.717  domain 0.33948863636363635
+epoch 22  lam 0.999  train BA 0.941  val BA 0.717  domain 0.32848011363636365
+epoch 23  lam 0.999  train BA 0.924  val BA 0.675  domain 0.328125
+epoch 24  lam 0.999  train BA 0.919  val BA 0.675  domain 0.3330965909090909
+early stop at epoch 24, best was 16 (val BA 0.767)
+val   speaker BA 0.767  AUC 0.767  n=22  ItalianPD 0.833  MDVR-KCL 0.500  NeuroVoz 0.750
+test  speaker BA 0.808  AUC 0.842  n=22  ItalianPD 1.000  MDVR-KCL 0.250  NeuroVoz 0.833
+
+=== mixed split=4 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3068       172 ItalianPD,MDVR-KCL,NeuroVoz 1521 1547
+  val    400        22 ItalianPD,MDVR-KCL,NeuroVoz  198  202
+ test    403        22 ItalianPD,MDVR-KCL,NeuroVoz  215  188
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_4_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.731  val BA 0.769  domain 0.3575994318181818
+epoch 01  lam 0.166  train BA 0.828  val BA 0.692  domain 0.3338068181818182
+epoch 02  lam 0.322  train BA 0.839  val BA 0.769  domain 0.24609375
+epoch 03  lam 0.463  train BA 0.866  val BA 0.769  domain 0.10511363636363637
+epoch 04  lam 0.584  train BA 0.844  val BA 0.769  domain 0.2265625
+epoch 05  lam 0.684  train BA 0.881  val BA 0.808  domain 0.3259943181818182
+epoch 06  lam 0.763  train BA 0.881  val BA 0.808  domain 0.32421875
+epoch 07  lam 0.824  train BA 0.875  val BA 0.962  domain 0.2606534090909091
+epoch 08  lam 0.871  train BA 0.897  val BA 0.962  domain 0.09730113636363637
+epoch 09  lam 0.906  train BA 0.852  val BA 0.885  domain 0.07421875
+epoch 10  lam 0.932  train BA 0.872  val BA 0.923  domain 0.07137784090909091
+epoch 11  lam 0.951  train BA 0.893  val BA 0.962  domain 0.32066761363636365
+epoch 12  lam 0.964  train BA 0.863  val BA 0.846  domain 0.3405539772727273
+epoch 13  lam 0.974  train BA 0.862  val BA 0.885  domain 0.3249289772727273
+epoch 14  lam 0.982  train BA 0.909  val BA 0.885  domain 0.31995738636363635
+epoch 15  lam 0.987  train BA 0.907  val BA 0.808  domain 0.24786931818181818
+early stop at epoch 15, best was 7 (val BA 0.962)
+val   speaker BA 0.962  AUC 0.991  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.917
+test  speaker BA 0.717  AUC 0.775  n=22  ItalianPD 0.833  MDVR-KCL 0.500  NeuroVoz 0.667
+
+=== mixed split=5 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3120       173 ItalianPD,MDVR-KCL,NeuroVoz 1559 1561
+  val    351        21 ItalianPD,MDVR-KCL,NeuroVoz  177  174
+ test    400        22 ItalianPD,MDVR-KCL,NeuroVoz  198  202
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_5_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.709  val BA 0.764  domain 0.4055989583333333
+epoch 01  lam 0.166  train BA 0.807  val BA 0.806  domain 0.22395833333333334
+epoch 02  lam 0.322  train BA 0.841  val BA 0.806  domain 0.029947916666666668
+epoch 03  lam 0.463  train BA 0.840  val BA 0.806  domain 0.080078125
+epoch 04  lam 0.584  train BA 0.897  val BA 0.806  domain 0.3157552083333333
+epoch 05  lam 0.684  train BA 0.874  val BA 0.847  domain 0.3297526041666667
+epoch 06  lam 0.763  train BA 0.882  val BA 0.764  domain 0.3258463541666667
+epoch 07  lam 0.824  train BA 0.891  val BA 0.722  domain 0.3160807291666667
+epoch 08  lam 0.871  train BA 0.882  val BA 0.806  domain 0.24251302083333334
+epoch 09  lam 0.906  train BA 0.880  val BA 0.847  domain 0.22688802083333334
+epoch 10  lam 0.932  train BA 0.902  val BA 0.847  domain 0.3206380208333333
+epoch 11  lam 0.951  train BA 0.891  val BA 0.806  domain 0.3258463541666667
+epoch 12  lam 0.964  train BA 0.876  val BA 0.806  domain 0.3352864583333333
+epoch 13  lam 0.974  train BA 0.891  val BA 0.847  domain 0.3264973958333333
+early stop at epoch 13, best was 5 (val BA 0.847)
+val   speaker BA 0.847  AUC 0.898  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.885  AUC 0.983  n=22  ItalianPD 1.000  MDVR-KCL 0.833  NeuroVoz 0.833
+
+=== mixed split=6 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3150       174 ItalianPD,MDVR-KCL,NeuroVoz 1591 1559
+  val    370        21 ItalianPD,MDVR-KCL,NeuroVoz  166  204
+ test    351        21 ItalianPD,MDVR-KCL,NeuroVoz  177  174
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_6_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.805  val BA 0.768  domain 0.373046875
+epoch 01  lam 0.166  train BA 0.817  val BA 0.859  domain 0.2643229166666667
+epoch 02  lam 0.322  train BA 0.865  val BA 0.809  domain 0.068359375
+epoch 03  lam 0.463  train BA 0.868  val BA 0.905  domain 0.1142578125
+epoch 04  lam 0.584  train BA 0.869  val BA 0.814  domain 0.33984375
+epoch 05  lam 0.684  train BA 0.862  val BA 0.859  domain 0.328125
+epoch 06  lam 0.763  train BA 0.899  val BA 0.855  domain 0.328125
+epoch 07  lam 0.824  train BA 0.895  val BA 0.905  domain 0.2392578125
+epoch 08  lam 0.871  train BA 0.894  val BA 0.900  domain 0.068359375
+epoch 09  lam 0.906  train BA 0.891  val BA 0.905  domain 0.16536458333333334
+epoch 10  lam 0.932  train BA 0.900  val BA 0.905  domain 0.33984375
+epoch 11  lam 0.951  train BA 0.892  val BA 0.905  domain 0.3434244791666667
+epoch 12  lam 0.964  train BA 0.893  val BA 0.905  domain 0.3356119791666667
+epoch 13  lam 0.974  train BA 0.902  val BA 0.905  domain 0.3193359375
+epoch 14  lam 0.982  train BA 0.925  val BA 0.905  domain 0.34375
+epoch 15  lam 0.987  train BA 0.922  val BA 0.859  domain 0.330078125
+early stop at epoch 15, best was 7 (val BA 0.905)
+val   speaker BA 0.905  AUC 0.936  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.817
+test  speaker BA 0.806  AUC 0.852  n=21  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.733
+
+=== mixed split=7 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3095       174 ItalianPD,MDVR-KCL,NeuroVoz 1578 1517
+  val    406        21 ItalianPD,MDVR-KCL,NeuroVoz  190  216
+ test    370        21 ItalianPD,MDVR-KCL,NeuroVoz  166  204
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_7_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.757  val BA 0.668  domain 0.21158854166666666
+epoch 01  lam 0.166  train BA 0.816  val BA 0.723  domain 0.1494140625
+epoch 02  lam 0.322  train BA 0.864  val BA 0.809  domain 0.05078125
+epoch 03  lam 0.463  train BA 0.854  val BA 0.809  domain 0.0576171875
+epoch 04  lam 0.584  train BA 0.879  val BA 0.814  domain 0.22786458333333334
+epoch 05  lam 0.684  train BA 0.852  val BA 0.859  domain 0.23567708333333334
+epoch 06  lam 0.763  train BA 0.899  val BA 0.855  domain 0.14453125
+epoch 07  lam 0.824  train BA 0.868  val BA 0.855  domain 0.031901041666666664
+epoch 08  lam 0.871  train BA 0.904  val BA 0.755  domain 0.053059895833333336
+epoch 09  lam 0.906  train BA 0.881  val BA 0.714  domain 0.2809244791666667
+epoch 10  lam 0.932  train BA 0.930  val BA 0.755  domain 0.3375651041666667
+epoch 11  lam 0.951  train BA 0.887  val BA 0.759  domain 0.3404947916666667
+epoch 12  lam 0.964  train BA 0.892  val BA 0.859  domain 0.3434244791666667
+epoch 13  lam 0.974  train BA 0.882  val BA 0.809  domain 0.3115234375
+early stop at epoch 13, best was 5 (val BA 0.859)
+val   speaker BA 0.859  AUC 0.918  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.733
+test  speaker BA 0.809  AUC 0.873  n=21  ItalianPD 0.833  MDVR-KCL 0.750  NeuroVoz 0.817
+
+=== mixed split=8 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3074       174 ItalianPD,MDVR-KCL,NeuroVoz 1554 1520
+  val    391        21 ItalianPD,MDVR-KCL,NeuroVoz  190  201
+ test    406        21 ItalianPD,MDVR-KCL,NeuroVoz  190  216
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_8_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.783  val BA 0.859  domain 0.3291015625
+epoch 01  lam 0.166  train BA 0.840  val BA 0.809  domain 0.3059895833333333
+epoch 02  lam 0.322  train BA 0.864  val BA 0.750  domain 0.1181640625
+epoch 03  lam 0.463  train BA 0.861  val BA 0.800  domain 0.054036458333333336
+epoch 04  lam 0.584  train BA 0.849  val BA 0.750  domain 0.21158854166666666
+epoch 05  lam 0.684  train BA 0.865  val BA 0.800  domain 0.3291015625
+epoch 06  lam 0.763  train BA 0.903  val BA 0.800  domain 0.3258463541666667
+epoch 07  lam 0.824  train BA 0.885  val BA 0.855  domain 0.2607421875
+epoch 08  lam 0.871  train BA 0.870  val BA 0.850  domain 0.09505208333333333
+epoch 09  lam 0.906  train BA 0.876  val BA 0.850  domain 0.1669921875
+epoch 10  lam 0.932  train BA 0.930  val BA 0.750  domain 0.33984375
+epoch 11  lam 0.951  train BA 0.889  val BA 0.850  domain 0.341796875
+epoch 12  lam 0.964  train BA 0.869  val BA 0.900  domain 0.3375651041666667
+epoch 13  lam 0.974  train BA 0.869  val BA 0.850  domain 0.3216145833333333
+epoch 14  lam 0.982  train BA 0.898  val BA 0.850  domain 0.3375651041666667
+epoch 15  lam 0.987  train BA 0.891  val BA 0.900  domain 0.3362630208333333
+epoch 16  lam 0.991  train BA 0.895  val BA 0.850  domain 0.3313802083333333
+epoch 17  lam 0.993  train BA 0.901  val BA 0.800  domain 0.3365885416666667
+epoch 18  lam 0.995  train BA 0.909  val BA 0.900  domain 0.3248697916666667
+epoch 19  lam 0.997  train BA 0.910  val BA 0.850  domain 0.3317057291666667
+epoch 20  lam 0.998  train BA 0.920  val BA 0.759  domain 0.341796875
+early stop at epoch 20, best was 12 (val BA 0.900)
+val   speaker BA 0.900  AUC 0.909  n=21  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 1.000
+test  speaker BA 0.814  AUC 0.891  n=21  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.650
+
+=== mixed split=9 handcrafted utterance dann ===
+ role  items  speakers                     corpora   pd   hc
+train   3145       173 ItalianPD,MDVR-KCL,NeuroVoz 1572 1573
+  val    335        22 ItalianPD,MDVR-KCL,NeuroVoz  172  163
+ test    391        21 ItalianPD,MDVR-KCL,NeuroVoz  190  201
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_9_handcrafted_utterance_dann_s0
+device cuda, 44805 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.733  val BA 0.727  domain 0.4261067708333333
+epoch 01  lam 0.166  train BA 0.825  val BA 0.682  domain 0.2978515625
+epoch 02  lam 0.322  train BA 0.833  val BA 0.773  domain 0.07063802083333333
+epoch 03  lam 0.463  train BA 0.823  val BA 0.818  domain 0.07194010416666667
+epoch 04  lam 0.584  train BA 0.829  val BA 0.818  domain 0.23990885416666666
+epoch 05  lam 0.684  train BA 0.856  val BA 0.864  domain 0.3284505208333333
+epoch 06  lam 0.763  train BA 0.881  val BA 0.864  domain 0.326171875
+epoch 07  lam 0.824  train BA 0.867  val BA 0.864  domain 0.3258463541666667
+epoch 08  lam 0.871  train BA 0.863  val BA 0.818  domain 0.21451822916666666
+epoch 09  lam 0.906  train BA 0.855  val BA 0.818  domain 0.2581380208333333
+epoch 10  lam 0.932  train BA 0.911  val BA 0.818  domain 0.3317057291666667
+epoch 11  lam 0.951  train BA 0.867  val BA 0.818  domain 0.34375
+epoch 12  lam 0.964  train BA 0.888  val BA 0.818  domain 0.3356119791666667
+epoch 13  lam 0.974  train BA 0.884  val BA 0.818  domain 0.3235677083333333
+early stop at epoch 13, best was 5 (val BA 0.864)
+val   speaker BA 0.864  AUC 0.926  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+test  speaker BA 0.800  AUC 0.927  n=21  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.800
+
+### 05:37:58  python -m src.training.run --family handcrafted --level utterance --protocol lodo --all-configs --regime dann
+3 configurations: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+
+=== lodo split=ItalianPD handcrafted utterance dann ===
+ role  items  speakers           corpora   pd   hc
+train   2600       128 MDVR-KCL,NeuroVoz 1271 1329
+  val    441        23 MDVR-KCL,NeuroVoz  227  214
+ test    830        65         ItalianPD  436  394
+domains in train: ['MDVR-KCL', 'NeuroVoz']
+writing experiments\lodo_ItalianPD_handcrafted_utterance_dann_s0
+device cuda, 44676 parameters, 2 training domains ['MDVR-KCL', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.764  val BA 0.739  domain 0.592578125
+epoch 01  lam 0.166  train BA 0.822  val BA 0.742  domain 0.39921875
+epoch 02  lam 0.323  train BA 0.830  val BA 0.830  domain 0.12109375
+epoch 03  lam 0.463  train BA 0.844  val BA 0.830  domain 0.072265625
+epoch 04  lam 0.584  train BA 0.804  val BA 0.913  domain 0.20703125
+epoch 05  lam 0.684  train BA 0.884  val BA 0.788  domain 0.512109375
+epoch 06  lam 0.763  train BA 0.822  val BA 0.871  domain 0.491015625
+epoch 07  lam 0.824  train BA 0.852  val BA 0.871  domain 0.5078125
+epoch 08  lam 0.871  train BA 0.896  val BA 0.913  domain 0.494921875
+epoch 09  lam 0.906  train BA 0.898  val BA 0.826  domain 0.487890625
+epoch 10  lam 0.932  train BA 0.906  val BA 0.871  domain 0.509765625
+epoch 11  lam 0.951  train BA 0.906  val BA 0.830  domain 0.49140625
+epoch 12  lam 0.964  train BA 0.922  val BA 0.784  domain 0.5109375
+epoch 13  lam 0.974  train BA 0.914  val BA 0.871  domain 0.467578125
+epoch 14  lam 0.982  train BA 0.928  val BA 0.780  domain 0.494140625
+epoch 15  lam 0.987  train BA 0.922  val BA 0.826  domain 0.50546875
+epoch 16  lam 0.991  train BA 0.944  val BA 0.871  domain 0.496484375
+early stop at epoch 16, best was 8 (val BA 0.913)
+val   speaker BA 0.913  AUC 0.909  n=23  MDVR-KCL 1.000  NeuroVoz 0.889
+test  speaker BA 0.703  AUC 0.708  n=65  ItalianPD 0.703
+
+=== lodo split=MDVR-KCL handcrafted utterance dann ===
+ role  items  speakers            corpora   pd   hc
+train   3190       152 ItalianPD,NeuroVoz 1616 1574
+  val    608        27 ItalianPD,NeuroVoz  287  321
+ test     73        37           MDVR-KCL   31   42
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\lodo_MDVR-KCL_handcrafted_utterance_dann_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.786  val BA 0.692  domain 0.5113932291666666
+epoch 01  lam 0.166  train BA 0.858  val BA 0.750  domain 0.49609375
+epoch 02  lam 0.322  train BA 0.852  val BA 0.850  domain 0.4925130208333333
+epoch 03  lam 0.463  train BA 0.908  val BA 0.767  domain 0.3955078125
+epoch 04  lam 0.584  train BA 0.914  val BA 0.808  domain 0.3984375
+epoch 05  lam 0.684  train BA 0.913  val BA 0.775  domain 0.453125
+epoch 06  lam 0.763  train BA 0.927  val BA 0.808  domain 0.5133463541666666
+epoch 07  lam 0.824  train BA 0.913  val BA 0.850  domain 0.55078125
+epoch 08  lam 0.871  train BA 0.933  val BA 0.742  domain 0.5478515625
+epoch 09  lam 0.906  train BA 0.926  val BA 0.733  domain 0.4879557291666667
+epoch 10  lam 0.932  train BA 0.914  val BA 0.725  domain 0.49609375
+epoch 11  lam 0.951  train BA 0.921  val BA 0.725  domain 0.4986979166666667
+epoch 12  lam 0.964  train BA 0.947  val BA 0.725  domain 0.4899088541666667
+epoch 13  lam 0.974  train BA 0.940  val BA 0.767  domain 0.4108072916666667
+epoch 14  lam 0.982  train BA 0.961  val BA 0.700  domain 0.3876953125
+epoch 15  lam 0.987  train BA 0.933  val BA 0.683  domain 0.4645182291666667
+early stop at epoch 15, best was 7 (val BA 0.850)
+val   speaker BA 0.850  AUC 0.844  n=27  ItalianPD 0.875  NeuroVoz 0.826
+test  speaker BA 0.591  AUC 0.667  n=37  MDVR-KCL 0.591
+
+=== lodo split=NeuroVoz handcrafted utterance dann ===
+ role  items  speakers            corpora   pd   hc
+train    747        86 ItalianPD,MDVR-KCL  397  350
+  val    156        16 ItalianPD,MDVR-KCL   70   86
+ test   2968       114           NeuroVoz 1467 1501
+domains in train: ['ItalianPD', 'MDVR-KCL']
+writing experiments\lodo_NeuroVoz_handcrafted_utterance_dann_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'MDVR-KCL'], regime dann
+epoch 00  lam 0.000  train BA 0.701  val BA 0.746  domain 0.435546875
+epoch 01  lam 0.168  train BA 0.887  val BA 0.746  domain 0.412109375
+epoch 02  lam 0.327  train BA 0.919  val BA 0.873  domain 0.1953125
+epoch 03  lam 0.469  train BA 0.912  val BA 0.929  domain 0.10546875
+epoch 04  lam 0.590  train BA 0.938  val BA 0.929  domain 0.087890625
+epoch 05  lam 0.690  train BA 0.902  val BA 0.929  domain 0.1171875
+epoch 06  lam 0.769  train BA 0.926  val BA 0.929  domain 0.107421875
+epoch 07  lam 0.829  train BA 0.939  val BA 0.929  domain 0.099609375
+epoch 08  lam 0.875  train BA 0.939  val BA 0.929  domain 0.099609375
+epoch 09  lam 0.910  train BA 0.949  val BA 0.929  domain 0.09765625
+epoch 10  lam 0.935  train BA 0.939  val BA 0.929  domain 0.099609375
+epoch 11  lam 0.953  train BA 0.925  val BA 0.929  domain 0.080078125
+epoch 12  lam 0.966  train BA 0.936  val BA 0.929  domain 0.05859375
+epoch 13  lam 0.976  train BA 0.946  val BA 0.857  domain 0.05859375
+early stop at epoch 13, best was 5 (val BA 0.929)
+val   speaker BA 0.929  AUC 0.937  n=16  ItalianPD 0.875  MDVR-KCL 1.000
+test  speaker BA 0.500  AUC 0.504  n=114  NeuroVoz 0.500
+
+### 05:38:30  python -m src.training.run --family handcrafted --level phoneme --phone-class vowel --protocol mixed --all-configs --regime baseline
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  52911       141 ItalianPD,NeuroVoz 21632 31279
+  val   7028        18 ItalianPD,NeuroVoz  3160  3868
+ test   6538        16 ItalianPD,NeuroVoz  2690  3848
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_0_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.778  val BA 0.778  domain nan
+epoch 01  lam 0.000  train BA 0.844  val BA 0.722  domain nan
+epoch 02  lam 0.000  train BA 0.864  val BA 0.778  domain nan
+epoch 03  lam 0.000  train BA 0.883  val BA 0.778  domain nan
+epoch 04  lam 0.000  train BA 0.903  val BA 0.778  domain nan
+epoch 05  lam 0.000  train BA 0.916  val BA 0.778  domain nan
+epoch 06  lam 0.000  train BA 0.922  val BA 0.722  domain nan
+epoch 07  lam 0.000  train BA 0.922  val BA 0.722  domain nan
+epoch 08  lam 0.000  train BA 0.929  val BA 0.667  domain nan
+epoch 09  lam 0.000  train BA 0.935  val BA 0.778  domain nan
+epoch 10  lam 0.000  train BA 0.948  val BA 0.667  domain nan
+epoch 11  lam 0.000  train BA 0.948  val BA 0.722  domain nan
+epoch 12  lam 0.000  train BA 0.948  val BA 0.722  domain nan
+epoch 13  lam 0.000  train BA 0.955  val BA 0.722  domain nan
+early stop at epoch 13, best was 5 (val BA 0.778)
+val   speaker BA 0.778  AUC 0.864  n=18  ItalianPD 1.000  NeuroVoz 0.617
+test  speaker BA 0.889  AUC 0.937  n=16  ItalianPD 1.000  NeuroVoz 0.800
+
+=== mixed split=1 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  52226       138 ItalianPD,NeuroVoz 21239 30987
+  val   7223        19 ItalianPD,NeuroVoz  3083  4140
+ test   7028        18 ItalianPD,NeuroVoz  3160  3868
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_1_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.773  val BA 0.794  domain nan
+epoch 01  lam 0.000  train BA 0.839  val BA 0.844  domain nan
+epoch 02  lam 0.000  train BA 0.887  val BA 0.844  domain nan
+epoch 03  lam 0.000  train BA 0.901  val BA 0.844  domain nan
+epoch 04  lam 0.000  train BA 0.928  val BA 0.844  domain nan
+epoch 05  lam 0.000  train BA 0.928  val BA 0.844  domain nan
+epoch 06  lam 0.000  train BA 0.934  val BA 0.844  domain nan
+epoch 07  lam 0.000  train BA 0.934  val BA 0.844  domain nan
+epoch 08  lam 0.000  train BA 0.941  val BA 0.789  domain nan
+epoch 09  lam 0.000  train BA 0.941  val BA 0.844  domain nan
+epoch 10  lam 0.000  train BA 0.947  val BA 0.844  domain nan
+epoch 11  lam 0.000  train BA 0.947  val BA 0.844  domain nan
+epoch 12  lam 0.000  train BA 0.947  val BA 0.844  domain nan
+epoch 13  lam 0.000  train BA 0.954  val BA 0.844  domain nan
+early stop at epoch 13, best was 5 (val BA 0.844)
+val   speaker BA 0.844  AUC 0.900  n=19  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.778  AUC 0.877  n=18  ItalianPD 1.000  NeuroVoz 0.617
+
+=== mixed split=2 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  52744       138 ItalianPD,NeuroVoz 21964 30780
+  val   6510        18 ItalianPD,NeuroVoz  2435  4075
+ test   7223        19 ItalianPD,NeuroVoz  3083  4140
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_2_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.790  val BA 0.625  domain nan
+epoch 01  lam 0.000  train BA 0.865  val BA 0.738  domain nan
+epoch 02  lam 0.000  train BA 0.872  val BA 0.675  domain nan
+epoch 03  lam 0.000  train BA 0.900  val BA 0.725  domain nan
+epoch 04  lam 0.000  train BA 0.913  val BA 0.787  domain nan
+epoch 05  lam 0.000  train BA 0.920  val BA 0.787  domain nan
+epoch 06  lam 0.000  train BA 0.927  val BA 0.787  domain nan
+epoch 07  lam 0.000  train BA 0.933  val BA 0.838  domain nan
+epoch 08  lam 0.000  train BA 0.933  val BA 0.787  domain nan
+epoch 09  lam 0.000  train BA 0.940  val BA 0.787  domain nan
+epoch 10  lam 0.000  train BA 0.940  val BA 0.838  domain nan
+epoch 11  lam 0.000  train BA 0.947  val BA 0.787  domain nan
+epoch 12  lam 0.000  train BA 0.947  val BA 0.787  domain nan
+epoch 13  lam 0.000  train BA 0.947  val BA 0.787  domain nan
+epoch 14  lam 0.000  train BA 0.960  val BA 0.787  domain nan
+epoch 15  lam 0.000  train BA 0.960  val BA 0.787  domain nan
+early stop at epoch 15, best was 7 (val BA 0.838)
+val   speaker BA 0.838  AUC 0.912  n=18  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.789  AUC 0.911  n=19  ItalianPD 1.000  NeuroVoz 0.667
+
+=== mixed split=3 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  53453       138 ItalianPD,NeuroVoz 21732 31721
+  val   6514        19 ItalianPD,NeuroVoz  3315  3199
+ test   6510        18 ItalianPD,NeuroVoz  2435  4075
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_3_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.805  val BA 0.850  domain nan
+epoch 01  lam 0.000  train BA 0.852  val BA 0.850  domain nan
+epoch 02  lam 0.000  train BA 0.880  val BA 0.850  domain nan
+epoch 03  lam 0.000  train BA 0.907  val BA 0.850  domain nan
+epoch 04  lam 0.000  train BA 0.907  val BA 0.850  domain nan
+epoch 05  lam 0.000  train BA 0.920  val BA 0.850  domain nan
+epoch 06  lam 0.000  train BA 0.927  val BA 0.850  domain nan
+epoch 07  lam 0.000  train BA 0.940  val BA 0.850  domain nan
+epoch 08  lam 0.000  train BA 0.947  val BA 0.850  domain nan
+epoch 09  lam 0.000  train BA 0.953  val BA 0.850  domain nan
+epoch 10  lam 0.000  train BA 0.947  val BA 0.850  domain nan
+epoch 11  lam 0.000  train BA 0.960  val BA 0.850  domain nan
+epoch 12  lam 0.000  train BA 0.973  val BA 0.850  domain nan
+epoch 13  lam 0.000  train BA 0.967  val BA 0.850  domain nan
+early stop at epoch 13, best was 5 (val BA 0.850)
+val   speaker BA 0.850  AUC 0.756  n=19  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.787  AUC 0.875  n=18  ItalianPD 1.000  NeuroVoz 0.667
+
+=== mixed split=4 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  53006       138 ItalianPD,NeuroVoz 21698 31308
+  val   6957        18 ItalianPD,NeuroVoz  2469  4488
+ test   6514        19 ItalianPD,NeuroVoz  3315  3199
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_4_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.777  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 0.860  val BA 0.800  domain nan
+epoch 02  lam 0.000  train BA 0.873  val BA 0.800  domain nan
+epoch 03  lam 0.000  train BA 0.907  val BA 0.900  domain nan
+epoch 04  lam 0.000  train BA 0.913  val BA 0.800  domain nan
+epoch 05  lam 0.000  train BA 0.927  val BA 0.850  domain nan
+epoch 06  lam 0.000  train BA 0.933  val BA 0.850  domain nan
+epoch 07  lam 0.000  train BA 0.953  val BA 0.900  domain nan
+epoch 08  lam 0.000  train BA 0.947  val BA 0.850  domain nan
+epoch 09  lam 0.000  train BA 0.960  val BA 0.900  domain nan
+epoch 10  lam 0.000  train BA 0.973  val BA 0.850  domain nan
+epoch 11  lam 0.000  train BA 0.953  val BA 0.850  domain nan
+epoch 12  lam 0.000  train BA 0.967  val BA 0.850  domain nan
+epoch 13  lam 0.000  train BA 0.980  val BA 0.900  domain nan
+epoch 14  lam 0.000  train BA 0.960  val BA 0.850  domain nan
+epoch 15  lam 0.000  train BA 0.967  val BA 0.800  domain nan
+early stop at epoch 15, best was 7 (val BA 0.900)
+val   speaker BA 0.900  AUC 0.888  n=18  ItalianPD 1.000  NeuroVoz 0.833
+test  speaker BA 0.850  AUC 0.778  n=19  ItalianPD 1.000  NeuroVoz 0.750
+
+=== mixed split=5 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  53734       140 ItalianPD,NeuroVoz 23166 30568
+  val   5786        17 ItalianPD,NeuroVoz  1847  3939
+ test   6957        18 ItalianPD,NeuroVoz  2469  4488
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_5_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.784  val BA 0.679  domain nan
+epoch 01  lam 0.000  train BA 0.823  val BA 0.779  domain nan
+epoch 02  lam 0.000  train BA 0.851  val BA 0.729  domain nan
+epoch 03  lam 0.000  train BA 0.900  val BA 0.779  domain nan
+epoch 04  lam 0.000  train BA 0.913  val BA 0.779  domain nan
+epoch 05  lam 0.000  train BA 0.913  val BA 0.779  domain nan
+epoch 06  lam 0.000  train BA 0.920  val BA 0.779  domain nan
+epoch 07  lam 0.000  train BA 0.920  val BA 0.829  domain nan
+epoch 08  lam 0.000  train BA 0.947  val BA 0.779  domain nan
+epoch 09  lam 0.000  train BA 0.933  val BA 0.779  domain nan
+epoch 10  lam 0.000  train BA 0.947  val BA 0.850  domain nan
+epoch 11  lam 0.000  train BA 0.940  val BA 0.779  domain nan
+epoch 12  lam 0.000  train BA 0.953  val BA 0.829  domain nan
+epoch 13  lam 0.000  train BA 0.960  val BA 0.829  domain nan
+epoch 14  lam 0.000  train BA 0.960  val BA 0.779  domain nan
+epoch 15  lam 0.000  train BA 0.967  val BA 0.829  domain nan
+epoch 16  lam 0.000  train BA 0.973  val BA 0.829  domain nan
+epoch 17  lam 0.000  train BA 0.973  val BA 0.779  domain nan
+epoch 18  lam 0.000  train BA 0.987  val BA 0.779  domain nan
+early stop at epoch 18, best was 10 (val BA 0.850)
+val   speaker BA 0.850  AUC 0.929  n=17  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.850  AUC 0.900  n=18  ItalianPD 1.000  NeuroVoz 0.750
+
+=== mixed split=6 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  54214       142 ItalianPD,NeuroVoz 22900 31314
+  val   6477        16 ItalianPD,NeuroVoz  2735  3742
+ test   5786        17 ItalianPD,NeuroVoz  1847  3939
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_6_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.773  val BA 0.706  domain nan
+epoch 01  lam 0.000  train BA 0.825  val BA 0.635  domain nan
+epoch 02  lam 0.000  train BA 0.859  val BA 0.635  domain nan
+epoch 03  lam 0.000  train BA 0.874  val BA 0.635  domain nan
+epoch 04  lam 0.000  train BA 0.914  val BA 0.706  domain nan
+epoch 05  lam 0.000  train BA 0.914  val BA 0.635  domain nan
+epoch 06  lam 0.000  train BA 0.921  val BA 0.563  domain nan
+epoch 07  lam 0.000  train BA 0.928  val BA 0.690  domain nan
+epoch 08  lam 0.000  train BA 0.928  val BA 0.635  domain nan
+epoch 09  lam 0.000  train BA 0.934  val BA 0.635  domain nan
+epoch 10  lam 0.000  train BA 0.934  val BA 0.690  domain nan
+epoch 11  lam 0.000  train BA 0.934  val BA 0.635  domain nan
+epoch 12  lam 0.000  train BA 0.954  val BA 0.690  domain nan
+epoch 13  lam 0.000  train BA 0.961  val BA 0.635  domain nan
+epoch 14  lam 0.000  train BA 0.967  val BA 0.706  domain nan
+epoch 15  lam 0.000  train BA 0.980  val BA 0.690  domain nan
+epoch 16  lam 0.000  train BA 0.974  val BA 0.619  domain nan
+epoch 17  lam 0.000  train BA 0.987  val BA 0.690  domain nan
+epoch 18  lam 0.000  train BA 0.987  val BA 0.619  domain nan
+epoch 19  lam 0.000  train BA 0.987  val BA 0.619  domain nan
+epoch 20  lam 0.000  train BA 0.987  val BA 0.690  domain nan
+epoch 21  lam 0.000  train BA 0.993  val BA 0.690  domain nan
+epoch 22  lam 0.000  train BA 0.987  val BA 0.619  domain nan
+early stop at epoch 22, best was 14 (val BA 0.706)
+val   speaker BA 0.706  AUC 0.857  n=16  ItalianPD 1.000  NeuroVoz 0.542
+test  speaker BA 0.829  AUC 0.900  n=17  ItalianPD 1.000  NeuroVoz 0.733
+
+=== mixed split=7 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  53100       142 ItalianPD,NeuroVoz 22040 31060
+  val   6900        17 ItalianPD,NeuroVoz  2707  4193
+ test   6477        16 ItalianPD,NeuroVoz  2735  3742
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_7_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.776  val BA 0.771  domain nan
+epoch 01  lam 0.000  train BA 0.842  val BA 0.771  domain nan
+epoch 02  lam 0.000  train BA 0.870  val BA 0.771  domain nan
+epoch 03  lam 0.000  train BA 0.877  val BA 0.771  domain nan
+epoch 04  lam 0.000  train BA 0.896  val BA 0.882  domain nan
+epoch 05  lam 0.000  train BA 0.916  val BA 0.826  domain nan
+epoch 06  lam 0.000  train BA 0.909  val BA 0.826  domain nan
+epoch 07  lam 0.000  train BA 0.916  val BA 0.882  domain nan
+epoch 08  lam 0.000  train BA 0.922  val BA 0.826  domain nan
+epoch 09  lam 0.000  train BA 0.922  val BA 0.882  domain nan
+epoch 10  lam 0.000  train BA 0.922  val BA 0.826  domain nan
+epoch 11  lam 0.000  train BA 0.935  val BA 0.882  domain nan
+epoch 12  lam 0.000  train BA 0.929  val BA 0.882  domain nan
+epoch 13  lam 0.000  train BA 0.942  val BA 0.771  domain nan
+epoch 14  lam 0.000  train BA 0.948  val BA 0.826  domain nan
+epoch 15  lam 0.000  train BA 0.942  val BA 0.882  domain nan
+early stop at epoch 15, best was 7 (val BA 0.882)
+val   speaker BA 0.882  AUC 0.931  n=17  ItalianPD 1.000  NeuroVoz 0.817
+test  speaker BA 0.802  AUC 0.841  n=16  ItalianPD 1.000  NeuroVoz 0.667
+
+=== mixed split=8 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  53033       141 ItalianPD,NeuroVoz 21734 31299
+  val   6544        17 ItalianPD,NeuroVoz  3041  3503
+ test   6900        17 ItalianPD,NeuroVoz  2707  4193
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_8_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.770  val BA 0.833  domain nan
+epoch 01  lam 0.000  train BA 0.796  val BA 0.833  domain nan
+epoch 02  lam 0.000  train BA 0.857  val BA 0.833  domain nan
+epoch 03  lam 0.000  train BA 0.864  val BA 0.882  domain nan
+epoch 04  lam 0.000  train BA 0.883  val BA 0.826  domain nan
+epoch 05  lam 0.000  train BA 0.909  val BA 0.944  domain nan
+epoch 06  lam 0.000  train BA 0.909  val BA 0.882  domain nan
+epoch 07  lam 0.000  train BA 0.922  val BA 0.882  domain nan
+epoch 08  lam 0.000  train BA 0.929  val BA 0.944  domain nan
+epoch 09  lam 0.000  train BA 0.935  val BA 0.882  domain nan
+epoch 10  lam 0.000  train BA 0.948  val BA 0.944  domain nan
+epoch 11  lam 0.000  train BA 0.955  val BA 0.944  domain nan
+epoch 12  lam 0.000  train BA 0.955  val BA 0.882  domain nan
+epoch 13  lam 0.000  train BA 0.955  val BA 0.944  domain nan
+early stop at epoch 13, best was 5 (val BA 0.944)
+val   speaker BA 0.944  AUC 0.958  n=17  ItalianPD 1.000  NeuroVoz 0.917
+test  speaker BA 0.826  AUC 0.958  n=17  ItalianPD 1.000  NeuroVoz 0.733
+
+=== mixed split=9 handcrafted phoneme baseline ===
+ role  items  speakers            corpora    pd    hc
+train  53395       142 ItalianPD,NeuroVoz 21751 31644
+  val   6538        16 ItalianPD,NeuroVoz  2690  3848
+ test   6544        17 ItalianPD,NeuroVoz  3041  3503
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_9_handcrafted_phoneme_baseline_vowel_s0
+device cuda, 44418 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.764  val BA 0.833  domain nan
+epoch 01  lam 0.000  train BA 0.790  val BA 0.833  domain nan
+epoch 02  lam 0.000  train BA 0.851  val BA 0.833  domain nan
+epoch 03  lam 0.000  train BA 0.890  val BA 0.833  domain nan
+epoch 04  lam 0.000  train BA 0.903  val BA 0.889  domain nan
+epoch 05  lam 0.000  train BA 0.916  val BA 0.833  domain nan
+epoch 06  lam 0.000  train BA 0.916  val BA 0.833  domain nan
+epoch 07  lam 0.000  train BA 0.922  val BA 0.944  domain nan
+epoch 08  lam 0.000  train BA 0.922  val BA 0.889  domain nan
+epoch 09  lam 0.000  train BA 0.935  val BA 0.889  domain nan
+epoch 10  lam 0.000  train BA 0.935  val BA 0.889  domain nan
+epoch 11  lam 0.000  train BA 0.955  val BA 0.889  domain nan
+epoch 12  lam 0.000  train BA 0.955  val BA 0.889  domain nan
+epoch 13  lam 0.000  train BA 0.955  val BA 0.889  domain nan
+epoch 14  lam 0.000  train BA 0.955  val BA 0.889  domain nan
+epoch 15  lam 0.000  train BA 0.974  val BA 0.889  domain nan
+early stop at epoch 15, best was 7 (val BA 0.944)
+val   speaker BA 0.944  AUC 0.968  n=16  ItalianPD 1.000  NeuroVoz 0.900
+test  speaker BA 0.944  AUC 0.972  n=17  ItalianPD 1.000  NeuroVoz 0.917
+
+### 05:43:02  python -m src.training.run --family handcrafted --level phoneme --phone-class vowel --protocol mixed --all-configs --regime dann
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  52911       141 ItalianPD,NeuroVoz 21632 31279
+  val   7028        18 ItalianPD,NeuroVoz  3160  3868
+ test   6538        16 ItalianPD,NeuroVoz  2690  3848
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_0_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.771  val BA 0.722  domain 0.697265625
+epoch 01  lam 0.165  train BA 0.816  val BA 0.778  domain 0.6176615594660194
+epoch 02  lam 0.322  train BA 0.857  val BA 0.722  domain 0.564453125
+epoch 03  lam 0.462  train BA 0.883  val BA 0.722  domain 0.5827707827669902
+epoch 04  lam 0.583  train BA 0.862  val BA 0.722  domain 0.5521655036407767
+epoch 05  lam 0.682  train BA 0.895  val BA 0.778  domain 0.5460406553398058
+epoch 06  lam 0.762  train BA 0.916  val BA 0.722  domain 0.5592953580097088
+epoch 07  lam 0.823  train BA 0.909  val BA 0.778  domain 0.5538152305825242
+epoch 08  lam 0.870  train BA 0.916  val BA 0.778  domain 0.5649461468446602
+epoch 09  lam 0.905  train BA 0.916  val BA 0.778  domain 0.5457182949029126
+epoch 10  lam 0.931  train BA 0.916  val BA 0.778  domain 0.5422102548543689
+epoch 11  lam 0.950  train BA 0.922  val BA 0.778  domain 0.5395555218446602
+epoch 12  lam 0.964  train BA 0.922  val BA 0.722  domain 0.5624431128640777
+epoch 13  lam 0.974  train BA 0.922  val BA 0.778  domain 0.5562424150485437
+early stop at epoch 13, best was 5 (val BA 0.778)
+val   speaker BA 0.778  AUC 0.864  n=18  ItalianPD 1.000  NeuroVoz 0.617
+test  speaker BA 0.889  AUC 0.937  n=16  ItalianPD 1.000  NeuroVoz 0.800
+
+=== mixed split=1 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  52226       138 ItalianPD,NeuroVoz 21239 30987
+  val   7223        19 ItalianPD,NeuroVoz  3083  4140
+ test   7028        18 ItalianPD,NeuroVoz  3160  3868
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_1_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.793  val BA 0.794  domain 0.7108609068627451
+epoch 01  lam 0.165  train BA 0.841  val BA 0.844  domain 0.6248276654411765
+epoch 02  lam 0.322  train BA 0.880  val BA 0.844  domain 0.5719209558823529
+epoch 03  lam 0.462  train BA 0.887  val BA 0.844  domain 0.5673445159313726
+epoch 04  lam 0.583  train BA 0.887  val BA 0.844  domain 0.5377604166666666
+epoch 05  lam 0.682  train BA 0.914  val BA 0.844  domain 0.5671338848039216
+epoch 06  lam 0.762  train BA 0.913  val BA 0.844  domain 0.5524854473039216
+epoch 07  lam 0.823  train BA 0.914  val BA 0.844  domain 0.5506472120098039
+epoch 08  lam 0.870  train BA 0.928  val BA 0.844  domain 0.5472771139705882
+epoch 09  lam 0.905  train BA 0.921  val BA 0.844  domain 0.5396943933823529
+epoch 10  lam 0.931  train BA 0.934  val BA 0.844  domain 0.5409773284313726
+epoch 11  lam 0.950  train BA 0.928  val BA 0.844  domain 0.5484260110294118
+epoch 12  lam 0.964  train BA 0.928  val BA 0.844  domain 0.530484068627451
+epoch 13  lam 0.974  train BA 0.921  val BA 0.844  domain 0.5524854473039216
+early stop at epoch 13, best was 5 (val BA 0.844)
+val   speaker BA 0.844  AUC 0.878  n=19  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.722  AUC 0.852  n=18  ItalianPD 1.000  NeuroVoz 0.517
+
+=== mixed split=2 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  52744       138 ItalianPD,NeuroVoz 21964 30780
+  val   6510        18 ItalianPD,NeuroVoz  2435  4075
+ test   7223        19 ItalianPD,NeuroVoz  3083  4140
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_2_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.790  val BA 0.675  domain 0.691235588592233
+epoch 01  lam 0.165  train BA 0.851  val BA 0.625  domain 0.596973604368932
+epoch 02  lam 0.322  train BA 0.864  val BA 0.725  domain 0.5592953580097088
+epoch 03  lam 0.462  train BA 0.872  val BA 0.787  domain 0.5329376516990292
+epoch 04  lam 0.583  train BA 0.879  val BA 0.738  domain 0.5543651395631068
+epoch 05  lam 0.682  train BA 0.892  val BA 0.787  domain 0.548657463592233
+epoch 06  lam 0.762  train BA 0.899  val BA 0.725  domain 0.5643772754854369
+epoch 07  lam 0.823  train BA 0.913  val BA 0.725  domain 0.5444478155339806
+epoch 08  lam 0.870  train BA 0.912  val BA 0.725  domain 0.5569440230582524
+epoch 09  lam 0.905  train BA 0.920  val BA 0.787  domain 0.5448649878640777
+epoch 10  lam 0.931  train BA 0.927  val BA 0.787  domain 0.5632964199029126
+epoch 11  lam 0.950  train BA 0.927  val BA 0.738  domain 0.5402192050970874
+epoch 12  lam 0.964  train BA 0.927  val BA 0.787  domain 0.5391004247572816
+epoch 13  lam 0.974  train BA 0.920  val BA 0.787  domain 0.5440685679611651
+early stop at epoch 13, best was 5 (val BA 0.787)
+val   speaker BA 0.787  AUC 0.887  n=18  ItalianPD 1.000  NeuroVoz 0.667
+test  speaker BA 0.844  AUC 0.922  n=19  ItalianPD 1.000  NeuroVoz 0.750
+
+=== mixed split=3 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  53453       138 ItalianPD,NeuroVoz 21732 31721
+  val   6514        19 ItalianPD,NeuroVoz  3315  3199
+ test   6510        18 ItalianPD,NeuroVoz  2435  4075
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_3_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.799  val BA 0.800  domain 0.7059044471153846
+epoch 01  lam 0.165  train BA 0.852  val BA 0.850  domain 0.6112342247596154
+epoch 02  lam 0.322  train BA 0.872  val BA 0.850  domain 0.5829702524038461
+epoch 03  lam 0.462  train BA 0.885  val BA 0.850  domain 0.5450721153846154
+epoch 04  lam 0.583  train BA 0.879  val BA 0.794  domain 0.5725661057692307
+epoch 05  lam 0.682  train BA 0.913  val BA 0.800  domain 0.5379169170673077
+epoch 06  lam 0.762  train BA 0.900  val BA 0.800  domain 0.5369027944711539
+epoch 07  lam 0.823  train BA 0.920  val BA 0.850  domain 0.5516826923076923
+epoch 08  lam 0.870  train BA 0.893  val BA 0.850  domain 0.5447904146634616
+epoch 09  lam 0.905  train BA 0.920  val BA 0.800  domain 0.5495229867788461
+epoch 10  lam 0.931  train BA 0.920  val BA 0.850  domain 0.5459547776442307
+epoch 11  lam 0.950  train BA 0.933  val BA 0.850  domain 0.5474196213942307
+epoch 12  lam 0.964  train BA 0.927  val BA 0.794  domain 0.5559457632211539
+epoch 13  lam 0.974  train BA 0.920  val BA 0.850  domain 0.5347618689903846
+epoch 14  lam 0.981  train BA 0.933  val BA 0.850  domain 0.5558706430288461
+epoch 15  lam 0.987  train BA 0.940  val BA 0.794  domain 0.5262920673076923
+early stop at epoch 15, best was 7 (val BA 0.850)
+val   speaker BA 0.850  AUC 0.789  n=19  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.725  AUC 0.863  n=18  ItalianPD 1.000  NeuroVoz 0.583
+
+=== mixed split=4 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  53006       138 ItalianPD,NeuroVoz 21698 31308
+  val   6957        18 ItalianPD,NeuroVoz  2469  4488
+ test   6514        19 ItalianPD,NeuroVoz  3315  3199
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_4_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.771  val BA 0.750  domain 0.6885567632850241
+epoch 01  lam 0.165  train BA 0.833  val BA 0.800  domain 0.6327936292270532
+epoch 02  lam 0.322  train BA 0.860  val BA 0.800  domain 0.5887492451690821
+epoch 03  lam 0.462  train BA 0.873  val BA 0.800  domain 0.5616508152173914
+epoch 04  lam 0.583  train BA 0.887  val BA 0.900  domain 0.5538571859903382
+epoch 05  lam 0.682  train BA 0.920  val BA 0.800  domain 0.5610469504830918
+epoch 06  lam 0.762  train BA 0.907  val BA 0.850  domain 0.5530646135265701
+epoch 07  lam 0.823  train BA 0.920  val BA 0.850  domain 0.5431763285024155
+epoch 08  lam 0.870  train BA 0.920  val BA 0.850  domain 0.545535175120773
+epoch 09  lam 0.905  train BA 0.913  val BA 0.850  domain 0.5634624094202898
+epoch 10  lam 0.931  train BA 0.927  val BA 0.750  domain 0.5470637077294686
+epoch 11  lam 0.950  train BA 0.933  val BA 0.800  domain 0.5473467693236715
+epoch 12  lam 0.964  train BA 0.920  val BA 0.800  domain 0.5428743961352657
+epoch 13  lam 0.974  train BA 0.927  val BA 0.850  domain 0.543383907004831
+epoch 14  lam 0.981  train BA 0.940  val BA 0.800  domain 0.5421006944444444
+early stop at epoch 14, best was 6 (val BA 0.850)
+val   speaker BA 0.850  AUC 0.925  n=18  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.850  AUC 0.811  n=19  ItalianPD 1.000  NeuroVoz 0.750
+
+=== mixed split=5 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  53734       140 ItalianPD,NeuroVoz 23166 30568
+  val   5786        17 ItalianPD,NeuroVoz  1847  3939
+ test   6957        18 ItalianPD,NeuroVoz  2469  4488
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_5_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.797  val BA 0.679  domain 0.7077788576555024
+epoch 01  lam 0.165  train BA 0.803  val BA 0.679  domain 0.6521007775119617
+epoch 02  lam 0.322  train BA 0.837  val BA 0.729  domain 0.6013195275119617
+epoch 03  lam 0.462  train BA 0.836  val BA 0.779  domain 0.5584816088516746
+epoch 04  lam 0.583  train BA 0.872  val BA 0.779  domain 0.5614533492822966
+epoch 05  lam 0.682  train BA 0.877  val BA 0.729  domain 0.5608178827751196
+epoch 06  lam 0.762  train BA 0.900  val BA 0.729  domain 0.5634531997607656
+epoch 07  lam 0.823  train BA 0.907  val BA 0.729  domain 0.5487066387559809
+epoch 08  lam 0.870  train BA 0.913  val BA 0.729  domain 0.5521456339712919
+epoch 09  lam 0.905  train BA 0.906  val BA 0.729  domain 0.5409875897129187
+epoch 10  lam 0.931  train BA 0.920  val BA 0.850  domain 0.5453797846889952
+epoch 11  lam 0.950  train BA 0.920  val BA 0.800  domain 0.5363150418660287
+epoch 12  lam 0.964  train BA 0.920  val BA 0.679  domain 0.5506504186602871
+epoch 13  lam 0.974  train BA 0.913  val BA 0.779  domain 0.5220918062200957
+epoch 14  lam 0.981  train BA 0.927  val BA 0.779  domain 0.5716021232057417
+epoch 15  lam 0.987  train BA 0.920  val BA 0.800  domain 0.5380906100478469
+epoch 16  lam 0.990  train BA 0.920  val BA 0.779  domain 0.5432304126794258
+epoch 17  lam 0.993  train BA 0.913  val BA 0.800  domain 0.5621822667464115
+epoch 18  lam 0.995  train BA 0.920  val BA 0.800  domain 0.5352310107655502
+early stop at epoch 18, best was 10 (val BA 0.850)
+val   speaker BA 0.850  AUC 0.914  n=17  ItalianPD 1.000  NeuroVoz 0.750
+test  speaker BA 0.850  AUC 0.925  n=18  ItalianPD 1.000  NeuroVoz 0.750
+
+=== mixed split=6 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  54214       142 ItalianPD,NeuroVoz 22900 31314
+  val   6477        16 ItalianPD,NeuroVoz  2735  3742
+ test   5786        17 ItalianPD,NeuroVoz  1847  3939
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_6_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.793  val BA 0.706  domain 0.6958123518957346
+epoch 01  lam 0.165  train BA 0.818  val BA 0.690  domain 0.6190017772511849
+epoch 02  lam 0.322  train BA 0.858  val BA 0.706  domain 0.5659434241706162
+epoch 03  lam 0.462  train BA 0.871  val BA 0.635  domain 0.5553539691943128
+epoch 04  lam 0.583  train BA 0.884  val BA 0.778  domain 0.5590380627962085
+epoch 05  lam 0.682  train BA 0.899  val BA 0.778  domain 0.548337529620853
+epoch 06  lam 0.762  train BA 0.907  val BA 0.635  domain 0.5550207345971564
+epoch 07  lam 0.823  train BA 0.906  val BA 0.563  domain 0.5407656990521327
+epoch 08  lam 0.870  train BA 0.899  val BA 0.706  domain 0.5397474822274881
+epoch 09  lam 0.905  train BA 0.907  val BA 0.690  domain 0.5607412618483413
+epoch 10  lam 0.931  train BA 0.913  val BA 0.706  domain 0.5423763329383886
+epoch 11  lam 0.950  train BA 0.907  val BA 0.635  domain 0.5480598341232228
+epoch 12  lam 0.964  train BA 0.921  val BA 0.706  domain 0.55416913507109
+epoch 13  lam 0.974  train BA 0.921  val BA 0.778  domain 0.5381368483412322
+early stop at epoch 13, best was 5 (val BA 0.778)
+val   speaker BA 0.778  AUC 0.794  n=16  ItalianPD 1.000  NeuroVoz 0.667
+test  speaker BA 0.729  AUC 0.871  n=17  ItalianPD 1.000  NeuroVoz 0.567
+
+=== mixed split=7 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  53100       142 ItalianPD,NeuroVoz 22040 31060
+  val   6900        17 ItalianPD,NeuroVoz  2707  4193
+ test   6477        16 ItalianPD,NeuroVoz  2735  3742
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_7_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.782  val BA 0.771  domain 0.6741206219806763
+epoch 01  lam 0.165  train BA 0.829  val BA 0.771  domain 0.5963541666666666
+epoch 02  lam 0.322  train BA 0.864  val BA 0.771  domain 0.577313556763285
+epoch 03  lam 0.462  train BA 0.847  val BA 0.715  domain 0.5508756038647343
+epoch 04  lam 0.583  train BA 0.896  val BA 0.771  domain 0.5384020229468599
+epoch 05  lam 0.682  train BA 0.896  val BA 0.771  domain 0.5584427838164251
+epoch 06  lam 0.762  train BA 0.890  val BA 0.826  domain 0.5339107789855072
+epoch 07  lam 0.823  train BA 0.896  val BA 0.826  domain 0.5620282306763285
+epoch 08  lam 0.870  train BA 0.909  val BA 0.771  domain 0.5338352958937198
+epoch 09  lam 0.905  train BA 0.916  val BA 0.826  domain 0.5453842089371981
+epoch 10  lam 0.931  train BA 0.916  val BA 0.882  domain 0.5337409420289855
+epoch 11  lam 0.950  train BA 0.922  val BA 0.826  domain 0.5437424516908212
+epoch 12  lam 0.964  train BA 0.922  val BA 0.715  domain 0.5383831521739131
+epoch 13  lam 0.974  train BA 0.909  val BA 0.715  domain 0.5328917572463768
+epoch 14  lam 0.981  train BA 0.916  val BA 0.771  domain 0.5544044384057971
+epoch 15  lam 0.987  train BA 0.929  val BA 0.882  domain 0.5352506038647343
+epoch 16  lam 0.990  train BA 0.929  val BA 0.771  domain 0.5312122584541062
+epoch 17  lam 0.993  train BA 0.929  val BA 0.826  domain 0.5418553743961353
+epoch 18  lam 0.995  train BA 0.942  val BA 0.826  domain 0.533816425120773
+early stop at epoch 18, best was 10 (val BA 0.882)
+val   speaker BA 0.882  AUC 0.917  n=17  ItalianPD 1.000  NeuroVoz 0.817
+test  speaker BA 0.690  AUC 0.857  n=16  ItalianPD 1.000  NeuroVoz 0.500
+
+=== mixed split=8 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  53033       141 ItalianPD,NeuroVoz 21734 31299
+  val   6544        17 ItalianPD,NeuroVoz  3041  3503
+ test   6900        17 ItalianPD,NeuroVoz  2707  4193
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_8_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.770  val BA 0.833  domain 0.6911043176328503
+epoch 01  lam 0.165  train BA 0.790  val BA 0.833  domain 0.626339824879227
+epoch 02  lam 0.322  train BA 0.836  val BA 0.771  domain 0.5719919987922706
+epoch 03  lam 0.462  train BA 0.862  val BA 0.833  domain 0.5644436896135265
+epoch 04  lam 0.583  train BA 0.862  val BA 0.826  domain 0.5581031099033816
+epoch 05  lam 0.682  train BA 0.882  val BA 0.833  domain 0.5460258152173914
+epoch 06  lam 0.762  train BA 0.856  val BA 0.826  domain 0.5452143719806763
+epoch 07  lam 0.823  train BA 0.888  val BA 0.889  domain 0.5475732185990339
+epoch 08  lam 0.870  train BA 0.908  val BA 0.944  domain 0.5445538949275363
+epoch 09  lam 0.905  train BA 0.909  val BA 0.826  domain 0.542157306763285
+epoch 10  lam 0.931  train BA 0.922  val BA 0.944  domain 0.5380623490338164
+epoch 11  lam 0.950  train BA 0.922  val BA 0.889  domain 0.5441953502415459
+epoch 12  lam 0.964  train BA 0.922  val BA 0.833  domain 0.531382095410628
+epoch 13  lam 0.974  train BA 0.929  val BA 0.778  domain 0.5356846316425121
+epoch 14  lam 0.981  train BA 0.929  val BA 0.882  domain 0.5461579106280193
+epoch 15  lam 0.987  train BA 0.929  val BA 0.944  domain 0.5244187801932367
+epoch 16  lam 0.990  train BA 0.929  val BA 0.778  domain 0.5540458937198067
+early stop at epoch 16, best was 8 (val BA 0.944)
+val   speaker BA 0.944  AUC 0.972  n=17  ItalianPD 1.000  NeuroVoz 0.917
+test  speaker BA 0.771  AUC 0.944  n=17  ItalianPD 1.000  NeuroVoz 0.650
+
+=== mixed split=9 handcrafted phoneme dann ===
+ role  items  speakers            corpora    pd    hc
+train  53395       142 ItalianPD,NeuroVoz 21751 31644
+  val   6538        16 ItalianPD,NeuroVoz  2690  3848
+ test   6544        17 ItalianPD,NeuroVoz  3041  3503
+domains in train: ['ItalianPD', 'NeuroVoz']
+writing experiments\mixed_9_handcrafted_phoneme_dann_vowel_s0
+device cuda, 44676 parameters, 2 training domains ['ItalianPD', 'NeuroVoz'], regime dann
+epoch 00  lam 0.000  train BA 0.744  val BA 0.833  domain 0.6873497596153846
+epoch 01  lam 0.165  train BA 0.796  val BA 0.833  domain 0.6335261418269231
+epoch 02  lam 0.322  train BA 0.831  val BA 0.833  domain 0.5691293569711539
+epoch 03  lam 0.462  train BA 0.869  val BA 0.833  domain 0.5538799579326923
+epoch 04  lam 0.583  train BA 0.870  val BA 0.833  domain 0.5534480168269231
+epoch 05  lam 0.682  train BA 0.883  val BA 0.833  domain 0.5576547475961539
+epoch 06  lam 0.762  train BA 0.896  val BA 0.833  domain 0.5473820612980769
+epoch 07  lam 0.823  train BA 0.903  val BA 0.833  domain 0.5587627704326923
+epoch 08  lam 0.870  train BA 0.909  val BA 0.833  domain 0.5388746995192307
+epoch 09  lam 0.905  train BA 0.896  val BA 0.833  domain 0.5523775540865384
+epoch 10  lam 0.931  train BA 0.903  val BA 0.833  domain 0.5524151141826923
+epoch 11  lam 0.950  train BA 0.903  val BA 0.833  domain 0.5359450120192307
+epoch 12  lam 0.964  train BA 0.922  val BA 0.889  domain 0.5455416165865384
+epoch 13  lam 0.974  train BA 0.916  val BA 0.762  domain 0.5402268629807693
+epoch 14  lam 0.981  train BA 0.922  val BA 0.833  domain 0.5517765925480769
+epoch 15  lam 0.987  train BA 0.929  val BA 0.817  domain 0.5286207932692307
+epoch 16  lam 0.990  train BA 0.935  val BA 0.889  domain 0.5439828725961539
+epoch 17  lam 0.993  train BA 0.929  val BA 0.833  domain 0.5417104867788461
+epoch 18  lam 0.995  train BA 0.929  val BA 0.889  domain 0.5423114483173077
+epoch 19  lam 0.996  train BA 0.942  val BA 0.833  domain 0.5370530348557693
+epoch 20  lam 0.997  train BA 0.929  val BA 0.833  domain 0.532470703125
+early stop at epoch 20, best was 12 (val BA 0.889)
+val   speaker BA 0.889  AUC 0.968  n=16  ItalianPD 1.000  NeuroVoz 0.800
+test  speaker BA 0.882  AUC 0.931  n=17  ItalianPD 1.000  NeuroVoz 0.817
+
+### 05:48:11  python -m src.training.run --family handcrafted --level duration --protocol mixed --all-configs --regime single --dataset ItalianPD
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train 100707        51 ItalianPD 50088 50619
+  val  14340         7 ItalianPD  7545  6795
+ test  11684         7 ItalianPD  6446  5238
+domains in train: ['ItalianPD']
+writing experiments\mixed_0_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+
+=== mixed split=1 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train  96345        51 ItalianPD 48127 48218
+  val  16046         7 ItalianPD  8407  7639
+ test  14340         7 ItalianPD  7545  6795
+domains in train: ['ItalianPD']
+writing experiments\mixed_1_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+
+=== mixed split=2 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train  96407        51 ItalianPD 48900 47507
+  val  14278         7 ItalianPD  6772  7506
+ test  16046         7 ItalianPD  8407  7639
+domains in train: ['ItalianPD']
+writing experiments\mixed_2_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+
+=== mixed split=3 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train 100650        51 ItalianPD 50871 49779
+  val  11803         7 ItalianPD  6436  5367
+ test  14278         7 ItalianPD  6772  7506
+domains in train: ['ItalianPD']
+writing experiments\mixed_3_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+early stop at epoch 13, best was 5 (val BA 0.833)
+val   speaker BA 0.833  AUC 1.000  n=7  ItalianPD 0.833
+test  speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+
+=== mixed split=4 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train 103059        52 ItalianPD 53193 49866
+  val  11869         6 ItalianPD  4450  7419
+ test  11803         7 ItalianPD  6436  5367
+domains in train: ['ItalianPD']
+writing experiments\mixed_4_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+test  speaker BA 0.833  AUC 1.000  n=7  ItalianPD 0.833
+
+=== mixed split=5 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train 106447        53 ItalianPD 56098 50349
+  val   8415         6 ItalianPD  3531  4884
+ test  11869         6 ItalianPD  4450  7419
+domains in train: ['ItalianPD']
+writing experiments\mixed_5_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+
+=== mixed split=6 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train 104372        53 ItalianPD 52824 51548
+  val  13944         6 ItalianPD  7724  6220
+ test   8415         6 ItalianPD  3531  4884
+domains in train: ['ItalianPD']
+writing experiments\mixed_6_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+
+=== mixed split=7 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train  99558        53 ItalianPD 49727 49831
+  val  13229         6 ItalianPD  6628  6601
+ test  13944         6 ItalianPD  7724  6220
+domains in train: ['ItalianPD']
+writing experiments\mixed_7_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+
+=== mixed split=8 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train 102379        53 ItalianPD 51311 51068
+  val  11123         6 ItalianPD  6140  4983
+ test  13229         6 ItalianPD  6628  6601
+domains in train: ['ItalianPD']
+writing experiments\mixed_8_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+
+=== mixed split=9 handcrafted duration single ===
+ role  items  speakers   corpora    pd    hc
+train 103924        52 ItalianPD 51493 52431
+  val  11684         7 ItalianPD  6446  5238
+ test  11123         6 ItalianPD  6140  4983
+domains in train: ['ItalianPD']
+writing experiments\mixed_9_handcrafted_duration_single_ItalianPD_s0
+device cuda, 44418 parameters, 1 training domains ['ItalianPD'], regime baseline
+epoch 00  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=7  ItalianPD 1.000
+test  speaker BA 1.000  AUC 1.000  n=6  ItalianPD 1.000
+
+### 05:54:26  python -m src.training.run --family handcrafted --level duration --protocol mixed --all-configs --regime single --dataset MDVR-KCL
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  39416        29 MDVR-KCL 14998 24418
+  val   5219         4 MDVR-KCL  3165  2054
+ test   4340         4 MDVR-KCL  1385  2955
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_0_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.958  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+early stop at epoch 13, best was 5 (val BA 0.750)
+val   speaker BA 0.750  AUC 0.750  n=4  MDVR-KCL 0.750
+test  speaker BA 0.750  AUC 1.000  n=4  MDVR-KCL 0.750
+
+=== mixed split=1 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  40536        30 MDVR-KCL 15840 24696
+  val   3220         3 MDVR-KCL   543  2677
+ test   5219         4 MDVR-KCL  3165  2054
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_1_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.962  val BA 0.500  domain nan
+epoch 01  lam 0.000  train BA 0.962  val BA 0.250  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+early stop at epoch 13, best was 5 (val BA 0.500)
+val   speaker BA 0.500  AUC 0.500  n=3  MDVR-KCL 0.500
+test  speaker BA 0.750  AUC 0.750  n=4  MDVR-KCL 0.750
+
+=== mixed split=2 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  41609        31 MDVR-KCL 17540 24069
+  val   4146         3 MDVR-KCL  1465  2681
+ test   3220         3 MDVR-KCL   543  2677
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_2_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.964  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=3  MDVR-KCL 1.000
+test  speaker BA 0.500  AUC 0.500  n=3  MDVR-KCL 0.500
+
+=== mixed split=3 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  40434        31 MDVR-KCL 16376 24058
+  val   4395         3 MDVR-KCL  1707  2688
+ test   4146         3 MDVR-KCL  1465  2681
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_3_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.870  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=3  MDVR-KCL 1.000
+test  speaker BA 1.000  AUC 1.000  n=3  MDVR-KCL 1.000
+
+=== mixed split=4 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  39218        30 MDVR-KCL 16644 22574
+  val   5362         4 MDVR-KCL  1197  4165
+ test   4395         3 MDVR-KCL  1707  2688
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_4_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.933  val BA 0.833  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+early stop at epoch 13, best was 5 (val BA 0.833)
+val   speaker BA 0.833  AUC 1.000  n=4  MDVR-KCL 0.833
+test  speaker BA 0.750  AUC 1.000  n=3  MDVR-KCL 0.750
+
+=== mixed split=5 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  38821        29 MDVR-KCL 16272 22549
+  val   4792         4 MDVR-KCL  2079  2713
+ test   5362         4 MDVR-KCL  1197  4165
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_5_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.930  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+early stop at epoch 13, best was 5 (val BA 0.750)
+val   speaker BA 0.750  AUC 0.750  n=4  MDVR-KCL 0.750
+test  speaker BA 0.833  AUC 1.000  n=4  MDVR-KCL 0.833
+
+=== mixed split=6 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  39125        29 MDVR-KCL 15048 24077
+  val   5058         4 MDVR-KCL  2421  2637
+ test   4792         4 MDVR-KCL  2079  2713
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_6_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.941  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=4  MDVR-KCL 1.000
+test  speaker BA 0.500  AUC 0.750  n=4  MDVR-KCL 0.500
+
+=== mixed split=7 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  37573        29 MDVR-KCL 13930 23643
+  val   6344         4 MDVR-KCL  3197  3147
+ test   5058         4 MDVR-KCL  2421  2637
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_7_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.941  val BA 1.000  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 13, best was 5 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=4  MDVR-KCL 1.000
+test  speaker BA 0.750  AUC 0.750  n=4  MDVR-KCL 0.750
+
+=== mixed split=8 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  36532        29 MDVR-KCL 13962 22570
+  val   6099         4 MDVR-KCL  2389  3710
+ test   6344         4 MDVR-KCL  3197  3147
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_8_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.941  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+early stop at epoch 13, best was 5 (val BA 0.750)
+val   speaker BA 0.750  AUC 0.500  n=4  MDVR-KCL 0.750
+test  speaker BA 1.000  AUC 1.000  n=4  MDVR-KCL 1.000
+
+=== mixed split=9 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  38536        29 MDVR-KCL 15774 22762
+  val   4340         4 MDVR-KCL  1385  2955
+ test   6099         4 MDVR-KCL  2389  3710
+domains in train: ['MDVR-KCL']
+writing experiments\mixed_9_handcrafted_duration_single_MDVR-KCL_s0
+device cuda, 44418 parameters, 1 training domains ['MDVR-KCL'], regime baseline
+epoch 00  lam 0.000  train BA 0.958  val BA 0.750  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+early stop at epoch 13, best was 5 (val BA 0.750)
+val   speaker BA 0.750  AUC 1.000  n=4  MDVR-KCL 0.750
+test  speaker BA 0.750  AUC 0.500  n=4  MDVR-KCL 0.750
+
+### 05:57:52  python -m src.training.run --family handcrafted --level duration --protocol mixed --all-configs --regime single --dataset NeuroVoz
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  80449        92 NeuroVoz 33690 46759
+  val   9540        11 NeuroVoz  4784  4756
+ test   8764        11 NeuroVoz  3124  5640
+domains in train: ['NeuroVoz']
+writing experiments\mixed_0_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.885  val BA 0.533  domain nan
+epoch 01  lam 0.000  train BA 0.969  val BA 0.633  domain nan
+epoch 02  lam 0.000  train BA 0.979  val BA 0.617  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+early stop at epoch 13, best was 5 (val BA 0.750)
+val   speaker BA 0.750  AUC 0.800  n=11  NeuroVoz 0.750
+test  speaker BA 0.733  AUC 0.867  n=11  NeuroVoz 0.733
+
+=== mixed split=1 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  78238        91 NeuroVoz 31982 46256
+  val  10975        12 NeuroVoz  4832  6143
+ test   9540        11 NeuroVoz  4784  4756
+domains in train: ['NeuroVoz']
+writing experiments\mixed_1_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.850  val BA 0.833  domain nan
+epoch 01  lam 0.000  train BA 0.968  val BA 0.833  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+early stop at epoch 13, best was 5 (val BA 0.667)
+val   speaker BA 0.667  AUC 0.833  n=12  NeuroVoz 0.667
+test  speaker BA 0.833  AUC 0.967  n=11  NeuroVoz 0.833
+
+=== mixed split=2 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  78760        90 NeuroVoz 32762 45998
+  val   9018        12 NeuroVoz  4004  5014
+ test  10975        12 NeuroVoz  4832  6143
+domains in train: ['NeuroVoz']
+writing experiments\mixed_2_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.869  val BA 0.833  domain nan
+epoch 01  lam 0.000  train BA 0.989  val BA 0.833  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+epoch 20  lam 0.000  train BA 1.000  val BA 0.917  domain nan
+early stop at epoch 20, best was 12 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=12  NeuroVoz 1.000
+test  speaker BA 0.583  AUC 0.806  n=12  NeuroVoz 0.583
+
+=== mixed split=3 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  79363        90 NeuroVoz 32671 46692
+  val  10372        12 NeuroVoz  4923  5449
+ test   9018        12 NeuroVoz  4004  5014
+domains in train: ['NeuroVoz']
+writing experiments\mixed_3_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.923  val BA 0.583  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.333  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.417  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.417  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.500  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+early stop at epoch 19, best was 11 (val BA 0.667)
+val   speaker BA 0.667  AUC 0.556  n=12  NeuroVoz 0.667
+test  speaker BA 0.833  AUC 0.972  n=12  NeuroVoz 0.833
+
+=== mixed split=4 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  77287        90 NeuroVoz 32260 45027
+  val  11094        12 NeuroVoz  4415  6679
+ test  10372        12 NeuroVoz  4923  5449
+domains in train: ['NeuroVoz']
+writing experiments\mixed_4_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.946  val BA 0.833  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.750  domain nan
+early stop at epoch 13, best was 5 (val BA 0.750)
+val   speaker BA 0.750  AUC 0.917  n=12  NeuroVoz 0.750
+test  speaker BA 0.583  AUC 0.639  n=12  NeuroVoz 0.583
+
+=== mixed split=5 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  78118        91 NeuroVoz 33045 45073
+  val   9541        11 NeuroVoz  4138  5403
+ test  11094        12 NeuroVoz  4415  6679
+domains in train: ['NeuroVoz']
+writing experiments\mixed_5_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.880  val BA 0.733  domain nan
+epoch 01  lam 0.000  train BA 0.978  val BA 0.817  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.650  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 20  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+early stop at epoch 20, best was 12 (val BA 0.817)
+val   speaker BA 0.817  AUC 0.800  n=11  NeuroVoz 0.817
+test  speaker BA 0.750  AUC 0.917  n=12  NeuroVoz 0.750
+
+=== mixed split=6 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  80664        92 NeuroVoz 34554 46110
+  val   8548        11 NeuroVoz  2906  5642
+ test   9541        11 NeuroVoz  4138  5403
+domains in train: ['NeuroVoz']
+writing experiments\mixed_6_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.848  val BA 0.617  domain nan
+epoch 01  lam 0.000  train BA 0.967  val BA 0.633  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.633  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.550  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+early stop at epoch 19, best was 11 (val BA 0.800)
+val   speaker BA 0.800  AUC 0.800  n=11  NeuroVoz 0.800
+test  speaker BA 0.717  AUC 0.767  n=11  NeuroVoz 0.717
+
+=== mixed split=7 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  79571        92 NeuroVoz 34574 44997
+  val  10634        11 NeuroVoz  4118  6516
+ test   8548        11 NeuroVoz  2906  5642
+domains in train: ['NeuroVoz']
+writing experiments\mixed_7_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.880  val BA 0.817  domain nan
+epoch 01  lam 0.000  train BA 0.957  val BA 0.817  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+early stop at epoch 16, best was 8 (val BA 0.900)
+val   speaker BA 0.900  AUC 0.900  n=11  NeuroVoz 0.900
+test  speaker BA 0.800  AUC 0.733  n=11  NeuroVoz 0.800
+
+=== mixed split=8 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  77852        92 NeuroVoz 33126 44726
+  val  10267        11 NeuroVoz  4354  5913
+ test  10634        11 NeuroVoz  4118  6516
+domains in train: ['NeuroVoz']
+writing experiments\mixed_8_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.880  val BA 0.917  domain nan
+epoch 01  lam 0.000  train BA 0.978  val BA 0.900  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.800  domain nan
+early stop at epoch 13, best was 5 (val BA 0.900)
+val   speaker BA 0.900  AUC 1.000  n=11  NeuroVoz 0.900
+test  speaker BA 0.817  AUC 0.933  n=11  NeuroVoz 0.817
+
+=== mixed split=9 handcrafted duration single ===
+ role  items  speakers  corpora    pd    hc
+train  79722        92 NeuroVoz 34120 45602
+  val   8764        11 NeuroVoz  3124  5640
+ test  10267        11 NeuroVoz  4354  5913
+domains in train: ['NeuroVoz']
+writing experiments\mixed_9_handcrafted_duration_single_NeuroVoz_s0
+device cuda, 44418 parameters, 1 training domains ['NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.871  val BA 0.917  domain nan
+epoch 01  lam 0.000  train BA 0.968  val BA 0.817  domain nan
+epoch 02  lam 0.000  train BA 0.989  val BA 0.817  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.833  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.733  domain nan
+early stop at epoch 16, best was 8 (val BA 0.833)
+val   speaker BA 0.833  AUC 0.800  n=11  NeuroVoz 0.833
+test  speaker BA 0.800  AUC 1.000  n=11  NeuroVoz 0.800
+
+===== PHASE 2: mel duration =====
+
+### 06:03:56  python -m src.training.run --family mel --level duration --protocol mixed --all-configs --regime baseline
+10 configurations: [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9)]
+
+=== mixed split=0 mel duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 220572       172 ItalianPD,MDVR-KCL,NeuroVoz 98776 121796
+  val  29099        22 ItalianPD,MDVR-KCL,NeuroVoz 15494  13605
+ test  24788        22 ItalianPD,MDVR-KCL,NeuroVoz 10955  13833
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_0_mel_duration_baseline_s0
+device cuda, 224131 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.983  val BA 0.818  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.909  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.909  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.818  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.864  domain nan
+early stop at epoch 18, best was 10 (val BA 0.909)
+val   speaker BA 0.909  AUC 0.926  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.900
+test  speaker BA 0.864  AUC 0.893  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+
+=== mixed split=1 mel duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 215119       172 ItalianPD,MDVR-KCL,NeuroVoz 95949 119170
+  val  30241        22 ItalianPD,MDVR-KCL,NeuroVoz 13782  16459
+ test  29099        22 ItalianPD,MDVR-KCL,NeuroVoz 15494  13605
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_1_mel_duration_baseline_s0
+device cuda, 224131 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.982  val BA 0.817  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.858  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.758  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.758  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.758  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.858  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.758  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.858  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.858  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.858  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.758  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.758  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.808  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.858  domain nan
+early stop at epoch 14, best was 6 (val BA 0.858)
+val   speaker BA 0.858  AUC 0.942  n=22  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.833
+test  speaker BA 0.864  AUC 0.901  n=22  ItalianPD 1.000  MDVR-KCL 0.750  NeuroVoz 0.817
+
+=== mixed split=2 mel duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 216776       172 ItalianPD,MDVR-KCL,NeuroVoz 99202 117574
+  val  27442        22 ItalianPD,MDVR-KCL,NeuroVoz 12241  15201
+ test  30241        22 ItalianPD,MDVR-KCL,NeuroVoz 13782  16459
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_2_mel_duration_baseline_s0
+device cuda, 224131 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.982  val BA 0.950  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.958  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.900  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 1.000  domain nan
+early stop at epoch 14, best was 6 (val BA 1.000)
+val   speaker BA 1.000  AUC 1.000  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 1.000
+test  speaker BA 0.808  AUC 0.942  n=22  ItalianPD 1.000  MDVR-KCL 0.500  NeuroVoz 0.750
+
+=== mixed split=3 mel duration baseline ===
+ role  items  speakers                     corpora    pd     hc
+train 220447       172 ItalianPD,MDVR-KCL,NeuroVoz 99918 120529
+  val  26570        22 ItalianPD,MDVR-KCL,NeuroVoz 13066  13504
+ test  27442        22 ItalianPD,MDVR-KCL,NeuroVoz 12241  15201
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_3_mel_duration_baseline_s0
+device cuda, 224131 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.982  val BA 0.625  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.675  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.683  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.583  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.675  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.725  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 08  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 09  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 10  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 11  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 12  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 13  lam 0.000  train BA 1.000  val BA 0.817  domain nan
+epoch 14  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 15  lam 0.000  train BA 1.000  val BA 0.675  domain nan
+epoch 16  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 17  lam 0.000  train BA 1.000  val BA 0.708  domain nan
+epoch 18  lam 0.000  train BA 1.000  val BA 0.667  domain nan
+epoch 19  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 20  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+epoch 21  lam 0.000  train BA 1.000  val BA 0.717  domain nan
+early stop at epoch 21, best was 13 (val BA 0.817)
+val   speaker BA 0.817  AUC 0.867  n=22  ItalianPD 0.833  MDVR-KCL 0.750  NeuroVoz 0.833
+test  speaker BA 0.950  AUC 1.000  n=22  ItalianPD 1.000  MDVR-KCL 1.000  NeuroVoz 0.917
+
+=== mixed split=4 mel duration baseline ===
+ role  items  speakers                     corpora     pd     hc
+train 219564       172 ItalianPD,MDVR-KCL,NeuroVoz 102097 117467
+  val  28325        22 ItalianPD,MDVR-KCL,NeuroVoz  10062  18263
+ test  26570        22 ItalianPD,MDVR-KCL,NeuroVoz  13066  13504
+domains in train: ['ItalianPD', 'MDVR-KCL', 'NeuroVoz']
+writing experiments\mixed_4_mel_duration_baseline_s0
+device cuda, 224131 parameters, 3 training domains ['ItalianPD', 'MDVR-KCL', 'NeuroVoz'], regime baseline
+epoch 00  lam 0.000  train BA 0.988  val BA 0.944  domain nan
+epoch 01  lam 0.000  train BA 1.000  val BA 0.923  domain nan
+epoch 02  lam 0.000  train BA 1.000  val BA 0.944  domain nan
+epoch 03  lam 0.000  train BA 1.000  val BA 0.885  domain nan
+epoch 04  lam 0.000  train BA 1.000  val BA 0.906  domain nan
+epoch 05  lam 0.000  train BA 1.000  val BA 0.868  domain nan
+epoch 06  lam 0.000  train BA 1.000  val BA 0.962  domain nan
+epoch 07  lam 0.000  train BA 1.000  val BA 0.944  domain nan

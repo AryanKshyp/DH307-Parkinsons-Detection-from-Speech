@@ -1,0 +1,72 @@
+inferring mixed_0_handcrafted_duration_baseline_s0
+inferring mixed_1_handcrafted_duration_baseline_s0
+inferring mixed_2_handcrafted_duration_baseline_s0
+inferring mixed_3_handcrafted_duration_baseline_s0
+inferring mixed_4_handcrafted_duration_baseline_s0
+inferring mixed_5_handcrafted_duration_baseline_s0
+inferring mixed_6_handcrafted_duration_baseline_s0
+inferring mixed_7_handcrafted_duration_baseline_s0
+inferring mixed_8_handcrafted_duration_baseline_s0
+inferring mixed_9_handcrafted_duration_baseline_s0
+inferring mixed_0_handcrafted_duration_dann_s0
+inferring mixed_1_handcrafted_duration_dann_s0
+inferring mixed_2_handcrafted_duration_dann_s0
+inferring mixed_3_handcrafted_duration_dann_s0
+inferring mixed_4_handcrafted_duration_dann_s0
+inferring mixed_5_handcrafted_duration_dann_s0
+inferring mixed_6_handcrafted_duration_dann_s0
+inferring mixed_7_handcrafted_duration_dann_s0
+inferring mixed_8_handcrafted_duration_dann_s0
+inferring mixed_9_handcrafted_duration_dann_s0
+
+  regime           rule   dataset   n  balanced_acc   auc
+baseline      mean_prob       all 216         0.817 0.902
+baseline      mean_prob ItalianPD  65         0.982 0.999
+baseline      mean_prob  MDVR-KCL  37         0.765 0.824
+baseline      mean_prob  NeuroVoz 114         0.737 0.816
+baseline     mean_logit       all 216         0.813 0.893
+baseline     mean_logit ItalianPD  65         0.982 0.991
+baseline     mean_logit  MDVR-KCL  37         0.741 0.821
+baseline     mean_logit  NeuroVoz 114         0.737 0.806
+baseline    median_prob       all 216         0.817 0.899
+baseline    median_prob ItalianPD  65         0.982 0.999
+baseline    median_prob  MDVR-KCL  37         0.765 0.824
+baseline    median_prob  NeuroVoz 114         0.737 0.812
+baseline   trimmed_mean       all 216         0.817 0.902
+baseline   trimmed_mean ItalianPD  65         0.982 0.999
+baseline   trimmed_mean  MDVR-KCL  37         0.765 0.827
+baseline   trimmed_mean  NeuroVoz 114         0.737 0.816
+baseline  majority_vote       all 216         0.817 0.903
+baseline  majority_vote ItalianPD  65         0.982 1.000
+baseline  majority_vote  MDVR-KCL  37         0.765 0.818
+baseline  majority_vote  NeuroVoz 114         0.737 0.825
+baseline confident_mean       all 216         0.800 0.892
+baseline confident_mean ItalianPD  65         0.982 0.997
+baseline confident_mean  MDVR-KCL  37         0.741 0.815
+baseline confident_mean  NeuroVoz 114         0.711 0.804
+    dann      mean_prob       all 216         0.810 0.890
+    dann      mean_prob ItalianPD  65         0.982 0.998
+    dann      mean_prob  MDVR-KCL  37         0.765 0.848
+    dann      mean_prob  NeuroVoz 114         0.720 0.791
+    dann     mean_logit       all 216         0.802 0.888
+    dann     mean_logit ItalianPD  65         0.982 0.997
+    dann     mean_logit  MDVR-KCL  37         0.765 0.839
+    dann     mean_logit  NeuroVoz 114         0.703 0.786
+    dann    median_prob       all 216         0.819 0.886
+    dann    median_prob ItalianPD  65         0.982 0.997
+    dann    median_prob  MDVR-KCL  37         0.765 0.842
+    dann    median_prob  NeuroVoz 114         0.738 0.783
+    dann   trimmed_mean       all 216         0.810 0.889
+    dann   trimmed_mean ItalianPD  65         0.982 0.998
+    dann   trimmed_mean  MDVR-KCL  37         0.765 0.848
+    dann   trimmed_mean  NeuroVoz 114         0.720 0.790
+    dann  majority_vote       all 216         0.819 0.891
+    dann  majority_vote ItalianPD  65         0.982 0.998
+    dann  majority_vote  MDVR-KCL  37         0.765 0.842
+    dann  majority_vote  NeuroVoz 114         0.738 0.795
+    dann confident_mean       all 216         0.807 0.887
+    dann confident_mean ItalianPD  65         0.982 0.998
+    dann confident_mean  MDVR-KCL  37         0.765 0.833
+    dann confident_mean  NeuroVoz 114         0.712 0.786
+
+wrote reports\stage7_aggregation_handcrafted_duration.csv

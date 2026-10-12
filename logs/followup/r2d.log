@@ -1,0 +1,19 @@
+
+=== duration [handcrafted]: 40000 segments, 102 speakers, 40 features ===
+corpus mix: ItalianPD 28873, MDVR-KCL 11127
+channels: clinical, smartphone   languages: en, it
+chance: corpus 0.500, PD/HC 0.500
+normaliser checks out: order preserved, per-speaker mean 0. Between-speaker spread of feature means 13.62 -> 1.2e-16, which is where a speaker-constant label like PD/HC lives.
+corpus scope checks out: per-dataset mean 0 on the fitted set.
+  global           corpus 0.799 [0.756,0.835]   PD/HC 0.831 [0.789,0.868]
+    per-fold corpus 0.743 0.846 0.776 0.805 0.866
+    per-fold PD/HC  0.858 0.875 0.883 0.810 0.736
+  corpus           corpus 0.992 [0.990,0.994]   PD/HC 0.836 [0.795,0.872]
+    per-fold corpus 0.990 0.992 0.995 0.995 0.990
+    per-fold PD/HC  0.858 0.870 0.897 0.828 0.743
+
+=== balanced accuracy by normalisation scope ===
+ scope transform  corpus  pd_hc  corpus_chance            corpora tasks
+global      none   0.799  0.831            0.5 ItalianPD+MDVR-KCL   all
+corpus      none   0.992  0.836            0.5 ItalianPD+MDVR-KCL   all
+wrote experiments\corpus_norm_ablation\probe_mixed_r2d.csv

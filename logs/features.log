@@ -1,0 +1,35 @@
+
+=== phoneme: 75311 segments, 1851 files ===
+mel: 75311 items, 758290 frames, 0.20 GB
+wrote mel_phoneme.npy (758290, 65)
+wrote handcrafted_phoneme.npy (75311, 40)
+  voice-quality valid: 88.5%
+  columns with missing values:
+shimmer_local    11.3
+jitter_local      7.3
+f0_mean           6.9
+f0_std            6.9
+
+=== duration: 274459 segments, 3871 files ===
+mel: 274459 items, 6862994 frames, 1.78 GB
+wrote mel_duration.npy (6862994, 65)
+wrote handcrafted_duration.npy (274459, 40)
+  voice-quality valid: 94.4%
+  columns with missing values:
+shimmer_local    5.5
+jitter_local     4.5
+f0_mean          4.4
+f0_std           4.4
+
+=== utterance: 3871 segments, 3871 files ===
+mel: 20397 items, 8158800 frames, 2.12 GB
+wrote mel_utterance.npy (8158800, 65)
+wrote handcrafted_utterance.npy (3871, 40)
+  voice-quality valid: 99.9%
+  columns with missing values:
+f0_mean          0.1
+f0_std           0.1
+shimmer_local    0.1
+jitter_local     0.1
+
+features in data\processed\features

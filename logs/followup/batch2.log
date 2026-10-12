@@ -1,0 +1,15 @@
++ export OMP_NUM_THREADS=4
++ OMP_NUM_THREADS=4
++ P=.venv/Scripts/python.exe
++ V='vowel_a vowel_e vowel_i vowel_o vowel_u'
++ .venv/Scripts/python.exe scripts/probe_normalisation.py --levels duration --corpora ItalianPD NeuroVoz --tasks vowel_a vowel_e vowel_i vowel_o vowel_u --scopes global corpus --per-fold --bootstrap 1000 --tag _r2a
++ .venv/Scripts/python.exe scripts/probe_normalisation.py --levels duration --corpora ItalianPD MDVR-KCL --tasks read_text --scopes global corpus --per-fold --bootstrap 1000 --tag _r2b
++ .venv/Scripts/python.exe scripts/probe_normalisation.py --levels duration --corpora ItalianPD NeuroVoz --scopes global corpus --per-fold --bootstrap 1000 --tag _r2c
++ wait
++ .venv/Scripts/python.exe scripts/probe_normalisation.py --levels duration --corpora ItalianPD MDVR-KCL --scopes global corpus --per-fold --bootstrap 1000 --tag _r2d
++ .venv/Scripts/python.exe scripts/probe_normalisation.py --levels duration --corpora ItalianPD NeuroVoz --tasks vowel_a vowel_e vowel_i vowel_o vowel_u --drop-cohorts young_control --scopes global corpus --per-fold --bootstrap 1000 --tag _r2e
++ .venv/Scripts/python.exe scripts/probe_normalisation.py --levels duration_100 --scopes global corpus --per-fold --bootstrap 1000 --tag _r5
++ .venv/Scripts/python.exe scripts/probe_normalisation.py --levels duration --family mel-meanpool --scopes global corpus --per-fold --bootstrap 1000 --tag _r6
++ wait
++ echo BATCH2_DONE
+BATCH2_DONE

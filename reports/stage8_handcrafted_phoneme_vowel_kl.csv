@@ -1,0 +1,5 @@
+regime,label,pair,kl,n_a,n_b
+baseline,HC,ItalianPD/NeuroVoz,27.88537975696146,37,58
+baseline,PD,ItalianPD/NeuroVoz,6.9040247834483575,27,53
+dann,HC,ItalianPD/NeuroVoz,2.4136215912703713,37,58
+dann,PD,ItalianPD/NeuroVoz,1.84257376154481,27,53

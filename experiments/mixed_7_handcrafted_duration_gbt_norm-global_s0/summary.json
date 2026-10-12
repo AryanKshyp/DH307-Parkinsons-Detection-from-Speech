@@ -1,0 +1,21 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "norm": "global",
+  "protocol": "mixed",
+  "split": "7",
+  "target_stats": null,
+  "val_ba": 0.8590909090909091,
+  "val_auc": 0.8545454545454546,
+  "val_by_dataset": {
+    "ItalianPD": 1.0,
+    "MDVR-KCL": 1.0,
+    "NeuroVoz": 0.7333333333333334
+  },
+  "test_ba": 0.7545454545454545,
+  "test_auc": 0.8272727272727274,
+  "test_by_dataset": {
+    "ItalianPD": 1.0,
+    "MDVR-KCL": 1.0,
+    "NeuroVoz": 0.5166666666666667
+  }
+}

@@ -1,0 +1,44 @@
+# Default Stage 7 run. Flags override these values.
+#
+# This file is a profile, not the last word: every key here is a field on
+# TrainConfig (src/training/config.py), which holds the fallback used when a
+# key is absent. Delete a line and you get the same value, not a different
+# one. Add a key that is not a field and the run stops rather than ignoring it.
+#
+# Spine: duration + handcrafted + mixed fold 0 + baseline.
+# After a dry-run looks sane:
+#   python -m src.training.run --all-configs --regime baseline
+#   python -m src.training.run --all-configs --regime dann
+#   python -m src.training.run --family mel --all-configs --regime baseline
+#   python -m src.training.run --protocol lodo --split MDVR-KCL --regime dann
+
+family: handcrafted          # handcrafted | mel
+level: duration              # whatever Stage 5 wrote: duration, duration_100, utterance, word, phoneme
+protocol: mixed              # mixed | lodo
+split: 0                     # fold index, or a corpus name under lodo
+regime: baseline             # baseline | dann | single
+dataset: null                # required when regime=single; otherwise a filter
+phone_class: null            # e.g. vowel -- phoneme-level runs must set this
+tasks: null                  # optional list; null means every task
+norm: global                 # fitted on training rows only
+                             # corpus = optional batch-correction ablation
+                             # (handcrafted only; see experiments/corpus_norm_ablation/)
+
+epochs: 30
+batch_size: 256
+lr: 0.001
+weight_decay: 0.0
+patience: 8
+min_select_epoch: 5      # no checkpoint before this epoch, so early stop
+                         # cannot save a pre-adversarial trunk and call it
+                         # DANN (lambda ~0.70 by epoch 5). Applies to
+                         # baseline too, so both regimes share one rule.
+seed: 0
+samples_per_epoch: null      # null = one draw per training item, speaker-weighted
+num_workers: 0
+device: auto
+
+width: null                  # null = 256 (mlp) or 128 (cnn)
+dropout: null                # null = 0.3 (mlp) or 0.0 (cnn)
+lambda_max: 1.0
+lambda_gamma: 10.0

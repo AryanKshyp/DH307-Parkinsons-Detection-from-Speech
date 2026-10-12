@@ -1,0 +1,56 @@
+
+=== duration [handcrafted]: 40000 segments, 216 speakers, 40 features ===
+corpus mix: ItalianPD 18504, NeuroVoz 14419, MDVR-KCL 7077
+channels: clinical, smartphone   languages: en, es, it
+chance: corpus 0.333, PD/HC 0.500
+normaliser checks out: order preserved, per-speaker mean 0. Between-speaker spread of feature means 13.46 -> 1.3e-16, which is where a speaker-constant label like PD/HC lives.
+corpus scope checks out: per-dataset mean 0 on the fitted set.
+  global+inlp_k0   corpus 0.757 [0.730,0.786]   PD/HC 0.738 [0.704,0.771]
+    per-fold corpus 0.774 0.779 0.746 0.730 0.749
+    per-fold PD/HC  0.712 0.747 0.705 0.783 0.752
+  global+inlp_k1   corpus 0.748 [0.722,0.777]   PD/HC 0.734 [0.698,0.765]
+    per-fold corpus 0.758 0.773 0.747 0.716 0.739
+    per-fold PD/HC  0.708 0.744 0.703 0.775 0.749
+  global+inlp_k2   corpus 0.731 [0.706,0.757]   PD/HC 0.732 [0.697,0.764]
+    per-fold corpus 0.752 0.752 0.738 0.699 0.711
+    per-fold PD/HC  0.701 0.746 0.700 0.776 0.749
+  global+inlp_k3   corpus 0.701 [0.680,0.724]   PD/HC 0.723 [0.688,0.754]
+    per-fold corpus 0.716 0.727 0.701 0.689 0.679
+    per-fold PD/HC  0.694 0.738 0.692 0.762 0.749
+LODO-style PD/HC (fit on the other corpora):
+  lodo ItalianPD    global    PD/HC 0.591  target_in_stats=False
+  lodo MDVR-KCL     global    PD/HC 0.599  target_in_stats=False
+  lodo NeuroVoz     global    PD/HC 0.521  target_in_stats=False
+  lodo ItalianPD    global    PD/HC 0.591  target_in_stats=False
+  lodo MDVR-KCL     global    PD/HC 0.606  target_in_stats=False
+  lodo NeuroVoz     global    PD/HC 0.523  target_in_stats=False
+  lodo ItalianPD    global    PD/HC 0.578  target_in_stats=False
+  lodo MDVR-KCL     global    PD/HC 0.598  target_in_stats=False
+  lodo NeuroVoz     global    PD/HC 0.521  target_in_stats=False
+  lodo ItalianPD    global    PD/HC 0.571  target_in_stats=False
+  lodo MDVR-KCL     global    PD/HC 0.605  target_in_stats=False
+  lodo NeuroVoz     global    PD/HC 0.528  target_in_stats=False
+
+=== balanced accuracy by normalisation scope ===
+ scope transform  corpus  pd_hc  corpus_chance                     corpora tasks
+global   inlp_k0   0.757  0.738          0.333 ItalianPD+MDVR-KCL+NeuroVoz   all
+global   inlp_k1   0.748  0.734          0.333 ItalianPD+MDVR-KCL+NeuroVoz   all
+global   inlp_k2   0.731  0.732          0.333 ItalianPD+MDVR-KCL+NeuroVoz   all
+global   inlp_k3   0.701  0.723          0.333 ItalianPD+MDVR-KCL+NeuroVoz   all
+wrote experiments\corpus_norm_ablation\probe_mixed_r3.csv
+
+=== LODO-style PD/HC ===
+   level transform  held_out  scope  pd_hc  n_test  held_out_in_stats
+duration   inlp_k0 ItalianPD global  0.591   18504              False
+duration   inlp_k0  MDVR-KCL global  0.599    7077              False
+duration   inlp_k0  NeuroVoz global  0.521   14419              False
+duration   inlp_k1 ItalianPD global  0.591   18504              False
+duration   inlp_k1  MDVR-KCL global  0.606    7077              False
+duration   inlp_k1  NeuroVoz global  0.523   14419              False
+duration   inlp_k2 ItalianPD global  0.578   18504              False
+duration   inlp_k2  MDVR-KCL global  0.598    7077              False
+duration   inlp_k2  NeuroVoz global  0.521   14419              False
+duration   inlp_k3 ItalianPD global  0.571   18504              False
+duration   inlp_k3  MDVR-KCL global  0.605    7077              False
+duration   inlp_k3  NeuroVoz global  0.528   14419              False
+wrote experiments\corpus_norm_ablation\probe_lodo_r3.csv

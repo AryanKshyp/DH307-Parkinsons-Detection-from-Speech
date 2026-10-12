@@ -1,0 +1,7 @@
+level,held_out,scope,pd_hc,n_test,held_out_in_stats
+duration,ItalianPD,global,0.5914256896640109,18504,False
+duration,MDVR-KCL,global,0.5990936374112052,7077,False
+duration,NeuroVoz,global,0.5206555715614681,14419,False
+duration,ItalianPD,corpus,0.504398461054412,18504,False
+duration,MDVR-KCL,corpus,0.6163993680772601,7077,False
+duration,NeuroVoz,corpus,0.5096331510445785,14419,False
