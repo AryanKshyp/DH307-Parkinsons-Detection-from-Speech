@@ -1,0 +1,89 @@
+role,speaker_id,dataset,cohort,label,prob_pd,pred,n_items
+val,neurovoz_HC_0036,NeuroVoz,control,HC,0.5872192978858948,PD,912
+val,neurovoz_HC_0055,NeuroVoz,control,HC,0.5602482557296753,PD,1138
+val,neurovoz_HC_0063,NeuroVoz,control,HC,0.4674074947834015,HC,908
+val,neurovoz_HC_0071,NeuroVoz,control,HC,0.4555361568927765,HC,890
+val,neurovoz_HC_0084,NeuroVoz,control,HC,0.3174600601196289,HC,448
+val,neurovoz_HC_0087,NeuroVoz,control,HC,0.5237262845039368,PD,775
+val,neurovoz_HC_0122,NeuroVoz,control,HC,0.2563778162002563,HC,1266
+val,neurovoz_HC_0139,NeuroVoz,control,HC,0.4665258228778839,HC,327
+val,neurovoz_HC_0143,NeuroVoz,control,HC,0.3661813139915466,HC,1334
+val,neurovoz_PD_0004,NeuroVoz,patient,PD,0.8320755958557129,PD,553
+val,neurovoz_PD_0010,NeuroVoz,patient,PD,0.7058324217796326,PD,713
+val,neurovoz_PD_0026,NeuroVoz,patient,PD,0.6354612112045288,PD,817
+val,neurovoz_PD_0038,NeuroVoz,patient,PD,0.571409285068512,PD,1139
+val,neurovoz_PD_0042,NeuroVoz,patient,PD,0.5155232548713684,PD,1182
+val,neurovoz_PD_0059,NeuroVoz,patient,PD,0.8615835905075073,PD,129
+val,neurovoz_PD_0078,NeuroVoz,patient,PD,0.4722945690155029,HC,922
+val,neurovoz_PD_0079,NeuroVoz,patient,PD,0.7306563258171082,PD,700
+val,neurovoz_PD_0111,NeuroVoz,patient,PD,0.2740870714187622,HC,1047
+val,mdvrkcl_ID00,MDVR-KCL,control,HC,0.4340542554855346,HC,1655
+val,mdvrkcl_ID21,MDVR-KCL,control,HC,0.3297520577907562,HC,1220
+val,mdvrkcl_ID25,MDVR-KCL,control,HC,0.2111798673868179,HC,1346
+val,mdvrkcl_ID18,MDVR-KCL,patient,PD,0.8158491253852844,PD,410
+val,mdvrkcl_ID33,MDVR-KCL,patient,PD,0.5799810290336609,PD,799
+test,italianpd_yhc_Alberto R,ItalianPD,young_control,HC,0.2583804726600647,HC,983
+test,italianpd_yhc_Alessandro M,ItalianPD,young_control,HC,0.4791612029075622,HC,791
+test,italianpd_yhc_Alessandro P,ItalianPD,young_control,HC,0.3132810890674591,HC,1090
+test,italianpd_yhc_Arianna P,ItalianPD,young_control,HC,0.2849067151546478,HC,956
+test,italianpd_yhc_Biagio P,ItalianPD,young_control,HC,0.6438340544700623,PD,965
+test,italianpd_yhc_Daniele R,ItalianPD,young_control,HC,0.5686736106872559,PD,1089
+test,italianpd_yhc_Davide M,ItalianPD,young_control,HC,0.3411412239074707,HC,1161
+test,italianpd_yhc_Davide S,ItalianPD,young_control,HC,0.366672545671463,HC,1012
+test,italianpd_yhc_Domenico T,ItalianPD,young_control,HC,0.5658807754516602,PD,963
+test,italianpd_yhc_Gennaro T,ItalianPD,young_control,HC,0.4703276455402374,HC,1167
+test,italianpd_yhc_Giuseppe Andrea M,ItalianPD,young_control,HC,0.3850241601467132,HC,1256
+test,italianpd_yhc_Giuseppe M,ItalianPD,young_control,HC,0.4716081023216247,HC,975
+test,italianpd_yhc_Luca S,ItalianPD,young_control,HC,0.5534491539001465,PD,1012
+test,italianpd_yhc_Nicolas M,ItalianPD,young_control,HC,0.3482562601566314,HC,1157
+test,italianpd_yhc_Sara T,ItalianPD,young_control,HC,0.3837823569774627,HC,1126
+test,italianpd_ehc_AGNESE P,ItalianPD,elderly_control,HC,0.7156170606613159,PD,2908
+test,italianpd_ehc_ANGELA C,ItalianPD,elderly_control,HC,0.4329992830753326,HC,2183
+test,italianpd_ehc_ANGELA G,ItalianPD,elderly_control,HC,0.4358974993228912,HC,2141
+test,italianpd_ehc_ANTONIETTA P,ItalianPD,elderly_control,HC,0.1768832057714462,HC,2009
+test,italianpd_ehc_ANTONIO C,ItalianPD,elderly_control,HC,0.2122779786586761,HC,2000
+test,italianpd_ehc_BRIGIDA C,ItalianPD,elderly_control,HC,0.3411822021007538,HC,1933
+test,italianpd_ehc_GILDA C,ItalianPD,elderly_control,HC,0.5725921392440796,PD,2338
+test,italianpd_ehc_GIOVANNA G,ItalianPD,elderly_control,HC,0.3184731602668762,HC,2558
+test,italianpd_ehc_GIOVANNI B,ItalianPD,elderly_control,HC,0.2046207934617996,HC,2164
+test,italianpd_ehc_GRAZIA G,ItalianPD,elderly_control,HC,0.3904341161251068,HC,1980
+test,italianpd_ehc_LEONARDA F,ItalianPD,elderly_control,HC,0.3841643035411834,HC,2101
+test,italianpd_ehc_LISCO G,ItalianPD,elderly_control,HC,0.3248060345649719,HC,2231
+test,italianpd_ehc_LUIGI P,ItalianPD,elderly_control,HC,0.3581327199935913,HC,1842
+test,italianpd_ehc_MARIACRISTINA P,ItalianPD,elderly_control,HC,0.3473953902721405,HC,2129
+test,italianpd_ehc_MICHELE G,ItalianPD,elderly_control,HC,0.3280816674232483,HC,2186
+test,italianpd_ehc_NICOLA P,ItalianPD,elderly_control,HC,0.4999513924121856,HC,2370
+test,italianpd_ehc_PORCELLI A,ItalianPD,elderly_control,HC,0.331035852432251,HC,2097
+test,italianpd_ehc_SUMMO L,ItalianPD,elderly_control,HC,0.2363573759794235,HC,2308
+test,italianpd_ehc_TERESA M,ItalianPD,elderly_control,HC,0.3651358485221863,HC,1909
+test,italianpd_ehc_VITANTONIO D,ItalianPD,elderly_control,HC,0.5946219563484192,PD,1007
+test,italianpd_ehc_VITO A,ItalianPD,elderly_control,HC,0.3642543852329254,HC,1770
+test,italianpd_ehc_VITO L,ItalianPD,elderly_control,HC,0.2968104779720306,HC,2785
+test,italianpd_pd_1-5_Domenico C,ItalianPD,patient,PD,0.6628672480583191,PD,2717
+test,italianpd_pd_1-5_Felicetta C,ItalianPD,patient,PD,0.5564035177230835,PD,2543
+test,italianpd_pd_1-5_Leonarda L,ItalianPD,patient,PD,0.3791007399559021,HC,3214
+test,italianpd_pd_1-5_Lucia R,ItalianPD,patient,PD,0.4487994015216827,HC,2428
+test,italianpd_pd_1-5_Roberto R,ItalianPD,patient,PD,0.6643940806388855,PD,2470
+test,italianpd_pd_11-16_Anna B,ItalianPD,patient,PD,0.3459929823875427,HC,1952
+test,italianpd_pd_11-16_Michele C,ItalianPD,patient,PD,0.7887284755706787,PD,2227
+test,italianpd_pd_11-16_Nicola S,ItalianPD,patient,PD,0.5751631855964661,PD,1865
+test,italianpd_pd_11-16_Roberto L,ItalianPD,patient,PD,0.7397080063819885,PD,2082
+test,italianpd_pd_11-16_Roberto R,ItalianPD,patient,PD,0.7739526629447937,PD,2302
+test,italianpd_pd_11-16_Vito S,ItalianPD,patient,PD,0.7521883249282837,PD,1980
+test,italianpd_pd_17-28_Antonia G,ItalianPD,patient,PD,0.6739187240600586,PD,3536
+test,italianpd_pd_17-28_Daria L,ItalianPD,patient,PD,0.7340382933616638,PD,2443
+test,italianpd_pd_17-28_Giovanni M,ItalianPD,patient,PD,0.7362155318260193,PD,1941
+test,italianpd_pd_17-28_Giovanni N,ItalianPD,patient,PD,0.8875328302383423,PD,2261
+test,italianpd_pd_17-28_Giulia L,ItalianPD,patient,PD,0.659554660320282,PD,2694
+test,italianpd_pd_17-28_Giulia P,ItalianPD,patient,PD,0.3094132244586944,HC,1982
+test,italianpd_pd_17-28_Giustina M,ItalianPD,patient,PD,0.5780799388885498,PD,1829
+test,italianpd_pd_17-28_Mario B,ItalianPD,patient,PD,0.7467407584190369,PD,2634
+test,italianpd_pd_17-28_Nicola M,ItalianPD,patient,PD,0.7859459519386292,PD,1549
+test,italianpd_pd_17-28_Nicolò C,ItalianPD,patient,PD,0.8668279647827148,PD,1836
+test,italianpd_pd_17-28_Vito L,ItalianPD,patient,PD,0.643527626991272,PD,2590
+test,italianpd_pd_17-28_Vito S,ItalianPD,patient,PD,0.8505099415779114,PD,2283
+test,italianpd_pd_6-10_Luigi B,ItalianPD,patient,PD,0.7097769379615784,PD,2650
+test,italianpd_pd_6-10_Nicola S,ItalianPD,patient,PD,0.7069056630134583,PD,1973
+test,italianpd_pd_6-10_Saverio S,ItalianPD,patient,PD,0.7618014812469482,PD,2286
+test,italianpd_pd_6-10_Ugo B,ItalianPD,patient,PD,0.8105109930038452,PD,1809
+test,italianpd_pd_6-10_Vito S,ItalianPD,patient,PD,0.6958206295967102,PD,2003

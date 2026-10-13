@@ -1,14 +1,7 @@
-# Data is never tracked: corpora are not redistributable and filenames
-# contain speaker identifiers.
-data/
+# Data is not tracked: corpora are not redistributable and filenames contain
+# speaker identifiers. Anchored so src/data/ is not matched.
+/data/
 *.zip
-
-# Experiment outputs. Run configs, metrics and summaries are tracked;
-# per-speaker predictions and embeddings carry speaker identifiers.
-experiments/**/outputs/
-experiments/**/checkpoints/
-experiments/**/predictions.csv
-experiments/**/embeddings.csv
 
 .venv/
 __pycache__/

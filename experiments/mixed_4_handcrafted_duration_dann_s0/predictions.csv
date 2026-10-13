@@ -1,0 +1,45 @@
+role,speaker_id,dataset,cohort,label,prob_pd,pred,n_items
+val,neurovoz_HC_0051,NeuroVoz,control,HC,0.6959647536277771,PD,1204
+val,neurovoz_HC_0055,NeuroVoz,control,HC,0.6382603049278259,PD,1138
+val,neurovoz_HC_0063,NeuroVoz,control,HC,0.37873575091362,HC,908
+val,neurovoz_HC_0085,NeuroVoz,control,HC,0.44563665986061096,HC,747
+val,neurovoz_HC_0137,NeuroVoz,control,HC,0.3946414887905121,HC,1605
+val,neurovoz_HC_0144,NeuroVoz,control,HC,0.36527857184410095,HC,1077
+val,neurovoz_PD_0014,NeuroVoz,patient,PD,0.733010470867157,PD,677
+val,neurovoz_PD_0017,NeuroVoz,patient,PD,0.8576700687408447,PD,677
+val,neurovoz_PD_0032,NeuroVoz,patient,PD,0.6193443536758423,PD,708
+val,neurovoz_PD_0035,NeuroVoz,patient,PD,0.7029224634170532,PD,904
+val,neurovoz_PD_0066,NeuroVoz,patient,PD,0.6740137338638306,PD,749
+val,neurovoz_PD_0079,NeuroVoz,patient,PD,0.6407500505447388,PD,700
+val,italianpd_yhc_Davide M,ItalianPD,young_control,HC,0.11844037473201752,HC,1161
+val,italianpd_yhc_Gennaro T,ItalianPD,young_control,HC,0.1938842236995697,HC,1167
+val,italianpd_ehc_AGNESE P,ItalianPD,elderly_control,HC,0.4377962052822113,HC,2908
+val,italianpd_ehc_ANGELA C,ItalianPD,elderly_control,HC,0.29364103078842163,HC,2183
+val,italianpd_pd_1-5_Roberto R,ItalianPD,patient,PD,0.8396973609924316,PD,2470
+val,italianpd_pd_11-16_Vito S,ItalianPD,patient,PD,0.8667911887168884,PD,1980
+val,mdvrkcl_ID08,MDVR-KCL,control,HC,0.24695856869220734,HC,1530
+val,mdvrkcl_ID12,MDVR-KCL,control,HC,0.18300648033618927,HC,1364
+val,mdvrkcl_ID28,MDVR-KCL,control,HC,0.48737308382987976,HC,1271
+val,mdvrkcl_ID27,MDVR-KCL,patient,PD,0.6146190762519836,PD,1197
+test,neurovoz_HC_0034,NeuroVoz,control,HC,0.8401206731796265,PD,1296
+test,neurovoz_HC_0045,NeuroVoz,control,HC,0.4169110059738159,HC,713
+test,neurovoz_HC_0074,NeuroVoz,control,HC,0.5764932036399841,PD,914
+test,neurovoz_HC_0081,NeuroVoz,control,HC,0.717957079410553,PD,812
+test,neurovoz_HC_0084,NeuroVoz,control,HC,0.16381743550300598,HC,448
+test,neurovoz_HC_0122,NeuroVoz,control,HC,0.29879629611968994,HC,1266
+test,neurovoz_PD_0009,NeuroVoz,patient,PD,0.8009504079818726,PD,627
+test,neurovoz_PD_0033,NeuroVoz,patient,PD,0.702780544757843,PD,811
+test,neurovoz_PD_0037,NeuroVoz,patient,PD,0.45911526679992676,HC,848
+test,neurovoz_PD_0040,NeuroVoz,patient,PD,0.5172020792961121,PD,964
+test,neurovoz_PD_0041,NeuroVoz,patient,PD,0.6595308780670166,PD,924
+test,neurovoz_PD_0077,NeuroVoz,patient,PD,0.4647822678089142,HC,749
+test,italianpd_yhc_Domenico T,ItalianPD,young_control,HC,0.20327085256576538,HC,963
+test,italianpd_yhc_Giuseppe Andrea M,ItalianPD,young_control,HC,0.11314745247364044,HC,1256
+test,italianpd_ehc_ANGELA G,ItalianPD,elderly_control,HC,0.10783378779888153,HC,2141
+test,italianpd_ehc_VITANTONIO D,ItalianPD,elderly_control,HC,0.4682326316833496,HC,1007
+test,italianpd_pd_1-5_Felicetta C,ItalianPD,patient,PD,0.3951183557510376,HC,2543
+test,italianpd_pd_11-16_Anna B,ItalianPD,patient,PD,0.5998743772506714,PD,1952
+test,italianpd_pd_17-28_Giovanni M,ItalianPD,patient,PD,0.8445224165916443,PD,1941
+test,mdvrkcl_ID10,MDVR-KCL,control,HC,0.17647789418697357,HC,1473
+test,mdvrkcl_ID36,MDVR-KCL,control,HC,0.4725387990474701,HC,1215
+test,mdvrkcl_ID13,MDVR-KCL,patient,PD,0.6845698952674866,PD,1707

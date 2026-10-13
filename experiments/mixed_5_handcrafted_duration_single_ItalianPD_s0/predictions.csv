@@ -1,0 +1,13 @@
+role,speaker_id,dataset,cohort,label,prob_pd,pred,n_items
+val,italianpd_yhc_Alberto R,ItalianPD,young_control,HC,0.00155102857388556,HC,983
+val,italianpd_yhc_Arianna P,ItalianPD,young_control,HC,0.09076841175556183,HC,956
+val,italianpd_yhc_Biagio P,ItalianPD,young_control,HC,0.000470505008706823,HC,965
+val,italianpd_ehc_GRAZIA G,ItalianPD,elderly_control,HC,0.02961781993508339,HC,1980
+val,italianpd_pd_17-28_Giulia P,ItalianPD,patient,PD,0.9817201495170593,PD,1982
+val,italianpd_pd_17-28_Nicola M,ItalianPD,patient,PD,0.9678655862808228,PD,1549
+test,italianpd_yhc_Davide M,ItalianPD,young_control,HC,0.02519182488322258,HC,1161
+test,italianpd_yhc_Gennaro T,ItalianPD,young_control,HC,0.012034225277602673,HC,1167
+test,italianpd_ehc_AGNESE P,ItalianPD,elderly_control,HC,0.16051854193210602,HC,2908
+test,italianpd_ehc_ANGELA C,ItalianPD,elderly_control,HC,0.3443155884742737,HC,2183
+test,italianpd_pd_1-5_Roberto R,ItalianPD,patient,PD,0.9740017652511597,PD,2470
+test,italianpd_pd_11-16_Vito S,ItalianPD,patient,PD,0.9861235618591309,PD,1980

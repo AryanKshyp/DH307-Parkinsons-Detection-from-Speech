@@ -113,8 +113,7 @@ configs/datasets.yaml → manifest.csv → processed/*.wav + manifest_processed.
 
 One run = one directory `experiments/<protocol>_<split>_<family>_<level>_<regime>[_<extras>]_s<seed>/`
 containing `config.json`, `commit.txt`, `predictions.csv`, `embeddings.csv`,
-`metrics.csv`, `summary.json`, `checkpoints/`. Outputs and checkpoints are
-git-ignored; the configs are tracked.
+`metrics.csv`, `summary.json`, `checkpoints/`. All of it is tracked.
 
 ## Invariants
 
@@ -137,8 +136,9 @@ Violating any of these invalidates results (see `PIPELINE.md` § Invariants):
 
 ## Gotchas that bite
 
-- `data/` is git-ignored in full and contains speaker identifiers. Never commit
-  audio, alignments, manifests, or split files.
+- `data/` is git-ignored in full (`/data/`, anchored so `src/data/` stays
+  tracked) and contains speaker identifiers. Never commit audio, alignments,
+  manifests, or split files.
 - Corpus coverage is uneven by level and this must be carried into any claim:
   phoneme level is NeuroVoz + ItalianPD only (MMS_FA emits characters, not
   phones, and English orthography is not shallow); MDVR-KCL reaches word level

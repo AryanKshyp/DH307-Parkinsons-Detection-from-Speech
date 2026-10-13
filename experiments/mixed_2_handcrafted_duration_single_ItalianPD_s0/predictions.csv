@@ -1,0 +1,15 @@
+role,speaker_id,dataset,cohort,label,prob_pd,pred,n_items
+val,italianpd_yhc_Alessandro P,ItalianPD,young_control,HC,0.00024977934663183987,HC,1090
+val,italianpd_ehc_GILDA C,ItalianPD,elderly_control,HC,0.14381541311740875,HC,2338
+val,italianpd_ehc_SUMMO L,ItalianPD,elderly_control,HC,0.04704335704445839,HC,2308
+val,italianpd_ehc_VITO A,ItalianPD,elderly_control,HC,0.040288496762514114,HC,1770
+val,italianpd_pd_17-28_Nicolò C,ItalianPD,patient,PD,0.9881280660629272,PD,1836
+val,italianpd_pd_6-10_Luigi B,ItalianPD,patient,PD,0.9698211550712585,PD,2650
+val,italianpd_pd_6-10_Saverio S,ItalianPD,patient,PD,0.9728457927703857,PD,2286
+test,italianpd_yhc_Giuseppe M,ItalianPD,young_control,HC,0.08830811083316803,HC,975
+test,italianpd_ehc_ANTONIETTA P,ItalianPD,elderly_control,HC,0.13071209192276,HC,2009
+test,italianpd_ehc_GIOVANNA G,ItalianPD,elderly_control,HC,0.09347470104694366,HC,2558
+test,italianpd_ehc_PORCELLI A,ItalianPD,elderly_control,HC,0.002024889923632145,HC,2097
+test,italianpd_pd_1-5_Lucia R,ItalianPD,patient,PD,0.7594617009162903,PD,2428
+test,italianpd_pd_17-28_Antonia G,ItalianPD,patient,PD,0.8114854097366333,PD,3536
+test,italianpd_pd_17-28_Daria L,ItalianPD,patient,PD,0.9399058222770691,PD,2443

@@ -1,0 +1,65 @@
+role,speaker_id,dataset,cohort,label,prob_pd,pred,n_items
+val,neurovoz_HC_0034,NeuroVoz,control,HC,0.889822244644165,PD,1296
+val,neurovoz_HC_0060,NeuroVoz,control,HC,0.661293625831604,PD,993
+val,neurovoz_HC_0063,NeuroVoz,control,HC,0.3463420867919922,HC,908
+val,neurovoz_HC_0069,NeuroVoz,control,HC,0.40268123149871826,HC,874
+val,neurovoz_HC_0082,NeuroVoz,control,HC,0.46245256066322327,HC,737
+val,neurovoz_HC_0116,NeuroVoz,control,HC,0.17476943135261536,HC,921
+val,neurovoz_HC_0121,NeuroVoz,control,HC,0.253704309463501,HC,1233
+val,neurovoz_HC_0129,NeuroVoz,control,HC,0.40938326716423035,HC,1202
+val,neurovoz_HC_0134,NeuroVoz,control,HC,0.20931687951087952,HC,1079
+val,neurovoz_PD_0008,NeuroVoz,patient,PD,0.7063566446304321,PD,763
+val,neurovoz_PD_0023,NeuroVoz,patient,PD,0.727705180644989,PD,865
+val,neurovoz_PD_0025,NeuroVoz,patient,PD,0.28662440180778503,HC,701
+val,neurovoz_PD_0037,NeuroVoz,patient,PD,0.40950649976730347,HC,848
+val,neurovoz_PD_0041,NeuroVoz,patient,PD,0.6349954605102539,PD,924
+val,neurovoz_PD_0042,NeuroVoz,patient,PD,0.4022834599018097,HC,1182
+val,neurovoz_PD_0070,NeuroVoz,patient,PD,0.47250258922576904,HC,740
+val,neurovoz_PD_0115,NeuroVoz,patient,PD,0.612820565700531,PD,823
+val,italianpd_yhc_Nicolas M,ItalianPD,young_control,HC,0.05433087423443794,HC,1157
+val,italianpd_ehc_AGNESE P,ItalianPD,elderly_control,HC,0.3043828308582306,HC,2908
+val,italianpd_ehc_ANTONIETTA P,ItalianPD,elderly_control,HC,0.0162653885781765,HC,2009
+val,italianpd_ehc_GRAZIA G,ItalianPD,elderly_control,HC,0.024799266830086708,HC,1980
+val,italianpd_ehc_VITANTONIO D,ItalianPD,elderly_control,HC,0.3860073387622833,HC,1007
+val,italianpd_ehc_VITO L,ItalianPD,elderly_control,HC,0.03924797847867012,HC,2785
+val,italianpd_pd_1-5_Domenico C,ItalianPD,patient,PD,0.7969695329666138,PD,2717
+val,italianpd_pd_1-5_Felicetta C,ItalianPD,patient,PD,0.3826645016670227,HC,2543
+val,italianpd_pd_11-16_Roberto R,ItalianPD,patient,PD,0.919624924659729,PD,2302
+val,italianpd_pd_6-10_Vito S,ItalianPD,patient,PD,0.8485292196273804,PD,2003
+test,mdvrkcl_ID00,MDVR-KCL,control,HC,0.632722795009613,PD,1655
+test,mdvrkcl_ID01,MDVR-KCL,control,HC,0.5056089162826538,PD,1363
+test,mdvrkcl_ID03,MDVR-KCL,control,HC,0.5614911317825317,PD,1274
+test,mdvrkcl_ID05,MDVR-KCL,control,HC,0.43968549370765686,HC,1207
+test,mdvrkcl_ID08,MDVR-KCL,control,HC,0.2967809736728668,HC,1530
+test,mdvrkcl_ID09,MDVR-KCL,control,HC,0.4979664087295532,HC,1389
+test,mdvrkcl_ID10,MDVR-KCL,control,HC,0.2470167726278305,HC,1473
+test,mdvrkcl_ID11,MDVR-KCL,control,HC,0.4641536474227905,HC,1351
+test,mdvrkcl_ID12,MDVR-KCL,control,HC,0.3408133387565613,HC,1364
+test,mdvrkcl_ID14,MDVR-KCL,control,HC,0.6044460535049438,PD,1631
+test,mdvrkcl_ID15,MDVR-KCL,control,HC,0.23609279096126556,HC,2490
+test,mdvrkcl_ID19,MDVR-KCL,control,HC,0.5364861488342285,PD,1046
+test,mdvrkcl_ID21,MDVR-KCL,control,HC,0.5050557851791382,PD,1220
+test,mdvrkcl_ID22,MDVR-KCL,control,HC,0.5219754576683044,PD,1300
+test,mdvrkcl_ID23,MDVR-KCL,control,HC,0.4342982769012451,HC,1796
+test,mdvrkcl_ID25,MDVR-KCL,control,HC,0.3809316158294678,HC,1346
+test,mdvrkcl_ID26,MDVR-KCL,control,HC,0.692389965057373,PD,1506
+test,mdvrkcl_ID28,MDVR-KCL,control,HC,0.44952842593193054,HC,1271
+test,mdvrkcl_ID31,MDVR-KCL,control,HC,0.6164125204086304,PD,1292
+test,mdvrkcl_ID35,MDVR-KCL,control,HC,0.6949471235275269,PD,708
+test,mdvrkcl_ID36,MDVR-KCL,control,HC,0.585854709148407,PD,1215
+test,mdvrkcl_ID02,MDVR-KCL,patient,PD,0.6510157585144043,PD,1880
+test,mdvrkcl_ID04,MDVR-KCL,patient,PD,0.5574161410331726,PD,1321
+test,mdvrkcl_ID06,MDVR-KCL,patient,PD,0.6028660535812378,PD,1370
+test,mdvrkcl_ID07,MDVR-KCL,patient,PD,0.7187469005584717,PD,1876
+test,mdvrkcl_ID13,MDVR-KCL,patient,PD,0.7591506242752075,PD,1707
+test,mdvrkcl_ID16,MDVR-KCL,patient,PD,0.4851694107055664,HC,1590
+test,mdvrkcl_ID17,MDVR-KCL,patient,PD,0.4179019033908844,HC,975
+test,mdvrkcl_ID18,MDVR-KCL,patient,PD,0.8241923451423645,PD,410
+test,mdvrkcl_ID20,MDVR-KCL,patient,PD,0.627869188785553,PD,886
+test,mdvrkcl_ID24,MDVR-KCL,patient,PD,0.6671666502952576,PD,1465
+test,mdvrkcl_ID27,MDVR-KCL,patient,PD,0.6374467611312866,PD,1197
+test,mdvrkcl_ID29,MDVR-KCL,patient,PD,0.760330855846405,PD,1051
+test,mdvrkcl_ID30,MDVR-KCL,patient,PD,0.5828311443328857,PD,1285
+test,mdvrkcl_ID32,MDVR-KCL,patient,PD,0.538327693939209,PD,543
+test,mdvrkcl_ID33,MDVR-KCL,patient,PD,0.48236414790153503,HC,799
+test,mdvrkcl_ID34,MDVR-KCL,patient,PD,0.5755324363708496,PD,1193

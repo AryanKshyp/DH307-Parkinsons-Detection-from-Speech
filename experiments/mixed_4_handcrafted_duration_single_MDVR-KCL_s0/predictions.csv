@@ -1,0 +1,8 @@
+role,speaker_id,dataset,cohort,label,prob_pd,pred,n_items
+val,mdvrkcl_ID08,MDVR-KCL,control,HC,0.2874594032764435,HC,1530
+val,mdvrkcl_ID12,MDVR-KCL,control,HC,0.21928268671035767,HC,1364
+val,mdvrkcl_ID28,MDVR-KCL,control,HC,0.6178765296936035,PD,1271
+val,mdvrkcl_ID27,MDVR-KCL,patient,PD,0.9254330992698669,PD,1197
+test,mdvrkcl_ID10,MDVR-KCL,control,HC,0.35894012451171875,HC,1473
+test,mdvrkcl_ID36,MDVR-KCL,control,HC,0.5022043585777283,PD,1215
+test,mdvrkcl_ID13,MDVR-KCL,patient,PD,0.7214956879615784,PD,1707
